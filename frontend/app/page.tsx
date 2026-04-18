@@ -64,21 +64,59 @@ export default function WarRoom() {
 
       {debateData && (
         <div className="space-y-6">
-          {/* 三模型并发展示区 */}
-          <div className="grid grid-cols-3 gap-4">
-            {Object.entries(debateData.opinions || {}).map(([model, data]) => (
-              <div
-                key={model}
-                className="bg-gray-800 border border-gray-700 rounded-lg p-4 h-96 overflow-y-auto"
-              >
-                <h3 className="text-blue-400 font-bold border-b border-gray-700 pb-2 mb-2">
-                  {model}
-                </h3>
-                <pre className="text-sm text-gray-300 whitespace-pre-wrap">
-                  {JSON.stringify(data, null, 2)}
-                </pre>
+          {/* 异构模型配置显示 */}
+          <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-4">
+            <h3 className="text-yellow-400 font-bold mb-3">🔧 异构模型配置 (V6.1)</h3>
+            <div className="grid grid-cols-4 gap-2 text-sm">
+              <div className="bg-blue-900/30 p-2 rounded">
+                <span className="text-blue-400">Clarifier</span>
+                <div className="text-gray-300">GLM-5.1</div>
+                <div className="text-gray-500 text-xs">zhipu/multimodal</div>
               </div>
-            ))}
+              <div className="bg-green-900/30 p-2 rounded">
+                <span className="text-green-400">Builder</span>
+                <div className="text-gray-300">GPT-5.3 Codex</div>
+                <div className="text-gray-500 text-xs">openai/coding</div>
+              </div>
+              <div className="bg-purple-900/30 p-2 rounded">
+                <span className="text-purple-400">Reviewer</span>
+                <div className="text-gray-300">Claude Opus 4.6</div>
+                <div className="text-gray-500 text-xs">anthropic/reasoning</div>
+              </div>
+              <div className="bg-orange-900/30 p-2 rounded">
+                <span className="text-orange-400">Arbiter</span>
+                <div className="text-gray-300">GPT-5.4</div>
+                <div className="text-gray-500 text-xs">openai/synthesis</div>
+              </div>
+            </div>
+          </div>
+
+          {/* 四角色并发展示区 */}
+          <div className="grid grid-cols-4 gap-4">
+            {Object.entries(debateData.opinions || {}).map(([role, data]) => {
+              const colors = {
+                clarifier: "border-blue-500",
+                builder: "border-green-500",
+                reviewer: "border-purple-500",
+                arbiter: "border-orange-500"
+              };
+              return (
+                <div
+                  key={role}
+                  className={`bg-gray-800 border-2 ${colors[role] || "border-gray-700"} rounded-lg p-4 h-80 overflow-y-auto`}
+                >
+                  <h3 className="text-white font-bold border-b border-gray-700 pb-2 mb-2 uppercase">
+                    {role}
+                  </h3>
+                  <div className="text-xs text-gray-500 mb-2">
+                    {data?.model} | {data?.provider}
+                  </div>
+                  <pre className="text-sm text-gray-300 whitespace-pre-wrap">
+                    {JSON.stringify(data, null, 2)}
+                  </pre>
+                </div>
+              );
+            })}
           </div>
 
           {/* 共识裁判与物理拦截区 */}

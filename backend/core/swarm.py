@@ -21,12 +21,12 @@ class SwarmDebate:
         【强制调用宿主机原生工具 parallel_ai_skill】
         物理并行调用多模型，真并发非模拟
         """
-        # Build command to call native parallel_ai_skill
-        models = "claude-4.5,gemini-2.5-pro,gpt-5"
+        # Build command to call native parallel_ai_skill with ROLES
+        roles = "clarifier,builder,reviewer,arbiter"  # 异构角色调用
         cmd = [
             "python", 
             f"{self.MCP_TOOLS_PATH}/parallel_ai_skill/main.py",
-            "--models", models,
+            "--roles", roles,  # 使用角色而非模型名
             "--prompt", prompt,
             "--timeout", "30"
         ]

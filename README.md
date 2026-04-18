@@ -63,6 +63,7 @@ val-nexus/
 │       └── swarm.py         # 多AI编排核心
 ├── frontend/
 │   └── app/
+│       ├── layout.tsx       # Next.js 根布局
 │       └── page.tsx         # War Room 主界面
 └── docker-compose.yml       # 原生工具挂载编排
 ```
@@ -92,9 +93,18 @@ subprocess.run(["python", "/app/mcp_tools/zero_error_system/heal.py"])
 
 ## 🛡️ 安全设计
 
-- **环境变量隔离** - 所有 API Key 通过 `.env` 注入
+- **环境变量隔离** - 所有 API Key 通过 `.env` 注入，无硬编码
 - **只读挂载** - 原生工具以 `:ro` 模式挂载
 - **人工批准** - 物理执行前必须人工确认
+
+## 📝 设计哲学
+
+本项目为 **VAI Platform V6.1** 专门定制，核心目标是：
+
+1. **摒弃模拟执行** - 所有 AI 调用必须物理写盘并启动
+2. **多模型协同** - ≥3 个顶级大模型并发论证
+3. **高准确率保障** - 全链条 95% 置信度红线
+4. **物理拦截** - 人工批准后才执行物理操作
 
 ## 📜 协议
 
