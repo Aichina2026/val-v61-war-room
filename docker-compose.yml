@@ -10,9 +10,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - PYTHONPATH=/app
-      - 4SAPI_KEY=${4SAPI_KEY:-}
-      - ALIYUN_KEY=${ALIYUN_KEY:-}
-      - MOONSHOT_KEY=${MOONSHOT_KEY:-}
+      - 4SAPI_KEY
+      - ALIYUN_KEY
+      - MOONSHOT_KEY
     ports:
       - "8000:8000"
     command: >
