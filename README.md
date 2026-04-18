@@ -1,110 +1,142 @@
-# VAL V6.1 Multi-AI War Room
+# VAL V6.2 Flexible War Room
 
-[![VAL](https://img.shields.io/badge/VAL-V6.1-blue)](https://github.com)
+[![VAL](https://img.shields.io/badge/VAL-V6.2-blue)](https://github.com)
 [![Accuracy](https://img.shields.io/badge/Confidence-95%25-green)](https://github.com)
 [![Stack](https://img.shields.io/badge/Stack-Next.js%2015%20%7C%20React%2019%20%7C%20FastAPI-purple)](https://github.com)
 
-> **Multi-AI High-Accuracy Orchestration System** - 原生工具深度整合的多AI指挥部
+> **可配置化多AI高准确率辩论系统** - 节点/模型/角色/轮次全可选
 
-## 🎯 核心特性
+## 🎯 V6.2 新特性
 
-- **三模型并行论证** - 同时调用多个顶级大模型进行协同推理
-- **95% 准确率红线** - 强制 4AI 工作流裁判共识，不达标不流转
-- **物理拦截机制** - 人工批准后才执行物理操作
-- **原生工具挂载** - Docker Volume 深度整合宿主机工具链
+### 可配置化
+- ✅ **节点可选** - 4SAPI / 阿里百炼 / Moonshot
+- ✅ **模型可选** - 每个角色独立选择模型
+- ✅ **角色可选** - 自定义参与辩论的角色
+- ✅ **轮次可选** - 1-5轮辩论
+
+### 搜索增强
+- 🔍 **Google标准** - 搜索结果按Google格式处理
+- 📚 **上下文支持** - 搜索结果注入辩论上下文
+- ⚡ **可选启用** - 按需开启搜索
+
+### 简化界面
+- 清晰配置面板
+- 实时辩论过程展示
+- 折叠式详细JSON
 
 ## 🏗️ 架构
 
 ```
 Frontend (Next.js 15 + React 19)
-    ↓
+    ↓ POST /api/debate
 Backend (FastAPI + Python 3.12)
-    ↓
-Native Tools (/app/mcp_tools)
-    ├── parallel_ai_skill/    # 多模型并行调用
-    ├── 4AI工作流/            # 共识裁判
-    ├── free-code/            # 物理代码执行
-    └── zero_error_system/    # 自治愈系统
+    ↓ FlexibleDebateEngine
+    ├─ search_knowledge/       # 知识搜索
+    ├─ flexible_engine.py      # 可配置化引擎
+    │   ├─ 节点管理
+    │   ├─ 模型库
+    │   ├─ 角色分配
+    │   └─ 多轮辩论
+    └─ WebSocket 实时流
 ```
 
 ## 🚀 快速开始
 
-### 环境要求
-
-- Docker & Docker Compose
-- API Keys (OpenAI, Anthropic, Google)
-
-### 配置
-
-创建 `.env` 文件：
+### 1. 环境配置
 
 ```bash
-OPENAI_API_KEY=your_key_here
-ANTHROPIC_API_KEY=your_key_here
-GEMINI_API_KEY=your_key_here
+cp .env.example .env
+# 编辑 .env 填入你的 API Keys
 ```
 
-### 启动
+### 2. 启动服务
 
 ```bash
-cd val-nexus
 docker compose up -d
 ```
 
-访问 http://localhost:3000 进入 War Room
+### 3. 访问界面
+
+打开 http://localhost:3000
+
+## 🎮 使用指南
+
+### 模式选择
+| 模式 | 角色 | 轮次 | 阈值 | 适用场景 |
+|------|------|------|------|----------|
+| 极简 | 2 | 1 | 90% | 快速验证 |
+| 标准 | 4 | 1 | 95% | 常规任务 |
+| 深度 | 4 | 3 | 97% | 关键决策 |
+| 自定义 | 自选 | 自选 | 95% | 特殊需求 |
+
+### 角色模型映射
+| 角色 | 默认模型 | 备选模型 |
+|------|----------|----------|
+| Clarifier | GLM-5.1 | Gemini 2.5 Pro |
+| Builder | GPT-5.3 Codex | DeepSeek V3.2 |
+| Reviewer | Claude Opus 4.6 | Claude Opus 4.7 |
+| Arbiter | GPT-5.4 | GPT-5.4 xhigh |
+
+### API 使用
+
+```bash
+# 运行标准辩论
+curl -X POST http://localhost:8000/api/debate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "设计一个消息队列系统",
+    "mode": "standard",
+    "enable_search": true
+  }'
+
+# 自定义辩论
+curl -X POST http://localhost:8000/api/debate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "评估云原生架构",
+    "mode": "custom",
+    "roles": ["reviewer", "arbiter"],
+    "models": {"reviewer": "claude-opus-4-7", "arbiter": "gpt-5.4-xhigh"},
+    "rounds": 2,
+    "enable_search": true
+  }'
+```
 
 ## 📁 项目结构
 
 ```
 val-nexus/
 ├── backend/
-│   ├── main.py              # FastAPI 全双工路由
+│   ├── main.py                    # FastAPI 路由
 │   └── core/
-│       └── swarm.py         # 多AI编排核心
+│       ├── flexible_engine.py     # 可配置化辩论引擎
+│       └── swarm.py               # V6.1 兼容层
 ├── frontend/
 │   └── app/
-│       ├── layout.tsx       # Next.js 根布局
-│       └── page.tsx         # War Room 主界面
-└── docker-compose.yml       # 原生工具挂载编排
+│       └── page.tsx               # 简化版 War Room
+├── docker-compose.yml
+└── .env.example
 ```
 
-## 🔧 核心机制
+## 🔧 搜索增强
 
-### 1. 并行论证 (parallel_ai_skill)
+搜索结果按 Google 标准格式化：
 
-```python
-models = "claude-4.5,gemini-2.5-pro,gpt-5"
-# 物理并行调用，非 asyncio.gather 模拟
+```json
+{
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "...",
+      "snippet": "...",
+      "url": "...",
+      "source": "..."
+    }
+  ],
+  "knowledge_panel": {...},
+  "related_questions": [...]
+}
 ```
-
-### 2. 共识裁判 (4AI工作流)
-
-```python
-if confidence < 0.95:
-    raise ValueError("准确率未达 95% 红线，打回重组！")
-```
-
-### 3. 自治愈 (zero_error_system)
-
-```python
-# 任何错误自动转交自愈系统
-subprocess.run(["python", "/app/mcp_tools/zero_error_system/heal.py"])
-```
-
-## 🛡️ 安全设计
-
-- **环境变量隔离** - 所有 API Key 通过 `.env` 注入，无硬编码
-- **只读挂载** - 原生工具以 `:ro` 模式挂载
-- **人工批准** - 物理执行前必须人工确认
-
-## 📝 设计哲学
-
-本项目为 **VAI Platform V6.1** 专门定制，核心目标是：
-
-1. **摒弃模拟执行** - 所有 AI 调用必须物理写盘并启动
-2. **多模型协同** - ≥3 个顶级大模型并发论证
-3. **高准确率保障** - 全链条 95% 置信度红线
-4. **物理拦截** - 人工批准后才执行物理操作
 
 ## 📜 协议
 
@@ -112,4 +144,4 @@ MIT License - 开源供 AI 社区借鉴使用
 
 ---
 
-**Built for VAI Platform V6.1** | 2026-04-18
+**Built for VAI Platform V6.2** | 2026-04-18
