@@ -1,147 +1,80 @@
-# VAL V6.2 Flexible War Room
+# VAL V6.1 OS - 全链条高准确率生产级多AI系统
 
-[![VAL](https://img.shields.io/badge/VAL-V6.2-blue)](https://github.com)
-[![Accuracy](https://img.shields.io/badge/Confidence-95%25-green)](https://github.com)
-[![Stack](https://img.shields.io/badge/Stack-Next.js%2015%20%7C%20React%2019%20%7C%20FastAPI-purple)](https://github.com)
+## 版本信息
+- **版本**: V6.1 Production
+- **发布日期**: 2026-04-18
+- **Python**: 3.13
+- **FastAPI**: >=0.115
+- **Next.js**: 15
+- **React**: 19
 
-> **可配置化多AI高准确率辩论系统** - 节点/模型/角色/轮次全可选
+## 核心特性
 
-## 🎯 V6.2 新特性
+### ✅ 已修复问题
+| 问题 | 修复方案 | 状态 |
+|------|----------|------|
+| 模拟执行 | `physical_engine.py` 强制 subprocess 调用 | ✅ |
+| ≥3模型并发 | 每个角色强制3模型并行 (ThreadPoolExecutor) | ✅ |
+| 准确率红线 | 强制调用 `judge.py`，<95% 阻断 | ✅ |
+| Python 3.13 | docker-compose 更新 python:3.13-slim | ✅ |
+| /api/approve | 新增物理拦截端点 | ✅ |
+| WebSocket命名 | `/ws/openclaw` 符合原始指令 | ✅ |
+| 自愈系统 | 失败自动转交 `zero_error_system` | ✅ |
 
-### 可配置化
-- ✅ **节点可选** - 4SAPI / 阿里百炼 / Moonshot
-- ✅ **模型可选** - 每个角色独立选择模型
-- ✅ **角色可选** - 自定义参与辩论的角色
-- ✅ **轮次可选** - 1-5轮辩论
-
-### 搜索增强
-- 🔍 **Google标准** - 搜索结果按Google格式处理
-- 📚 **上下文支持** - 搜索结果注入辩论上下文
-- ⚡ **可选启用** - 按需开启搜索
-
-### 简化界面
-- 清晰配置面板
-- 实时辩论过程展示
-- 折叠式详细JSON
-
-## 🏗️ 架构
+### 🏗️ 架构
 
 ```
 Frontend (Next.js 15 + React 19)
-    ↓ POST /api/debate
-Backend (FastAPI + Python 3.12)
-    ↓ FlexibleDebateEngine
-    ├─ search_knowledge/       # 知识搜索
-    ├─ flexible_engine.py      # 可配置化引擎
-    │   ├─ 节点管理
-    │   ├─ 模型库
-    │   ├─ 角色分配
-    │   └─ 多轮辩论
-    └─ WebSocket 实时流
+    ↓ POST /api/plan
+Backend (FastAPI + Python 3.13)
+    ↓ PhysicalSwarmEngine
+    ├─ parallel_ai_skill (subprocess)  ≥3模型并行
+    ├─ 4AI工作流/judge.py  共识计算
+    ├─ 准确率红线检查 (≥95%)
+    └─ zero_error_system  自愈
+    ↓ 等待批准
+    ↓ POST /api/approve/{task_id}
+    ↓ 物理执行
 ```
 
-## 🚀 快速开始
+## API 端点
 
-### 1. 环境配置
+| 端点 | 方法 | 说明 |
+|------|------|------|
+| `/health` | GET | 健康检查 + 工具挂载验证 |
+| `/api/plan` | POST | L0&L1 多AI联合架构 |
+| `/api/approve/{task_id}` | POST | 物理拦截批准 |
+| `/api/task/{task_id}` | GET | 查询任务状态 |
+| `/ws/openclaw` | WS | 实时数据流 |
 
-```bash
-cp .env.example .env
-# 编辑 .env 填入你的 API Keys
+## 模型配置
+
+### 角色集群 (每个角色 ≥3 模型)
+| 角色 | 模型1 | 模型2 | 模型3 | 类型 |
+|------|-------|-------|-------|------|
+| Clarifier | GLM-5.1 | Gemini-2.5-pro | Kimi-K2.5 | 多模态分析 |
+| Builder | GPT-5.3-Codex | DeepSeek-V3.2 | Qwen-Coder | 代码生成 |
+| Reviewer | Claude-Opus-4.6 | Claude-Opus-4.7 | Kimi-K2.5 | 深度推理 |
+| Arbiter | GPT-5.4 | GPT-5.4-xhigh | Qwen-Max | 综合决策 |
+
+## 准确率红线
+
+```
+共识计算 → Judge.py 调用
+         ↓
+    confidence >= 0.95?
+         ↓
+    YES → 允许批准
+    NO  → ValueError (阻断)
 ```
 
-### 2. 启动服务
+## 启动
 
 ```bash
+cp .env.example .env  # 填入 API Keys
 docker compose up -d
 ```
 
-### 3. 访问界面
+## 状态
 
-打开 http://localhost:3000
-
-## 🎮 使用指南
-
-### 模式选择
-| 模式 | 角色 | 轮次 | 阈值 | 适用场景 |
-|------|------|------|------|----------|
-| 极简 | 2 | 1 | 90% | 快速验证 |
-| 标准 | 4 | 1 | 95% | 常规任务 |
-| 深度 | 4 | 3 | 97% | 关键决策 |
-| 自定义 | 自选 | 自选 | 95% | 特殊需求 |
-
-### 角色模型映射
-| 角色 | 默认模型 | 备选模型 |
-|------|----------|----------|
-| Clarifier | GLM-5.1 | Gemini 2.5 Pro |
-| Builder | GPT-5.3 Codex | DeepSeek V3.2 |
-| Reviewer | Claude Opus 4.6 | Claude Opus 4.7 |
-| Arbiter | GPT-5.4 | GPT-5.4 xhigh |
-
-### API 使用
-
-```bash
-# 运行标准辩论
-curl -X POST http://localhost:8000/api/debate \
-  -H "Content-Type: application/json" \
-  -d '{
-    "prompt": "设计一个消息队列系统",
-    "mode": "standard",
-    "enable_search": true
-  }'
-
-# 自定义辩论
-curl -X POST http://localhost:8000/api/debate \
-  -H "Content-Type: application/json" \
-  -d '{
-    "prompt": "评估云原生架构",
-    "mode": "custom",
-    "roles": ["reviewer", "arbiter"],
-    "models": {"reviewer": "claude-opus-4-7", "arbiter": "gpt-5.4-xhigh"},
-    "rounds": 2,
-    "enable_search": true
-  }'
-```
-
-## 📁 项目结构
-
-```
-val-nexus/
-├── backend/
-│   ├── main.py                    # FastAPI 路由
-│   └── core/
-│       ├── flexible_engine.py     # 可配置化辩论引擎
-│       └── swarm.py               # V6.1 兼容层
-├── frontend/
-│   └── app/
-│       └── page.tsx               # 简化版 War Room
-├── docker-compose.yml
-└── .env.example
-```
-
-## 🔧 搜索增强
-
-搜索结果按 Google 标准格式化：
-
-```json
-{
-  "organic_results": [
-    {
-      "position": 1,
-      "title": "...",
-      "snippet": "...",
-      "url": "...",
-      "source": "..."
-    }
-  ],
-  "knowledge_panel": {...},
-  "related_questions": [...]
-}
-```
-
-## 📜 协议
-
-MIT License - 开源供 AI 社区借鉴使用
-
----
-
-**Built for VAI Platform V6.2** | 2026-04-18
+✅ **生产级就绪** - 全链条高准确率机制已激活
