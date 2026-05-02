@@ -1,0 +1,31 @@
+{
+  "id": "workflow-1777715052628",
+  "category": "4ai-workflow",
+  "name": "4AI Workflow Execution",
+  "description": "Task: 分析4AI工作流系统自身问题，基于10轮论证结果（总体56.7%，安全22.2%，准确率40%，性能45%），生成具体优化方案。要求：\n1. 识别最关键的安全漏洞\n2. 提出架构改进方案\n3. 制定分",
+  "patterns": [
+    "multi-agent",
+    "orchestration"
+  ],
+  "result": {
+    "success": true,
+    "confidence": 0.9000000000000001,
+    "timing": {
+      "scout": 2,
+      "parallel": 51,
+      "arbiter": 50,
+      "total": 103
+    },
+    "models": {
+      "clarifier": "foursapi/gemini-3.1-pro-preview",
+      "builder": "foursapi/gpt-5.5",
+      "reviewer": "foursapi/claude-opus-4-7",
+      "arbiter": "foursapi/gemini-3.1-pro-preview"
+    }
+  },
+  "confidence": 0.9000000000000001,
+  "timestamp": "2026-05-02T09:44:12.628Z",
+  "version": "1.0.0",
+  "usageCount": 0,
+  "successCount": 0
+}

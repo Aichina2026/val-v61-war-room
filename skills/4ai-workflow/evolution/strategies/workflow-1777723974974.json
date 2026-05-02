@@ -1,0 +1,31 @@
+{
+  "id": "workflow-1777723974974",
+  "category": "4ai-workflow",
+  "name": "4AI Workflow Execution",
+  "description": "Task: 分析4AI工作流系统优化方案。\n\n当前状态：\n- 总体评分: 56.7%\n- 安全评分: 22.2%（已修复输入验证、速率限制、审计日志）\n- 准确率: 40%\n- 性能: 45%\n\n请提供：\n1. ",
+  "patterns": [
+    "multi-agent",
+    "orchestration"
+  ],
+  "result": {
+    "success": true,
+    "confidence": 0.9000000000000001,
+    "timing": {
+      "scout": 5,
+      "parallel": 27016,
+      "arbiter": 20497,
+      "total": 47518
+    },
+    "models": {
+      "clarifier": "foursapi/gemini-3.1-pro-preview",
+      "builder": "foursapi/gpt-5.5",
+      "reviewer": "foursapi/claude-opus-4-7",
+      "arbiter": "foursapi/gemini-3.1-pro-preview"
+    }
+  },
+  "confidence": 0.9000000000000001,
+  "timestamp": "2026-05-02T12:12:54.974Z",
+  "version": "1.0.0",
+  "usageCount": 0,
+  "successCount": 0
+}

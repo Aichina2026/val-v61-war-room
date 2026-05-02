@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "description": "4AI Workflow - Multi-Agent Orchestration",
+  "description": "4AI Workflow - Multi-Agent Orchestration with BIFROST",
   "routing": {
     "primary": "bifrost",
     "fallback": "foursapi"
@@ -9,52 +9,42 @@
     "scout": {
       "model": "foursapi/gpt-5.5",
       "description": "信息收集与关联分析",
-      "timeout": 30000,
-      "maxTokens": 4096,
+      "timeout": 60000,
+      "maxTokens": 16000,
       "temperature": 0.3,
-      "tools": ["memory_search", "web_fetch", "exec", "query_database"],
-      "collection": {
-        "timeRange": "24h",
-        "maxResults": 20,
-        "relevanceThreshold": 0.75,
-        "sources": ["memory", "messages", "database", "web"]
-      }
+      "tools": ["memory_search", "web_fetch", "exec", "query_database"]
     },
     "clarifier": {
       "model": "foursapi/gemini-3.1-pro-preview",
       "description": "需求分析与边界定义",
-      "timeout": 60000,
-      "maxTokens": 8192,
+      "timeout": 120000,
+      "maxTokens": 32000,
       "temperature": 0.2,
-      "backup": "foursapi/claude-opus-4-7",
-      "capabilities": ["long_context", "multimodal"]
+      "backup": "foursapi/claude-opus-4-7"
     },
     "builder": {
       "model": "foursapi/gpt-5.5",
       "description": "架构设计与代码生成",
-      "timeout": 120000,
-      "maxTokens": 16384,
+      "timeout": 180000,
+      "maxTokens": 64000,
       "temperature": 0.1,
-      "backup": "foursapi/claude-opus-4-7",
-      "capabilities": ["coding", "reasoning"]
+      "backup": "foursapi/claude-opus-4-7"
     },
     "reviewer": {
       "model": "foursapi/claude-opus-4-7",
       "description": "安全审查与极限测试",
-      "timeout": 120000,
-      "maxTokens": 8192,
+      "timeout": 180000,
+      "maxTokens": 32000,
       "temperature": 0.1,
-      "backup": "foursapi/gemini-3.1-pro-preview",
-      "capabilities": ["security_analysis", "adversarial_testing"]
+      "backup": "foursapi/gemini-3.1-pro-preview"
     },
     "arbiter": {
       "model": "foursapi/gemini-3.1-pro-preview",
       "description": "综合裁决与冲突解决",
-      "timeout": 60000,
-      "maxTokens": 8192,
+      "timeout": 120000,
+      "maxTokens": 32000,
       "temperature": 0.2,
-      "backup": "foursapi/gpt-5.5",
-      "capabilities": ["synthesis", "decision_making"]
+      "backup": "foursapi/gpt-5.5"
     }
   },
   "resilience": {
@@ -71,8 +61,8 @@
       "backoffMultiplier": 2
     },
     "timeout": {
-      "global": 300000,
-      "perRole": 120000
+      "global": 600000,
+      "perRole": 300000
     }
   },
   "output": {

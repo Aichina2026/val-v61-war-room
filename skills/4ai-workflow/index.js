@@ -16,6 +16,14 @@ const CONFIG = JSON.parse(
 
 // Load Strategy Library
 const { StrategyLibrary } = require('./lib/strategy-library');
+// Security modules
+const { validateTask, validateModelName } = require('./lib/input-validation');
+const { globalLimiter, roleLimiter, burstLimiter } = require('./lib/rate-limiter');
+const { AuditLogger } = require('./lib/audit-logger');
+
+// Initialize audit logger
+const auditLogger = new AuditLogger();
+
 let strategyLibrary = null;
 
 function getStrategyLibrary() {
@@ -34,6 +42,23 @@ function getStrategyLibrary() {
  * @returns {Promise<Object>} - Workflow result
  */
 async function execute(context, task) {
+  // Security: Input validation
+  try {
+    task = validateTask(task);
+  } catch (e) {
+    auditLogger.logSecurity('input_validation_failed', { error: e.message });
+    throw e;
+  }
+  
+  // Security: Rate limiting
+  if (!globalLimiter.canProceed('global')) {
+    throw new Error('Rate limit exceeded: Global limit');
+  }
+  
+  if (!burstLimiter.canProceed('burst')) {
+    throw new Error('Rate limit exceeded: Burst limit');
+  }
+
   console.log(`🚀 [4AI Workflow] Starting: ${task.slice(0, 80)}...`);
   
   const startTime = Date.now();
