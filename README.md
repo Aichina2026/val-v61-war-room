@@ -1,80 +1,80 @@
-# VAL V6.1 OS - 全链条高准确率生产级多AI系统
+# 4AI Autonomous Framework V2.0
 
-## 版本信息
-- **版本**: V6.1 Production
-- **发布日期**: 2026-04-18
-- **Python**: 3.13
-- **FastAPI**: >=0.115
-- **Next.js**: 15
-- **React**: 19
+完整的4AI自主触发系统，包含并行推演、零错误系统、自主规划和经验学习。
 
-## 核心特性
+## 核心组件
 
-### ✅ 已修复问题
-| 问题 | 修复方案 | 状态 |
-|------|----------|------|
-| 模拟执行 | `physical_engine.py` 强制 subprocess 调用 | ✅ |
-| ≥3模型并发 | 每个角色强制3模型并行 (ThreadPoolExecutor) | ✅ |
-| 准确率红线 | 强制调用 `judge.py`，<95% 阻断 | ✅ |
-| Python 3.13 | docker-compose 更新 python:3.13-slim | ✅ |
-| /api/approve | 新增物理拦截端点 | ✅ |
-| WebSocket命名 | `/ws/openclaw` 符合原始指令 | ✅ |
-| 自愈系统 | 失败自动转交 `zero_error_system` | ✅ |
+### 1. 4AI并行推演系统
+- `parallel_ai_skill_optimized.js` - 四阶段并行推演 (Clarifier→Builder→Reviewer→Arbiter)
+- `zero_error_system_optimized.cjs` - 零错误自治系统 (2-3轮对抗审查)
+- `verify_4ai_keys.js` - API密钥验证工具
 
-### 🏗️ 架构
+### 2. 自主触发系统V2.0
+- `AutonomousPlanner.js` - 自主决策层，自动判断复杂度并选择工作流
+- `AgentEventLoop.js` - 事件循环，7×24常驻，支持定时/文件/webhook触发
+- `ReActAgent.js` - 工具使用层，支持8种工具自主调用
+- `ExperienceLearner.js` - 经验学习，基于执行历史自我优化
 
-```
-Frontend (Next.js 15 + React 19)
-    ↓ POST /api/plan
-Backend (FastAPI + Python 3.13)
-    ↓ PhysicalSwarmEngine
-    ├─ parallel_ai_skill (subprocess)  ≥3模型并行
-    ├─ 4AI工作流/judge.py  共识计算
-    ├─ 准确率红线检查 (≥95%)
-    └─ zero_error_system  自愈
-    ↓ 等待批准
-    ↓ POST /api/approve/{task_id}
-    ↓ 物理执行
-```
+### 3. 配置与调度
+- `unified-ai-config.json` - 统一AI配置（安全模板，无真实密钥）
+- `scheduler-config.json` - 任务调度配置
+- `cron-jobs-template.json` - 定时任务模板
+- `unified-ai-cli.js` - 统一CLI入口
 
-## API 端点
+## 快速开始
 
-| 端点 | 方法 | 说明 |
-|------|------|------|
-| `/health` | GET | 健康检查 + 工具挂载验证 |
-| `/api/plan` | POST | L0&L1 多AI联合架构 |
-| `/api/approve/{task_id}` | POST | 物理拦截批准 |
-| `/api/task/{task_id}` | GET | 查询任务状态 |
-| `/ws/openclaw` | WS | 实时数据流 |
-
-## 模型配置
-
-### 角色集群 (每个角色 ≥3 模型)
-| 角色 | 模型1 | 模型2 | 模型3 | 类型 |
-|------|-------|-------|-------|------|
-| Clarifier | GLM-5.1 | Gemini-2.5-pro | Kimi-K2.5 | 多模态分析 |
-| Builder | GPT-5.3-Codex | DeepSeek-V3.2 | Qwen-Coder | 代码生成 |
-| Reviewer | Claude-Opus-4.6 | Claude-Opus-4.7 | Kimi-K2.5 | 深度推理 |
-| Arbiter | GPT-5.4 | GPT-5.4-xhigh | Qwen-Max | 综合决策 |
-
-## 准确率红线
-
-```
-共识计算 → Judge.py 调用
-         ↓
-    confidence >= 0.95?
-         ↓
-    YES → 允许批准
-    NO  → ValueError (阻断)
-```
-
-## 启动
-
+### 1. 配置API密钥
 ```bash
-cp .env.example .env  # 填入 API Keys
-docker compose up -d
+nano ~/.openclaw/workspace/unified-ai-config.json
+# 填入您的4SAPI/阿里/Kimi/ARK密钥
 ```
 
-## 状态
+### 2. 测试系统
+```bash
+# 测试4AI工作流
+node parallel_ai_skill_optimized.js "设计一个API网关"
 
-✅ **生产级就绪** - 全链条高准确率机制已激活
+# 测试自主规划
+node AutonomousPlanner.js "分析当前系统状态" --verbose
+
+# 测试工具使用
+node ReActAgent.js "搜索最新AI进展" --verbose
+```
+
+### 3. 启动事件循环
+```bash
+# 启动常驻事件循环
+node AgentEventLoop.js start --verbose
+
+# 查看状态
+node AgentEventLoop.js status
+```
+
+## 系统架构
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│               4AI Autonomy Framework V2.0                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  触发源层          感知决策层             执行引擎层       │
+│  ├─ Cron定时器 → ├─ AutonomousPlanner → ├─ 4AI并行推演     │
+│  ├─ Heartbeat   → ├─ ReActAgent       → ├─ ReAct工具链     │
+│  ├─ 文件监控    → └─ 策略优化器      → ├─ 零错误系统       │
+│  └─ Webhook     →                    → └─ 经验学习         │
+│                                                             │
+│  反馈闭环: ExperienceLearner → 持续自我优化                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 安全特性
+
+✅ 所有配置文件使用占位符 (YOUR_XXX_KEY_HERE)
+✅ 无真实API密钥泄露风险
+✅ 首次使用前必须填入用户自己的密钥
+✅ 完整的错误处理和日志记录
+
+## 许可证
+
+MIT License
