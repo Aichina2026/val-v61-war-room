@@ -1,0 +1,117 @@
+{
+  "timestamp": "2026-04-22T03:30:00Z",
+  "task": "安全冗余清理分析",
+  "status": "分析完成（安全模式）",
+  
+  "workspace_overview": {
+    "total_size": "79M",
+    "analysis_date": "2026-04-22",
+    "safe_mode": true
+  },
+  
+  "redundancy_analysis": {
+    "backup_directories": [
+      {
+        "path": "/root/.openclaw/workspace/backup",
+        "size": "520K",
+        "status": "主备份目录",
+        "recommendation": "保留，但可清理超过30天的旧备份"
+      },
+      {
+        "path": "/root/.openclay/workspace/backup-20260412-224640",
+        "size": "76K",
+        "status": "特定时间备份",
+        "recommendation": "可清理（已超过10天）"
+      },
+      {
+        "path": "/root/.openclaw/workspace/backup-20260415_221736",
+        "size": "12K",
+        "status": "特定时间备份",
+        "recommendation": "可清理（已超过7天）"
+      },
+      {
+        "path": "/root/.openclaw/workspace/backups",
+        "size": "4.0K",
+        "status": "备份目录",
+        "recommendation": "保留"
+      }
+    ],
+    
+    "marked_for_cleanup": {
+      "total_files": 1136,
+      "directory": "/root/.openclaw/workspace/.cleanup-marked",
+      "status": "已标记但未删除",
+      "recommendation": "可安全删除整个目录"
+    },
+    
+    "temporary_files": {
+      "omc-restart.log": {
+        "path": "/root/.openclaw/workspace/omc-restart.log",
+        "status": "重启日志",
+        "recommendation": "可清理"
+      }
+    },
+    
+    "log_files": {
+      "total_log_directories": 3,
+      "recent_logs_size": "1.9M",
+      "status": "已清理（03:00任务）",
+      "recommendation": "保持当前清理策略"
+    }
+  },
+  
+  "cleanup_recommendations": [
+    {
+      "priority": "高",
+      "action": "清理标记文件",
+      "target": "/root/.openclaw/workspace/.cleanup-marked",
+      "files_count": 1136,
+      "estimated_space": "约10-20MB",
+      "risk": "低（已明确标记为清理）",
+      "command": "rm -rf /root/.openclaw/workspace/.cleanup-marked"
+    },
+    {
+      "priority": "中",
+      "action": "清理旧备份目录",
+      "targets": [
+        "/root/.openclaw/workspace/backup-20260412-224640",
+        "/root/.openclaw/workspace/backup-20260415_221736"
+      ],
+      "estimated_space": "88K",
+      "risk": "低（有主备份目录）",
+      "command": "rm -rf /root/.openclaw/workspace/backup-20260412-224640 /root/.openclaw/workspace/backup-20260415_221736"
+    },
+    {
+      "priority": "低",
+      "action": "清理临时日志文件",
+      "target": "/root/.openclaw/workspace/omc-restart.log",
+      "estimated_space": "少量",
+      "risk": "极低",
+      "command": "rm /root/.openclaw/workspace/omc-restart.log"
+    }
+  ],
+  
+  "space_optimization": {
+    "current_workspace_size": "79M",
+    "potential_savings": "约20MB",
+    "optimized_size": "约59M",
+    "savings_percentage": "25%"
+  },
+  
+  "safety_notes": [
+    "所有清理操作都在安全模式下分析",
+    "建议先备份重要数据再执行清理",
+    "标记文件目录(.cleanup-marked)可安全删除",
+    "旧备份目录清理前确认主备份目录功能正常"
+  ],
+  
+  "next_steps": [
+    "1. 审核清理建议",
+    "2. 执行高优先级清理（标记文件）",
+    "3. 验证系统功能正常",
+    "4. 执行中低优先级清理",
+    "5. 更新清理策略配置"
+  ],
+  
+  "summary": "工作区冗余分析完成。发现可安全清理的冗余文件约20MB（占25%）。建议优先清理标记文件目录(.cleanup-marked)，包含1136个已标记文件。"
+}

@@ -1,0 +1,76 @@
+# NeuroForge AI Platform - Backend Dependencies
+# Generated: 2026-04-14
+
+# FastAPI Core
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-multipart==0.0.9
+pydantic==2.6.0
+pydantic-settings==2.2.0
+
+# Database
+sqlalchemy==2.0.30
+alembic==1.13.1
+psycopg2-binary==2.9.10
+asyncpg==0.29.0
+aiosqlite==0.20.0
+
+# Cache
+redis==5.0.3
+aioredis==2.0.1
+
+# AI/ML Ecosystem
+openai==1.12.0
+langchain==0.1.20
+langgraph==0.0.30
+autogen==0.2.30
+pydantic-ai==0.1.0
+
+# Vector Database
+qdrant-client==1.8.0
+pinecone-client==3.0.0
+weaviate-client==4.5.0
+
+# Async Processing
+celery==6.0.0
+flower==2.0.0
+
+# Real-time Communication
+websockets==13.0
+socketio==5.4.0
+python-socketio==5.11.0
+
+# Monitoring
+prometheus-client==0.20.0
+opentelemetry-api==1.24.0
+opentelemetry-sdk==1.24.0
+opentelemetry-instrumentation-fastapi==0.45b0
+
+# Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+cryptography==42.0.5
+python-dotenv==1.0.1
+
+# Utilities
+python-dateutil==2.9.0
+pytz==2024.1
+pandas==2.2.1
+numpy==1.26.4
+httpx==0.27.0
+aiohttp==3.9.5
+tenacity==8.3.0
+loguru==0.7.2
+structlog==24.1.0
+
+# Development
+pytest==8.0.0
+pytest-asyncio==0.23.0
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+black==24.1.0
+flake8==7.0.0
+mypy==1.8.0
+isort==5.13.2
+bandit==1.7.8
+pre-commit==3.6.0

@@ -1,0 +1,7 @@
+{
+  "markedAt": "2026-05-01T05:31:46.442Z",
+  "original": "resource_manager_agent/config/agent_config.yaml",
+  "reason": "Duplicate backup file",
+  "size": 4661,
+  "markedBy": "RedundancyCleanup"
+}

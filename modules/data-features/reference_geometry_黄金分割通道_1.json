@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382813_gj4epsdwm",
+  "name": "黄金分割通道_1",
+  "category": "geometry",
+  "type": "reference",
+  "accuracy": 0.855,
+  "description": "黄金分割通道_1 - geometry特征",
+  "success_rate": 0,
+  "quality_score": 0.513,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.813Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

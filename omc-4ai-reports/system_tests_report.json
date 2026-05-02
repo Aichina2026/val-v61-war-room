@@ -1,0 +1,75 @@
+{
+  "timestamp": 1776119440536,
+  "totalTests": 4,
+  "passedTests": 4,
+  "failedTests": 0,
+  "passRate": 100,
+  "details": [
+    {
+      "test": "task_recognition",
+      "passed": true,
+      "details": {
+        "type": "设计.*系统",
+        "content": "设计一个高性能的分布式缓存系统",
+        "confidence": 0.9420063588734806
+      },
+      "timestamp": 1776119440535
+    },
+    {
+      "test": "context_circuit_breaker",
+      "passed": true,
+      "details": {
+        "initialTokens": 0,
+        "testTokens": 6400,
+        "warningThreshold": 0.7,
+        "warningTriggered": false
+      },
+      "timestamp": 1776119440535
+    },
+    {
+      "test": "auto_iteration",
+      "passed": true,
+      "details": {
+        "metrics": {
+          "totalRequests": 1000,
+          "successfulRequests": 800,
+          "failedRequests": 200,
+          "successRate": 0.8,
+          "avgResponseTime": 3500,
+          "contextRestarts": 5,
+          "autoTasksExecuted": 10,
+          "iterationsCompleted": 0,
+          "dataPointsCollected": 50
+        },
+        "shouldIterate": true,
+        "thresholds": {
+          "successRateBelow": 0.85,
+          "avgResponseTimeAbove": 3000,
+          "costIncreaseAbove": 0.2
+        }
+      },
+      "timestamp": 1776119440536
+    },
+    {
+      "test": "data_collection",
+      "passed": true,
+      "details": {
+        "initial": {
+          "totalRequests": 0,
+          "successfulRequests": 0,
+          "dataPointsCollected": 0
+        },
+        "current": {
+          "totalRequests": 10,
+          "successfulRequests": 8,
+          "dataPointsCollected": 1
+        },
+        "difference": {
+          "totalRequests": 10,
+          "dataPoints": 1
+        }
+      },
+      "timestamp": 1776119440536
+    }
+  ]
+}

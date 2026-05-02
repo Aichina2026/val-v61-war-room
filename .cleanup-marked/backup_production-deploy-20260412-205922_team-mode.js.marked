@@ -1,0 +1,7 @@
+{
+  "markedAt": "2026-05-01T05:31:46.431Z",
+  "original": "backup/production-deploy-20260412-205922/team-mode.js",
+  "reason": "Duplicate backup file",
+  "size": 19493,
+  "markedBy": "RedundancyCleanup"
+}

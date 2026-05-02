@@ -1,0 +1,12 @@
+{"timestamp":"2026-04-12T12:43:31.393Z","level":"info","message":"路由调用开始","callId":"call_1775997811393_kjv4sw7of","stage":"analysis","promptLength":8}
+{"timestamp":"2026-04-12T12:43:31.563Z","level":"info","message":"路由调用成功","callId":"call_1775997811393_kjv4sw7of","stage":"analysis","strategy":"fast","latency":170,"model":"claude-opus-4.6"}
+{"timestamp":"2026-04-12T12:44:07.496Z","level":"info","message":"路由调用开始","callId":"call_1775997847496_1vd9541qd","stage":"analysis","promptLength":64}
+{"timestamp":"2026-04-12T12:44:08.289Z","level":"info","message":"路由调用成功","callId":"call_1775997847496_1vd9541qd","stage":"analysis","strategy":"balanced","latency":793,"model":"deepseek-v3.2"}
+{"timestamp":"2026-04-12T12:44:08.289Z","level":"info","message":"路由调用开始","callId":"call_1775997848289_3eitzylb1","stage":"design","promptLength":177}
+{"timestamp":"2026-04-12T12:44:09.212Z","level":"info","message":"路由调用成功","callId":"call_1775997848289_3eitzylb1","stage":"design","strategy":"high-quality","latency":923,"model":"multi-agent-system"}
+{"timestamp":"2026-04-12T12:44:09.212Z","level":"info","message":"路由调用开始","callId":"call_1775997849212_0o1kk0w5f","stage":"generation","promptLength":181}
+{"timestamp":"2026-04-12T12:44:09.441Z","level":"info","message":"路由调用成功","callId":"call_1775997849212_0o1kk0w5f","stage":"generation","strategy":"cost-effective","latency":229,"model":"deepseek-v3.2"}
+{"timestamp":"2026-04-12T12:44:09.442Z","level":"info","message":"路由调用开始","callId":"call_1775997849442_tf30ut085","stage":"review","promptLength":149}
+{"timestamp":"2026-04-12T12:44:10.562Z","level":"info","message":"路由调用成功","callId":"call_1775997849442_tf30ut085","stage":"review","strategy":"balanced","latency":1120,"model":"deepseek-v3.2"}
+{"timestamp":"2026-04-12T12:44:10.563Z","level":"info","message":"路由调用开始","callId":"call_1775997850563_qu8w5feq5","stage":"optimization","promptLength":143}
+{"timestamp":"2026-04-12T12:44:10.802Z","level":"info","message":"路由调用成功","callId":"call_1775997850563_qu8w5feq5","stage":"optimization","strategy":"fast","latency":239,"model":"claude-opus-4.6"}

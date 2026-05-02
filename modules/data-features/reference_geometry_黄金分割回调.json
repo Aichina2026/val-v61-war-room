@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773702956877_y21srl",
+  "name": "黄金分割回调",
+  "category": "geometry",
+  "type": "reference",
+  "accuracy": 0.85,
+  "description": "基于黄金分割比例的关键位回调分析",
+  "success_rate": 0,
+  "quality_score": 0.51,
+  "usage_count": 0,
+  "created_at": "2026-03-16T23:15:56.877Z",
+  "updated_at": "2026-03-16T23:15:56.878Z"
+}

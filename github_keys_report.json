@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-04-15T18:40:06.378Z",
+  "summary": {
+    "totalEnvVars": 2,
+    "totalConfigs": 1,
+    "totalSSHKeys": 0,
+    "totalGitConfigs": 2,
+    "likelyTokens": 0
+  },
+  "details": {
+    "environmentVariables": [
+      {
+        "key": "OPENCLAW_PATH_BOOTSTRAPPED",
+        "value": "1",
+        "length": 1,
+        "type": "unknown"
+      },
+      {
+        "key": "PATH",
+        "value": "/usr*********************************************************************************************************************************************************************************************/bin",
+        "length": 197,
+        "type": "unknown"
+      }
+    ],
+    "configFiles": [
+      {
+        "path": "/root/.gitconfig",
+        "size": 51,
+        "containsGitHub": false
+      }
+    ],
+    "sshKeys": [],
+    "gitConfig": [],
+    "foundKeys": []
+  },
+  "recommendations": [
+    {
+      "priority": "高",
+      "action": "设置GitHub访问令牌",
+      "reason": "未找到GitHub相关的环境变量",
+      "steps": [
+        "访问 https://github.com/settings/tokens",
+        "生成新的Personal Access Token (PAT)",
+        "设置环境变量: export GITHUB_TOKEN=your_token_here",
+        "或添加到配置文件: ~/.env 或 ~/.bashrc"
+      ]
+    },
+    {
+      "priority": "中",
+      "action": "生成SSH密钥",
+      "reason": "未找到SSH密钥",
+      "steps": [
+        "运行: ssh-keygen -t ed25519 -C \"your_email@example.com\"",
+        "将公钥添加到GitHub: https://github.com/settings/keys",
+        "测试连接: ssh -T git@github.com"
+      ]
+    }
+  ]
+}

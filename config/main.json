@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0-emergency",
+  "refactored": "2026-04-09T18:31:39.847Z",
+  "originalFiles": 3887,
+  "modules": {
+    "code-generation": {
+      "enabled": true,
+      "path": "modules/code-generation"
+    },
+    "task-management": {
+      "enabled": true,
+      "path": "modules/task-management"
+    },
+    "ai-engine": {
+      "enabled": true,
+      "path": "modules/ai-engine"
+    },
+    "data-features": {
+      "enabled": true,
+      "path": "modules/data-features"
+    },
+    "-----ai--": {
+      "enabled": true,
+      "path": "modules/no-code-system",
+      "type": "ui"
+    },
+    "--------": {
+      "enabled": true,
+      "path": "modules/code-generation",
+      "type": "development"
+    }
+  },
+  "performance": {
+    "lazyLoading": true,
+    "cacheEnabled": true,
+    "compression": true,
+    "integrated": true,
+    "integrationMethod": "non-invasive"
+  },
+  "integrations": {
+    "version": "1.0.0",
+    "integratedAt": "2026-04-09T19:50:07.201Z",
+    "systems": [
+      "evo-architect",
+      "no-code-system",
+      "omx-minimal",
+      "resource-manager",
+      "code-generation",
+      "omx-integration"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-04-14T11:47:29.105Z",
+  "target_model": "k2.6-code-preview",
+  "total_kimi_keys": 4,
+  "results": [
+    {
+      "key_name": "kimi_main",
+      "key_preview": "sk-kimi-...jVhG",
+      "available": false,
+      "can_call": false,
+      "reason": "model_not_available",
+      "available_models": []
+    },
+    {
+      "key_name": "env_KIMI_BASE_URL",
+      "key_preview": "https://...n/v1",
+      "available": false,
+      "can_call": false,
+      "reason": "model_not_available",
+      "available_models": []
+    },
+    {
+      "key_name": "env_KIMI_KEY_2",
+      "key_preview": "sk-kimi-...jZmE",
+      "available": false,
+      "can_call": false,
+      "reason": "model_not_available",
+      "available_models": []
+    },
+    {
+      "key_name": "env_KIMI_KEY_1",
+      "key_preview": "sk-kimi-...tA9c",
+      "available": false,
+      "can_call": false,
+      "reason": "model_not_available",
+      "available_models": []
+    }
+  ],
+  "summary": {
+    "available_count": 0,
+    "callable_count": 0,
+    "success_rate": 0
+  },
+  "recommendation": {
+    "action": "获取有效Kimi密钥",
+    "priority": "high",
+    "details": "需要有效的Kimi API密钥才能访问K2.6-code-preview"
+  }
+}

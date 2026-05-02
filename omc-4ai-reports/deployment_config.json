@@ -1,0 +1,61 @@
+{
+  "deploymentTime": "2026-04-13T22:30:54.074Z",
+  "config": {
+    "autoRecognition": {
+      "enabled": true,
+      "taskPatterns": [
+        "设计.*系统",
+        "实现.*功能",
+        "优化.*性能",
+        "修复.*问题",
+        "评估.*方案"
+      ],
+      "confidenceThreshold": 0.75,
+      "checkIntervalMs": 5000
+    },
+    "autoMaintenance": {
+      "enabled": true,
+      "checkIntervalMs": 30000,
+      "tasks": [
+        "清理临时文件",
+        "压缩日志",
+        "验证数据完整性",
+        "备份关键配置"
+      ]
+    },
+    "autoDataCollection": {
+      "enabled": true,
+      "metrics": [
+        "response_time",
+        "success_rate",
+        "token_usage",
+        "model_distribution",
+        "cost_per_request"
+      ],
+      "intervalMs": 60000
+    },
+    "autoIteration": {
+      "enabled": true,
+      "triggerThresholds": {
+        "successRateBelow": 0.85,
+        "avgResponseTimeAbove": 3000,
+        "costIncreaseAbove": 0.2
+      },
+      "iterationIntervalMs": 3600000
+    },
+    "contextCircuitBreaker": {
+      "enabled": true,
+      "predictionWindow": 10,
+      "maxContextTokens": 8000,
+      "warningThreshold": 0.7,
+      "autoRestart": true,
+      "autoResume": true,
+      "contextMemorySize": 5
+    }
+  },
+  "directories": {
+    "data": "/root/.openclaw/workspace/omc-4ai-data",
+    "logs": "/root/.openclaw/workspace/omc-automation-logs",
+    "reports": "/root/.openclaw/workspace/omc-4ai-reports"
+  }
+}

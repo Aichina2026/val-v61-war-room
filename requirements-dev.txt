@@ -1,0 +1,96 @@
+# 开发环境依赖
+# 核心版本: 2026-04-14
+
+# 测试框架升级版
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-xdist==3.5.0
+pytest-mock==3.12.0
+pytest-benchmark==4.0.0
+hypothesis==6.88.2
+
+# 代码质量和格式化
+black==23.11.0
+flake8==6.1.0
+flake8-bugbear==23.11.28
+flake8-comprehensions==3.14.0
+flake8-docstrings==1.7.0
+mypy==1.7.0
+isort==5.12.0
+bandit==1.7.5
+safety==2.3.5
+pre-commit==3.5.0
+
+# 类型检查增强
+types-requests==2.31.0.10
+types-python-dateutil==2.8.19.14
+types-pyyaml==6.0.12.12
+
+# 调试和性能分析
+ipython==8.17.2
+ipdb==0.13.13
+memory-profiler==0.61.0
+line-profiler==4.0.3
+py-spy==0.3.14
+
+# 文档生成
+mkdocs==1.5.3
+mkdocs-material==9.4.1
+mkdocstrings[python]==0.23.0
+pymdown-extensions==10.6
+mkdocs-autorefs==0.5.0
+
+# API文档
+swagger-ui-bundle==1.0.0
+redoc==2.0.0
+
+# 开发工具
+jupyter==1.0.0
+jupyterlab==4.0.10
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.18.0
+
+# HTTP开发和测试
+httpie==3.2.2
+locust==2.20.1
+k6==0.0.0  # 占位符，实际通过其他方式安装
+
+# 数据库工具
+pgcli==4.0.1
+redis-cli==0.0.0  # 占位符
+
+# 容器化工具
+docker==6.1.3
+docker-compose==2.23.3
+kubernetes==28.1.0
+
+# 监控和日志开发
+prometheus-client==0.19.0
+grafana-api==1.0.3
+elasticsearch==8.11.0
+loguru==0.7.2
+
+# 其他开发工具
+watchdog==3.0.0
+python-dotenv==1.0.0
+rich==13.7.0
+tqdm==4.66.1
+click==8.1.7
+cookiecutter==2.3.0
+
+# 版本控制
+gitpython==3.1.40
+
+# 网络工具
+netifaces==0.11.0
+psutil==5.9.6
+
+# 安全扫描工具
+trufflehog==3.63.7
+semgrep==1.40.0
+
+# 性能测试
+asyncio-multiprocess==0.0.2
+aiometer==0.5.0

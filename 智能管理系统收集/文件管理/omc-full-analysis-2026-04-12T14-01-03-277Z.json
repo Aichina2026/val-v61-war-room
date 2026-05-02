@@ -1,0 +1,1644 @@
+{
+  "timestamp": "2026-04-12T14:01:03.015Z",
+  "task": "检查系统中与'Oh-my-Codex、FREECODE CLAWCODE、CLAUDE CODE纯净版'相关工具、技能、系统、工作流、文件，查重选出优版本减少系统冗余。论证出Oh-my-Codex free claude最佳组合技能和最佳融合进化技能。",
+  "stages": {
+    "scan": {
+      "files": [
+        {
+          "path": "2_DAY_EMERGENCY_REFACTOR_REPORT.md",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 4
+          },
+          "size": 7482,
+          "type": ".md",
+          "lines": 385
+        },
+        {
+          "path": "4sapi-full-system-reports/full_system_1775932347042.json",
+          "matches": {
+            "Oh-my-Codex": 2,
+            "free-code": 1
+          },
+          "size": 11955,
+          "type": ".json",
+          "lines": 117
+        },
+        {
+          "path": "backup/production-20260412-210355/DEPLOYMENT.md",
+          "matches": {
+            "Oh-my-Codex": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 6
+          },
+          "size": 4524,
+          "type": ".md",
+          "lines": 287
+        },
+        {
+          "path": "backup/production-20260412-210355/SKILL.md",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 4
+          },
+          "size": 1192,
+          "type": ".md",
+          "lines": 75
+        },
+        {
+          "path": "backup/production-20260412-210355/code-generation-tools.json",
+          "matches": {
+            "Oh-my-Codex": 2,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 1
+          },
+          "size": 6157,
+          "type": ".json",
+          "lines": 231
+        },
+        {
+          "path": "backup/production-20260412-210355/free-code-integration.js",
+          "matches": {
+            "FREECODE": 5,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 9
+          },
+          "size": 8440,
+          "type": ".js",
+          "lines": 341
+        },
+        {
+          "path": "backup/production-20260412-210355/omc-workflow.js",
+          "matches": {
+            "Oh-my-Codex": 2
+          },
+          "size": 15639,
+          "type": ".js",
+          "lines": 535
+        },
+        {
+          "path": "backup/production-20260412-210355/start-code-generation.js",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "FREECODE": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 8
+          },
+          "size": 12402,
+          "type": ".js",
+          "lines": 500
+        },
+        {
+          "path": "backup/production-backup-20260412-210314/DEPLOYMENT.md",
+          "matches": {
+            "Oh-my-Codex": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 6
+          },
+          "size": 4524,
+          "type": ".md",
+          "lines": 287
+        },
+        {
+          "path": "backup/production-backup-20260412-210314/SKILL.md",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 4
+          },
+          "size": 1192,
+          "type": ".md",
+          "lines": 75
+        },
+        {
+          "path": "backup/production-backup-20260412-210314/code-generation-tools.json",
+          "matches": {
+            "Oh-my-Codex": 2,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 1
+          },
+          "size": 6157,
+          "type": ".json",
+          "lines": 231
+        },
+        {
+          "path": "backup/production-backup-20260412-210314/free-code-integration.js",
+          "matches": {
+            "FREECODE": 5,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 9
+          },
+          "size": 8440,
+          "type": ".js",
+          "lines": 341
+        },
+        {
+          "path": "backup/production-backup-20260412-210314/omc-workflow.js",
+          "matches": {
+            "Oh-my-Codex": 2
+          },
+          "size": 15639,
+          "type": ".js",
+          "lines": 535
+        },
+        {
+          "path": "backup/production-backup-20260412-210314/start-code-generation.js",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "FREECODE": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 8
+          },
+          "size": 12402,
+          "type": ".js",
+          "lines": 500
+        },
+        {
+          "path": "backup/production-deploy-20260412-205922/DEPLOYMENT.md",
+          "matches": {
+            "Oh-my-Codex": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 6
+          },
+          "size": 4524,
+          "type": ".md",
+          "lines": 287
+        },
+        {
+          "path": "backup/production-deploy-20260412-205922/SKILL.md",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 4
+          },
+          "size": 1192,
+          "type": ".md",
+          "lines": 75
+        },
+        {
+          "path": "backup/production-deploy-20260412-205922/code-generation-tools.json",
+          "matches": {
+            "Oh-my-Codex": 2,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 1
+          },
+          "size": 6157,
+          "type": ".json",
+          "lines": 231
+        },
+        {
+          "path": "backup/production-deploy-20260412-205922/free-code-integration.js",
+          "matches": {
+            "FREECODE": 5,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 9
+          },
+          "size": 8440,
+          "type": ".js",
+          "lines": 341
+        },
+        {
+          "path": "backup/production-deploy-20260412-205922/omc-workflow.js",
+          "matches": {
+            "Oh-my-Codex": 2
+          },
+          "size": 15639,
+          "type": ".js",
+          "lines": 535
+        },
+        {
+          "path": "backup/production-deploy-20260412-205922/start-code-generation.js",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "FREECODE": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 8
+          },
+          "size": 12402,
+          "type": ".js",
+          "lines": 500
+        },
+        {
+          "path": "memory/2026-04-12-model-api-validation.md",
+          "matches": {
+            "Oh-my-Codex": 9,
+            "FREECODE": 1,
+            "CLAWCODE": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 1,
+            "clawcode": 1,
+            "纯净版": 1
+          },
+          "size": 4088,
+          "type": ".md",
+          "lines": 473
+        },
+        {
+          "path": "modules/ai-engine/unified_task_data.json",
+          "matches": {
+            "CLAUDE CODE": 3,
+            "Claude code": 3,
+            "free-code": 7
+          },
+          "size": 16823,
+          "type": ".json",
+          "lines": 647
+        },
+        {
+          "path": "modules/code-generation/skills/code-generation/DEPLOYMENT.md",
+          "matches": {
+            "Oh-my-Codex": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 6
+          },
+          "size": 4524,
+          "type": ".md",
+          "lines": 287
+        },
+        {
+          "path": "modules/code-generation/skills/code-generation/SKILL.md",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 4
+          },
+          "size": 1192,
+          "type": ".md",
+          "lines": 75
+        },
+        {
+          "path": "modules/code-generation/skills/code-generation/code-generation-tools.json",
+          "matches": {
+            "Oh-my-Codex": 2,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 1
+          },
+          "size": 6157,
+          "type": ".json",
+          "lines": 231
+        },
+        {
+          "path": "modules/code-generation/skills/code-generation/free-code-integration.js",
+          "matches": {
+            "FREECODE": 5,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 9
+          },
+          "size": 8440,
+          "type": ".js",
+          "lines": 341
+        },
+        {
+          "path": "modules/code-generation/skills/code-generation/omc-workflow.js",
+          "matches": {
+            "Oh-my-Codex": 2
+          },
+          "size": 15639,
+          "type": ".js",
+          "lines": 535
+        },
+        {
+          "path": "modules/code-generation/skills/code-generation/start-code-generation.js",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "FREECODE": 3,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 8
+          },
+          "size": 12402,
+          "type": ".js",
+          "lines": 500
+        },
+        {
+          "path": "omc-analysis-reports/omc-analysis-2026-04-12T12-13-55-330Z.json",
+          "matches": {
+            "Oh-my-Codex": 19,
+            "FREECODE": 7,
+            "CLAWCODE": 5,
+            "CLAUDE CODE": 26,
+            "Claude code": 26,
+            "free-code": 30,
+            "clawcode": 5,
+            "纯净版": 3
+          },
+          "size": 17137,
+          "type": ".json",
+          "lines": 705
+        },
+        {
+          "path": "omc-analysis-reports/omc-analysis-2026-04-12T12-13-55-330Z.md",
+          "matches": {
+            "Oh-my-Codex": 5,
+            "free-code": 5
+          },
+          "size": 2468,
+          "type": ".md",
+          "lines": 153
+        },
+        {
+          "path": "omc-enhanced.js",
+          "matches": {
+            "Oh-my-Codex": 8,
+            "FREECODE": 2,
+            "CLAWCODE": 3,
+            "CLAUDE CODE": 3,
+            "Claude code": 3,
+            "free-code": 5,
+            "clawcode": 3,
+            "纯净版": 2
+          },
+          "size": 27719,
+          "type": ".js",
+          "lines": 1144
+        },
+        {
+          "path": "omc-fixed-reports/omc-analysis-2026-04-12T12-21-02-804Z.json",
+          "matches": {
+            "Oh-my-Codex": 14,
+            "FREECODE": 4,
+            "CLAWCODE": 3,
+            "CLAUDE CODE": 23,
+            "Claude code": 23,
+            "free-code": 14,
+            "clawcode": 3,
+            "纯净版": 2
+          },
+          "size": 8013,
+          "type": ".json",
+          "lines": 304
+        },
+        {
+          "path": "omc-fixed-reports/omc-summary-2026-04-12T12-21-02-804Z.md",
+          "matches": {
+            "Oh-my-Codex": 3,
+            "FREECODE": 1,
+            "CLAWCODE": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 2,
+            "clawcode": 1,
+            "纯净版": 1
+          },
+          "size": 1165,
+          "type": ".md",
+          "lines": 52
+        },
+        {
+          "path": "omc-stable-reports/omc-exec-summary-2026-04-12T12-25-19-138Z.md",
+          "matches": {
+            "Oh-my-Codex": 6,
+            "FREECODE": 2,
+            "CLAWCODE": 3,
+            "CLAUDE CODE": 3,
+            "Claude code": 3,
+            "free-code": 7,
+            "clawcode": 3,
+            "纯净版": 3
+          },
+          "size": 1846,
+          "type": ".md",
+          "lines": 69
+        },
+        {
+          "path": "omc-stable-reports/omc-full-analysis-2026-04-12T12-25-19-138Z.json",
+          "matches": {
+            "Oh-my-Codex": 57,
+            "FREECODE": 26,
+            "CLAWCODE": 33,
+            "CLAUDE CODE": 80,
+            "Claude code": 80,
+            "free-code": 81,
+            "clawcode": 33,
+            "纯净版": 18
+          },
+          "size": 30486,
+          "type": ".json",
+          "lines": 1130
+        },
+        {
+          "path": "omc-stable-reports/omc-implementation-plan-2026-04-12T12-25-19-138Z.md",
+          "matches": {
+            "Oh-my-Codex": 1,
+            "free-code": 3
+          },
+          "size": 1807,
+          "type": ".md",
+          "lines": 123
+        },
+        {
+          "path": "omc-workflow-api-fixed.js",
+          "matches": {
+            "Oh-my-Codex": 4,
+            "FREECODE": 2,
+            "CLAWCODE": 3,
+            "CLAUDE CODE": 3,
+            "Claude code": 3,
+            "free-code": 3,
+            "clawcode": 3,
+            "纯净版": 3
+          },
+          "size": 19753,
+          "type": ".js",
+          "lines": 733
+        },
+        {
+          "path": "omc-workflow-stable.js",
+          "matches": {
+            "Oh-my-Codex": 8,
+            "FREECODE": 2,
+            "CLAWCODE": 3,
+            "CLAUDE CODE": 4,
+            "Claude code": 4,
+            "free-code": 16,
+            "clawcode": 3,
+            "纯净版": 3
+          },
+          "size": 23480,
+          "type": ".js",
+          "lines": 928
+        },
+        {
+          "path": "production_accelerator.cjs",
+          "matches": {
+            "free-code": 1
+          },
+          "size": 28090,
+          "type": ".cjs",
+          "lines": 1166
+        },
+        {
+          "path": "start_full_4sapi_system.js",
+          "matches": {
+            "Oh-my-Codex": 6,
+            "free-code": 2
+          },
+          "size": 20527,
+          "type": ".js",
+          "lines": 749
+        },
+        {
+          "path": "test_4sapi_system.js",
+          "matches": {
+            "FREECODE": 1,
+            "free-code": 1
+          },
+          "size": 5131,
+          "type": ".js",
+          "lines": 145
+        },
+        {
+          "path": "test_workflows.py",
+          "matches": {
+            "Oh-my-Codex": 1
+          },
+          "size": 3906,
+          "type": ".py",
+          "lines": 145
+        },
+        {
+          "path": "中文帮助.md",
+          "matches": {
+            "Oh-my-Codex": 2,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 3
+          },
+          "size": 4202,
+          "type": ".md",
+          "lines": 220
+        },
+        {
+          "path": "中文系统启动器.js",
+          "matches": {
+            "free-code": 2
+          },
+          "size": 13541,
+          "type": ".js",
+          "lines": 558
+        },
+        {
+          "path": "中文系统报告/中文报告_1775932765585.json",
+          "matches": {
+            "free-code": 1
+          },
+          "size": 1258,
+          "type": ".json",
+          "lines": 25
+        },
+        {
+          "path": "中文系统报告/中文报告_1775932809610.json",
+          "matches": {
+            "free-code": 1
+          },
+          "size": 1258,
+          "type": ".json",
+          "lines": 25
+        },
+        {
+          "path": "中文配置.json",
+          "matches": {
+            "Oh-my-Codex": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 1
+          },
+          "size": 2586,
+          "type": ".json",
+          "lines": 152
+        },
+        {
+          "path": "环境变量配置模板.sh",
+          "matches": {
+            "Oh-my-Codex": 1,
+            "FREECODE": 1,
+            "CLAUDE CODE": 1,
+            "Claude code": 1,
+            "free-code": 1
+          },
+          "size": 4964,
+          "type": ".sh",
+          "lines": 206
+        }
+      ],
+      "directories": [
+        {
+          "path": "modules/code-generation",
+          "exists": true,
+          "itemCount": 2,
+          "items": [
+            "production_enhancer.js",
+            "skills"
+          ]
+        },
+        {
+          "path": "modules/code-generation/skills",
+          "exists": true,
+          "itemCount": 6,
+          "items": [
+            "code-generation",
+            "evo_architect_integration.js",
+            "image-generate",
+            "veadk-go-skills",
+            "veadk-skills",
+            "video-generate"
+          ]
+        },
+        {
+          "path": "modules/code-generation/skills/code-generation",
+          "exists": true,
+          "itemCount": 12,
+          "items": [
+            "DEPLOYMENT.md",
+            "SKILL.md",
+            "architect-validation.js",
+            "code-generation-tools.json",
+            "free-code-integration.js",
+            "omc-production-config.json",
+            "omc-router-adapter.js",
+            "omc-workflow-enhanced.js",
+            "omc-workflow.js",
+            "ri-mode.js"
+          ]
+        },
+        {
+          "path": "workflows",
+          "exists": true,
+          "itemCount": 2,
+          "items": [
+            "workflow_1775932341263.json",
+            "workflow_1775932341263_summary.md"
+          ]
+        },
+        {
+          "path": "tools",
+          "exists": true,
+          "itemCount": 3,
+          "items": [
+            "cache.js",
+            "config-loader.js",
+            "performance-monitor.js"
+          ]
+        }
+      ],
+      "keywordCounts": {
+        "Oh-my-Codex": 194,
+        "FREECODE": 81,
+        "CLAWCODE": 55,
+        "CLAUDE CODE": 171,
+        "Claude code": 171,
+        "free-code": 304,
+        "clawcode": 55,
+        "纯净版": 36
+      }
+    },
+    "identification": {
+      "totalFiles": 48,
+      "categories": {
+        "workflows": [
+          {
+            "path": "backup/production-20260412-210355/omc-workflow.js",
+            "matches": {
+              "Oh-my-Codex": 2
+            },
+            "size": 15639,
+            "type": ".js",
+            "lines": 535
+          },
+          {
+            "path": "backup/production-backup-20260412-210314/omc-workflow.js",
+            "matches": {
+              "Oh-my-Codex": 2
+            },
+            "size": 15639,
+            "type": ".js",
+            "lines": 535
+          },
+          {
+            "path": "backup/production-deploy-20260412-205922/omc-workflow.js",
+            "matches": {
+              "Oh-my-Codex": 2
+            },
+            "size": 15639,
+            "type": ".js",
+            "lines": 535
+          },
+          {
+            "path": "modules/code-generation/skills/code-generation/omc-workflow.js",
+            "matches": {
+              "Oh-my-Codex": 2
+            },
+            "size": 15639,
+            "type": ".js",
+            "lines": 535
+          },
+          {
+            "path": "omc-analysis-reports/omc-analysis-2026-04-12T12-13-55-330Z.json",
+            "matches": {
+              "Oh-my-Codex": 19,
+              "FREECODE": 7,
+              "CLAWCODE": 5,
+              "CLAUDE CODE": 26,
+              "Claude code": 26,
+              "free-code": 30,
+              "clawcode": 5,
+              "纯净版": 3
+            },
+            "size": 17137,
+            "type": ".json",
+            "lines": 705
+          },
+          {
+            "path": "omc-analysis-reports/omc-analysis-2026-04-12T12-13-55-330Z.md",
+            "matches": {
+              "Oh-my-Codex": 5,
+              "free-code": 5
+            },
+            "size": 2468,
+            "type": ".md",
+            "lines": 153
+          },
+          {
+            "path": "omc-enhanced.js",
+            "matches": {
+              "Oh-my-Codex": 8,
+              "FREECODE": 2,
+              "CLAWCODE": 3,
+              "CLAUDE CODE": 3,
+              "Claude code": 3,
+              "free-code": 5,
+              "clawcode": 3,
+              "纯净版": 2
+            },
+            "size": 27719,
+            "type": ".js",
+            "lines": 1144
+          },
+          {
+            "path": "omc-fixed-reports/omc-analysis-2026-04-12T12-21-02-804Z.json",
+            "matches": {
+              "Oh-my-Codex": 14,
+              "FREECODE": 4,
+              "CLAWCODE": 3,
+              "CLAUDE CODE": 23,
+              "Claude code": 23,
+              "free-code": 14,
+              "clawcode": 3,
+              "纯净版": 2
+            },
+            "size": 8013,
+            "type": ".json",
+            "lines": 304
+          },
+          {
+            "path": "omc-fixed-reports/omc-summary-2026-04-12T12-21-02-804Z.md",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "FREECODE": 1,
+              "CLAWCODE": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 2,
+              "clawcode": 1,
+              "纯净版": 1
+            },
+            "size": 1165,
+            "type": ".md",
+            "lines": 52
+          },
+          {
+            "path": "omc-stable-reports/omc-exec-summary-2026-04-12T12-25-19-138Z.md",
+            "matches": {
+              "Oh-my-Codex": 6,
+              "FREECODE": 2,
+              "CLAWCODE": 3,
+              "CLAUDE CODE": 3,
+              "Claude code": 3,
+              "free-code": 7,
+              "clawcode": 3,
+              "纯净版": 3
+            },
+            "size": 1846,
+            "type": ".md",
+            "lines": 69
+          },
+          {
+            "path": "omc-stable-reports/omc-full-analysis-2026-04-12T12-25-19-138Z.json",
+            "matches": {
+              "Oh-my-Codex": 57,
+              "FREECODE": 26,
+              "CLAWCODE": 33,
+              "CLAUDE CODE": 80,
+              "Claude code": 80,
+              "free-code": 81,
+              "clawcode": 33,
+              "纯净版": 18
+            },
+            "size": 30486,
+            "type": ".json",
+            "lines": 1130
+          },
+          {
+            "path": "omc-stable-reports/omc-implementation-plan-2026-04-12T12-25-19-138Z.md",
+            "matches": {
+              "Oh-my-Codex": 1,
+              "free-code": 3
+            },
+            "size": 1807,
+            "type": ".md",
+            "lines": 123
+          },
+          {
+            "path": "omc-workflow-api-fixed.js",
+            "matches": {
+              "Oh-my-Codex": 4,
+              "FREECODE": 2,
+              "CLAWCODE": 3,
+              "CLAUDE CODE": 3,
+              "Claude code": 3,
+              "free-code": 3,
+              "clawcode": 3,
+              "纯净版": 3
+            },
+            "size": 19753,
+            "type": ".js",
+            "lines": 733
+          },
+          {
+            "path": "omc-workflow-stable.js",
+            "matches": {
+              "Oh-my-Codex": 8,
+              "FREECODE": 2,
+              "CLAWCODE": 3,
+              "CLAUDE CODE": 4,
+              "Claude code": 4,
+              "free-code": 16,
+              "clawcode": 3,
+              "纯净版": 3
+            },
+            "size": 23480,
+            "type": ".js",
+            "lines": 928
+          },
+          {
+            "path": "test_workflows.py",
+            "matches": {
+              "Oh-my-Codex": 1
+            },
+            "size": 3906,
+            "type": ".py",
+            "lines": 145
+          }
+        ],
+        "codeGenerators": [
+          {
+            "path": "backup/production-20260412-210355/code-generation-tools.json",
+            "matches": {
+              "Oh-my-Codex": 2,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 1
+            },
+            "size": 6157,
+            "type": ".json",
+            "lines": 231
+          },
+          {
+            "path": "backup/production-20260412-210355/free-code-integration.js",
+            "matches": {
+              "FREECODE": 5,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 9
+            },
+            "size": 8440,
+            "type": ".js",
+            "lines": 341
+          },
+          {
+            "path": "backup/production-20260412-210355/start-code-generation.js",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "FREECODE": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 8
+            },
+            "size": 12402,
+            "type": ".js",
+            "lines": 500
+          },
+          {
+            "path": "backup/production-backup-20260412-210314/code-generation-tools.json",
+            "matches": {
+              "Oh-my-Codex": 2,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 1
+            },
+            "size": 6157,
+            "type": ".json",
+            "lines": 231
+          },
+          {
+            "path": "backup/production-backup-20260412-210314/free-code-integration.js",
+            "matches": {
+              "FREECODE": 5,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 9
+            },
+            "size": 8440,
+            "type": ".js",
+            "lines": 341
+          },
+          {
+            "path": "backup/production-backup-20260412-210314/start-code-generation.js",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "FREECODE": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 8
+            },
+            "size": 12402,
+            "type": ".js",
+            "lines": 500
+          },
+          {
+            "path": "backup/production-deploy-20260412-205922/code-generation-tools.json",
+            "matches": {
+              "Oh-my-Codex": 2,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 1
+            },
+            "size": 6157,
+            "type": ".json",
+            "lines": 231
+          },
+          {
+            "path": "backup/production-deploy-20260412-205922/free-code-integration.js",
+            "matches": {
+              "FREECODE": 5,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 9
+            },
+            "size": 8440,
+            "type": ".js",
+            "lines": 341
+          },
+          {
+            "path": "backup/production-deploy-20260412-205922/start-code-generation.js",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "FREECODE": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 8
+            },
+            "size": 12402,
+            "type": ".js",
+            "lines": 500
+          },
+          {
+            "path": "modules/code-generation/skills/code-generation/DEPLOYMENT.md",
+            "matches": {
+              "Oh-my-Codex": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 6
+            },
+            "size": 4524,
+            "type": ".md",
+            "lines": 287
+          },
+          {
+            "path": "modules/code-generation/skills/code-generation/SKILL.md",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 4
+            },
+            "size": 1192,
+            "type": ".md",
+            "lines": 75
+          },
+          {
+            "path": "modules/code-generation/skills/code-generation/code-generation-tools.json",
+            "matches": {
+              "Oh-my-Codex": 2,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 1
+            },
+            "size": 6157,
+            "type": ".json",
+            "lines": 231
+          },
+          {
+            "path": "modules/code-generation/skills/code-generation/free-code-integration.js",
+            "matches": {
+              "FREECODE": 5,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 9
+            },
+            "size": 8440,
+            "type": ".js",
+            "lines": 341
+          },
+          {
+            "path": "modules/code-generation/skills/code-generation/start-code-generation.js",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "FREECODE": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 8
+            },
+            "size": 12402,
+            "type": ".js",
+            "lines": 500
+          }
+        ],
+        "reviewTools": [],
+        "optimizationTools": [],
+        "validationTools": [
+          {
+            "path": "memory/2026-04-12-model-api-validation.md",
+            "matches": {
+              "Oh-my-Codex": 9,
+              "FREECODE": 1,
+              "CLAWCODE": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 1,
+              "clawcode": 1,
+              "纯净版": 1
+            },
+            "size": 4088,
+            "type": ".md",
+            "lines": 473
+          }
+        ],
+        "documentation": [
+          {
+            "path": "2_DAY_EMERGENCY_REFACTOR_REPORT.md",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 4
+            },
+            "size": 7482,
+            "type": ".md",
+            "lines": 385
+          },
+          {
+            "path": "backup/production-20260412-210355/DEPLOYMENT.md",
+            "matches": {
+              "Oh-my-Codex": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 6
+            },
+            "size": 4524,
+            "type": ".md",
+            "lines": 287
+          },
+          {
+            "path": "backup/production-20260412-210355/SKILL.md",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 4
+            },
+            "size": 1192,
+            "type": ".md",
+            "lines": 75
+          },
+          {
+            "path": "backup/production-backup-20260412-210314/DEPLOYMENT.md",
+            "matches": {
+              "Oh-my-Codex": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 6
+            },
+            "size": 4524,
+            "type": ".md",
+            "lines": 287
+          },
+          {
+            "path": "backup/production-backup-20260412-210314/SKILL.md",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 4
+            },
+            "size": 1192,
+            "type": ".md",
+            "lines": 75
+          },
+          {
+            "path": "backup/production-deploy-20260412-205922/DEPLOYMENT.md",
+            "matches": {
+              "Oh-my-Codex": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 6
+            },
+            "size": 4524,
+            "type": ".md",
+            "lines": 287
+          },
+          {
+            "path": "backup/production-deploy-20260412-205922/SKILL.md",
+            "matches": {
+              "Oh-my-Codex": 3,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 4
+            },
+            "size": 1192,
+            "type": ".md",
+            "lines": 75
+          },
+          {
+            "path": "中文帮助.md",
+            "matches": {
+              "Oh-my-Codex": 2,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 3
+            },
+            "size": 4202,
+            "type": ".md",
+            "lines": 220
+          }
+        ],
+        "configuration": [
+          {
+            "path": "4sapi-full-system-reports/full_system_1775932347042.json",
+            "matches": {
+              "Oh-my-Codex": 2,
+              "free-code": 1
+            },
+            "size": 11955,
+            "type": ".json",
+            "lines": 117
+          },
+          {
+            "path": "modules/ai-engine/unified_task_data.json",
+            "matches": {
+              "CLAUDE CODE": 3,
+              "Claude code": 3,
+              "free-code": 7
+            },
+            "size": 16823,
+            "type": ".json",
+            "lines": 647
+          },
+          {
+            "path": "中文系统报告/中文报告_1775932765585.json",
+            "matches": {
+              "free-code": 1
+            },
+            "size": 1258,
+            "type": ".json",
+            "lines": 25
+          },
+          {
+            "path": "中文系统报告/中文报告_1775932809610.json",
+            "matches": {
+              "free-code": 1
+            },
+            "size": 1258,
+            "type": ".json",
+            "lines": 25
+          },
+          {
+            "path": "中文配置.json",
+            "matches": {
+              "Oh-my-Codex": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 1
+            },
+            "size": 2586,
+            "type": ".json",
+            "lines": 152
+          }
+        ],
+        "other": [
+          {
+            "path": "production_accelerator.cjs",
+            "matches": {
+              "free-code": 1
+            },
+            "size": 28090,
+            "type": ".cjs",
+            "lines": 1166
+          },
+          {
+            "path": "start_full_4sapi_system.js",
+            "matches": {
+              "Oh-my-Codex": 6,
+              "free-code": 2
+            },
+            "size": 20527,
+            "type": ".js",
+            "lines": 749
+          },
+          {
+            "path": "test_4sapi_system.js",
+            "matches": {
+              "FREECODE": 1,
+              "free-code": 1
+            },
+            "size": 5131,
+            "type": ".js",
+            "lines": 145
+          },
+          {
+            "path": "中文系统启动器.js",
+            "matches": {
+              "free-code": 2
+            },
+            "size": 13541,
+            "type": ".js",
+            "lines": 558
+          },
+          {
+            "path": "环境变量配置模板.sh",
+            "matches": {
+              "Oh-my-Codex": 1,
+              "FREECODE": 1,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 1
+            },
+            "size": 4964,
+            "type": ".sh",
+            "lines": 206
+          }
+        ]
+      },
+      "coreTools": [
+        {
+          "name": "omc-workflow.js",
+          "path": "backup/production-20260412-210355/omc-workflow.js",
+          "category": "workflow",
+          "size": 15639,
+          "description": "Oh-my-Codex核心工作流引擎"
+        },
+        {
+          "name": "free-code-integration.js",
+          "path": "backup/production-20260412-210355/free-code-integration.js",
+          "category": "code-generation",
+          "size": 8440,
+          "description": "free-code项目集成 (Claude code纯洁版)"
+        },
+        {
+          "name": "omc-workflow-api-fixed.js",
+          "path": "omc-workflow-api-fixed.js",
+          "category": "workflow",
+          "size": 19753,
+          "description": "修正版OMC工作流 (API集成)"
+        },
+        {
+          "name": "omc-enhanced.js",
+          "path": "omc-enhanced.js",
+          "category": "enhanced-workflow",
+          "size": 27719,
+          "description": "增强版OMC工作流 (多模型支持)"
+        },
+        {
+          "name": "code-generation-tools.json",
+          "path": "backup/production-20260412-210355/code-generation-tools.json",
+          "category": "configuration",
+          "size": 6157,
+          "description": "代码生成工具配置"
+        }
+      ],
+      "categoryStats": [
+        {
+          "category": "workflows",
+          "count": 15,
+          "size": 200336
+        },
+        {
+          "category": "codeGenerators",
+          "count": 14,
+          "size": 113712
+        },
+        {
+          "category": "reviewTools",
+          "count": 0,
+          "size": 0
+        },
+        {
+          "category": "optimizationTools",
+          "count": 0,
+          "size": 0
+        },
+        {
+          "category": "validationTools",
+          "count": 1,
+          "size": 4088
+        },
+        {
+          "category": "documentation",
+          "count": 8,
+          "size": 28832
+        },
+        {
+          "category": "configuration",
+          "count": 5,
+          "size": 33880
+        },
+        {
+          "category": "other",
+          "count": 5,
+          "size": 72253
+        }
+      ]
+    },
+    "redundancy": {
+      "totalFiles": 48,
+      "duplicateFiles": 1,
+      "duplicates": [
+        {
+          "filename": "omc-workflow.js",
+          "count": 4,
+          "locations": [
+            "backup/production-20260412-210355/omc-workflow.js",
+            "backup/production-backup-20260412-210314/omc-workflow.js",
+            "backup/production-deploy-20260412-205922/omc-workflow.js",
+            "modules/code-generation/skills/code-generation/omc-workflow.js"
+          ],
+          "recommendation": "保留: backup/production-20260412-210355/omc-workflow.js (分数: 9)，其他可考虑移除或归档"
+        }
+      ],
+      "functionalOverlap": [
+        {
+          "type": "workflow",
+          "tools": [
+            "omc-workflow.js",
+            "omc-workflow-api-fixed.js",
+            "omc-enhanced.js"
+          ],
+          "description": "多个工作流实现功能重叠",
+          "recommendation": "选择功能最完整的版本，其他作为备份或参考"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "high",
+          "action": "清理重复文件",
+          "details": "发现 1 组重复文件，建议保留最佳版本"
+        },
+        {
+          "priority": "medium",
+          "action": "整合功能重叠",
+          "details": "多个工具功能相似，建议合并或明确分工"
+        }
+      ]
+    },
+    "selection": {
+      "bestVersions": [
+        {
+          "category": "workflow",
+          "selection": {
+            "path": "modules/code-generation/skills/code-generation/omc-workflow.js",
+            "matches": {
+              "Oh-my-Codex": 2
+            },
+            "size": 15639,
+            "type": ".js",
+            "lines": 535,
+            "score": 10
+          },
+          "reason": "功能完整，结构清晰，易于维护",
+          "alternatives": [
+            {
+              "path": "backup/production-20260412-210355/omc-workflow.js",
+              "matches": {
+                "Oh-my-Codex": 2
+              },
+              "size": 15639,
+              "type": ".js",
+              "lines": 535
+            },
+            {
+              "path": "backup/production-backup-20260412-210314/omc-workflow.js",
+              "matches": {
+                "Oh-my-Codex": 2
+              },
+              "size": 15639,
+              "type": ".js",
+              "lines": 535
+            }
+          ]
+        },
+        {
+          "category": "code-generation",
+          "selection": {
+            "path": "modules/code-generation/skills/code-generation/free-code-integration.js",
+            "matches": {
+              "FREECODE": 5,
+              "CLAUDE CODE": 1,
+              "Claude code": 1,
+              "free-code": 9
+            },
+            "size": 8440,
+            "type": ".js",
+            "lines": 341,
+            "score": 11
+          },
+          "reason": "纯净版Claude集成，模板系统完善",
+          "alternatives": [
+            {
+              "path": "backup/production-20260412-210355/code-generation-tools.json",
+              "matches": {
+                "Oh-my-Codex": 2,
+                "CLAUDE CODE": 1,
+                "Claude code": 1,
+                "free-code": 1
+              },
+              "size": 6157,
+              "type": ".json",
+              "lines": 231
+            },
+            {
+              "path": "backup/production-20260412-210355/free-code-integration.js",
+              "matches": {
+                "FREECODE": 5,
+                "CLAUDE CODE": 1,
+                "Claude code": 1,
+                "free-code": 9
+              },
+              "size": 8440,
+              "type": ".js",
+              "lines": 341
+            }
+          ]
+        },
+        {
+          "category": "configuration",
+          "selection": {
+            "path": "4sapi-full-system-reports/full_system_1775932347042.json",
+            "matches": {
+              "Oh-my-Codex": 2,
+              "free-code": 1
+            },
+            "size": 11955,
+            "type": ".json",
+            "lines": 117
+          },
+          "reason": "API密钥配置完整，路由策略明确",
+          "alternatives": []
+        }
+      ],
+      "selectionCriteria": {
+        "workflow": [
+          "功能完整性",
+          "代码质量",
+          "可维护性"
+        ],
+        "codeGeneration": [
+          "模板系统",
+          "集成程度",
+          "国内优化"
+        ],
+        "configuration": [
+          "完整性",
+          "安全性",
+          "易用性"
+        ]
+      }
+    },
+    "combination": {
+      "coreComponents": [
+        {
+          "category": "workflow",
+          "component": "modules/code-generation/skills/code-generation/omc-workflow.js",
+          "description": "Oh-my-Codex工作流引擎，负责端到端的代码生成流程管理"
+        },
+        {
+          "category": "code-generation",
+          "component": "modules/code-generation/skills/code-generation/free-code-integration.js",
+          "description": "free-code纯洁版Claude代码生成器，提供高质量模板系统"
+        },
+        {
+          "category": "configuration",
+          "component": "4sapi-full-system-reports/full_system_1775932347042.json",
+          "description": "API和模型配置，支持多提供商路由和故障转移"
+        }
+      ],
+      "strategies": [
+        {
+          "name": "Oh-my-Codex + free-code核心组合",
+          "description": "以OMC工作流为核心引擎，集成free-code纯洁版代码生成",
+          "workflow": "需求 → OMC分析 → free-code生成 → 质量验证 → 输出",
+          "components": [
+            {
+              "category": "workflow",
+              "component": "modules/code-generation/skills/code-generation/omc-workflow.js",
+              "description": "Oh-my-Codex工作流引擎，负责端到端的代码生成流程管理"
+            },
+            {
+              "category": "code-generation",
+              "component": "modules/code-generation/skills/code-generation/free-code-integration.js",
+              "description": "free-code纯洁版Claude代码生成器，提供高质量模板系统"
+            }
+          ],
+          "advantages": [
+            "架构清晰，职责明确",
+            "易于维护和扩展",
+            "质量保障体系完善",
+            "国内网络优化"
+          ],
+          "implementation": "修改omc-workflow.js调用free-code-integration.js"
+        },
+        {
+          "name": "智能增强组合",
+          "description": "在核心组合基础上增加智能路由和优化",
+          "workflow": "智能分析 → 动态路由 → 多阶段生成 → 自动优化",
+          "components": [
+            {
+              "category": "workflow",
+              "component": "modules/code-generation/skills/code-generation/omc-workflow.js",
+              "description": "Oh-my-Codex工作流引擎，负责端到端的代码生成流程管理"
+            },
+            {
+              "category": "code-generation",
+              "component": "modules/code-generation/skills/code-generation/free-code-integration.js",
+              "description": "free-code纯洁版Claude代码生成器，提供高质量模板系统"
+            },
+            {
+              "category": "configuration",
+              "component": "4sapi-full-system-reports/full_system_1775932347042.json",
+              "description": "API和模型配置，支持多提供商路由和故障转移"
+            }
+          ],
+          "advantages": [
+            "自适应能力强",
+            "性能更优",
+            "支持复杂场景",
+            "自动故障恢复"
+          ],
+          "implementation": "使用增强版工作流，集成所有工具"
+        }
+      ],
+      "recommendedStrategy": {
+        "name": "Oh-my-Codex + free-code核心组合",
+        "description": "以OMC工作流为核心引擎，集成free-code纯洁版代码生成",
+        "workflow": "需求 → OMC分析 → free-code生成 → 质量验证 → 输出",
+        "components": [
+          {
+            "category": "workflow",
+            "component": "modules/code-generation/skills/code-generation/omc-workflow.js",
+            "description": "Oh-my-Codex工作流引擎，负责端到端的代码生成流程管理"
+          },
+          {
+            "category": "code-generation",
+            "component": "modules/code-generation/skills/code-generation/free-code-integration.js",
+            "description": "free-code纯洁版Claude代码生成器，提供高质量模板系统"
+          }
+        ],
+        "advantages": [
+          "架构清晰，职责明确",
+          "易于维护和扩展",
+          "质量保障体系完善",
+          "国内网络优化"
+        ],
+        "implementation": "修改omc-workflow.js调用free-code-integration.js"
+      },
+      "selectionRationale": "核心组合平衡了功能完整性和维护成本，适合大多数场景"
+    },
+    "fusion": {
+      "fusionSkills": [
+        {
+          "name": "智能代码生成工作流",
+          "fusion": [
+            "Oh-my-Codex的阶段管理能力",
+            "free-code的纯洁版Claude模板",
+            "多模型API路由智能调度"
+          ],
+          "capabilities": [
+            "端到端自动化代码生成",
+            "上下文感知的模板选择",
+            "实时质量验证和反馈",
+            "自适应性能优化"
+          ],
+          "evolutionPath": [
+            "基础版: 固定工作流 + 基础模板",
+            "增强版: 动态路由 + 智能模板",
+            "智能版: 机器学习优化 + 预测生成"
+          ],
+          "implementation": "创建 unified-code-workflow.js"
+        },
+        {
+          "name": "质量保障智能体",
+          "fusion": [
+            "多模型并行审查机制",
+            "架构师级验证标准",
+            "持续优化反馈循环"
+          ],
+          "capabilities": [
+            "多专家共识代码审查",
+            "自动化质量门禁",
+            "性能基准测试",
+            "安全漏洞扫描"
+          ],
+          "evolutionPath": [
+            "基础版: 规则检查 + 简单验证",
+            "增强版: AI审查 + 智能建议",
+            "专家版: 知识库学习 + 预测性问题发现"
+          ],
+          "implementation": "创建 quality-assurance-agent.js"
+        }
+      ],
+      "evolutionStrategy": {
+        "phase1": "核心功能融合 (1-2个月)",
+        "phase2": "智能增强 (3-4个月)",
+        "phase3": "自主进化 (5-6个月)"
+      },
+      "keyBenefits": [
+        "显著提升代码生成质量",
+        "大幅降低人工干预",
+        "支持复杂项目需求",
+        "持续自我优化能力"
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "alibailian": {
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-chat",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "智谱GLM-5",
+            "reasoning": true,
+            "contextWindow": 128000,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.005,
+              "output": 0.01
+            },
+            "api": "openai-chat"
+          },
+          {
+            "id": "qwen3.6-plus",
+            "name": "通义千问3.6-Plus",
+            "reasoning": true,
+            "contextWindow": 128000,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.003,
+              "output": 0.006
+            },
+            "api": "openai-chat"
+          },
+          {
+            "id": "qwen3-max",
+            "name": "通义千问3-Max",
+            "reasoning": true,
+            "contextWindow": 128000,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.008,
+              "output": 0.016
+            },
+            "api": "openai-chat"
+          },
+          {
+            "id": "deepseek-v3.2",
+            "name": "DeepSeek-V3.2 (阿里云版)",
+            "reasoning": true,
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.001,
+              "output": 0.002
+            },
+            "api": "openai-chat"
+          }
+        ]
+      },
+      "kimi": {
+        "baseUrl": "https://api.moonshot.cn/v1",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-chat",
+        "models": [
+          {
+            "id": "kimi-k2.5",
+            "name": "Kimi Chat 2.5",
+            "reasoning": true,
+            "contextWindow": 128000,
+            "maxTokens": 64000,
+            "api": "openai-chat"
+          }
+        ]
+      },
+      "4sapi": {
+        "baseUrl": "https://4sapi.com",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-chat",
+        "models": [
+          {
+            "id": "gemini-3.1-pro-preview",
+            "name": "Google Gemini 3.1 Pro Preview",
+            "reasoning": true,
+            "contextWindow": 128000,
+            "maxTokens": 4096,
+            "api": "openai-chat"
+          },
+          {
+            "id": "gpt-5.4",
+            "name": "OpenAI GPT-5.4",
+            "reasoning": true,
+            "contextWindow": 128000,
+            "maxTokens": 4096,
+            "api": "openai-chat"
+          },
+          {
+            "id": "claude-opus-4.6",
+            "name": "Anthropic Claude Opus 4.6",
+            "reasoning": true,
+            "contextWindow": 200000,
+            "maxTokens": 4096,
+            "api": "openai-chat"
+          }
+        ]
+      },
+      "ark": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-v3.2",
+            "name": "DeepSeek-V3.2 (火山引擎版)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "headers": {
+              "X-Client-Request-Id": "ecs-openclaw/0304/i-yegisssjy8s6iplz6lpg"
+            },
+            "compat": {
+              "supportsDeveloperRole": false
+            },
+            "api": "openai-completions"
+          },
+          {
+            "id": "glm-4-7-251222",
+            "name": "智谱GLM-4-7B 251222版本",
+            "reasoning": true,
+            "contextWindow": 128000,
+            "maxTokens": 4096,
+            "api": "openai-chat"
+          }
+        ]
+      }
+    }
+  }
+}

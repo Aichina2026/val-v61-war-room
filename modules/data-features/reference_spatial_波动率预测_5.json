@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_axwa4x618",
+  "name": "波动率预测_5",
+  "category": "spatial",
+  "type": "reference",
+  "accuracy": 0.818,
+  "description": "波动率预测_5 - spatial特征",
+  "success_rate": 0,
+  "quality_score": 0.491,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

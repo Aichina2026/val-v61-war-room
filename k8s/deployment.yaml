@@ -1,0 +1,445 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ai-orchestrator
+  labels:
+    name: ai-orchestrator
+---
+# 配置映射
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ai-config
+  namespace: ai-orchestrator
+data:
+  environment: "production"
+  log_level: "INFO"
+  max_workers: "8"
+  model_cache_size: "20"
+  redis_url: "redis://redis.ai-orchestrator.svc.cluster.local:6379/0"
+  postgres_url: "postgresql://ai_user:${POSTGRES_PASSWORD}@postgres.ai-orchestrator.svc.cluster.local:5432/ai_orchestrator"
+  qdrant_url: "http://qdrant.ai-orchestrator.svc.cluster.local:6333"
+  prometheus_url: "http://prometheus.ai-orchestrator.svc.cluster.local:9090"
+  allowed_origins: "https://api.ai-system.com,https://dashboard.ai-system.com"
+  rate_limit_per_minute: "1000"
+---
+# 密钥
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ai-secrets
+  namespace: ai-orchestrator
+type: Opaque
+data:
+  postgres_password: YWlfcGFzc3dvcmRfMjAyNg==  # base64编码
+  redis_password: cmVkaXNfcGFzc3dvcmRfMjAyNg==
+  api_keys: eyJkZWZhdWx0IjogImFwaV9rZXlfZGVmYXVsdCIsICJhZG1pbiI6ICJhZG1pbl9zZWNyZXRfMjAyNiJ9
+  jwt_secret: amV0c19zZWNyZXRfMjAyNl9zZWN1cmVfdG9rZW4=
+---
+# AI编排器部署
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-orchestrator
+  namespace: ai-orchestrator
+  labels:
+    app: ai-orchestrator
+    version: v1.0.0
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-orchestrator
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: ai-orchestrator
+        version: v1.0.0
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      securityContext:
+        fsGroup: 1000
+        runAsUser: 1000
+        runAsNonRoot: true
+      containers:
+      - name: ai-orchestrator
+        image: registry.ai-system.com/ai-orchestrator:v1.0.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+          name: http-api
+          protocol: TCP
+        - containerPort: 8080
+          name: http-metrics
+          protocol: TCP
+        env:
+        - name: ENVIRONMENT
+          valueFrom:
+            configMapKeyRef:
+              name: ai-config
+              key: environment
+        - name: LOG_LEVEL
+          valueFrom:
+            configMapKeyRef:
+              name: ai-config
+              key: log_level
+        - name: MAX_WORKERS
+          valueFrom:
+            configMapKeyRef:
+              name: ai-config
+              key: max_workers
+        - name: REDIS_URL
+          valueFrom:
+            configMapKeyRef:
+              name: ai-config
+              key: redis_url
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: ai-secrets
+              key: postgres_password
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "1000m"
+            ephemeral-storage: "10Gi"
+          limits:
+            memory: "4Gi"
+            cpu: "2000m"
+            ephemeral-storage: "20Gi"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          successThreshold: 1
+          failureThreshold: 3
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+            scheme: HTTP
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+          successThreshold: 1
+          failureThreshold: 3
+        volumeMounts:
+        - name: data-volume
+          mountPath: /app/data
+        - name: logs-volume
+          mountPath: /app/logs
+        - name: models-volume
+          mountPath: /app/models
+          readOnly: true
+        - name: config-volume
+          mountPath: /app/config
+      volumes:
+      - name: data-volume
+        persistentVolumeClaim:
+          claimName: ai-data-pvc
+      - name: logs-volume
+        emptyDir: {}
+      - name: models-volume
+        persistentVolumeClaim:
+          claimName: ai-models-pvc
+      - name: config-volume
+        configMap:
+          name: ai-config
+      nodeSelector:
+        node-type: ai-optimized
+      tolerations:
+      - key: "ai-workload"
+        operator: "Equal"
+        value: "true"
+        effect: "NoSchedule"
+---
+# AI编排器服务
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-orchestrator
+  namespace: ai-orchestrator
+  labels:
+    app: ai-orchestrator
+spec:
+  selector:
+    app: ai-orchestrator
+  ports:
+  - name: http-api
+    port: 8000
+    targetPort: 8000
+    protocol: TCP
+  - name: http-metrics
+    port: 8080
+    targetPort: 8080
+    protocol: TCP
+  type: ClusterIP
+---
+# Redis部署
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: redis
+  namespace: ai-orchestrator
+spec:
+  serviceName: redis
+  replicas: 3
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: redis:7-alpine
+        ports:
+        - containerPort: 6379
+          name: redis
+        command: ["redis-server"]
+        args: ["--appendonly", "yes", "--maxmemory", "2gb", "--maxmemory-policy", "allkeys-lru"]
+        env:
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: ai-secrets
+              key: redis_password
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+        volumeMounts:
+        - name: redis-data
+          mountPath: /data
+        livenessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 5
+          periodSeconds: 5
+  volumeClaimTemplates:
+  - metadata:
+      name: redis-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 10Gi
+      storageClassName: fast-ssd
+---
+# Redis服务
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: ai-orchestrator
+spec:
+  selector:
+    app: redis
+  ports:
+  - port: 6379
+    targetPort: 6379
+  clusterIP: None
+---
+# PostgreSQL部署
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  namespace: ai-orchestrator
+spec:
+  serviceName: postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:15-alpine
+        ports:
+        - containerPort: 5432
+          name: postgres
+        env:
+        - name: POSTGRES_DB
+          value: "ai_orchestrator"
+        - name: POSTGRES_USER
+          value: "ai_user"
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: ai-secrets
+              key: postgres_password
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "1000m"
+          limits:
+            memory: "4Gi"
+            cpu: "2000m"
+        volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data
+        livenessProbe:
+          exec:
+            command:
+            - pg_isready
+            - -U
+            - ai_user
+          initialDelaySeconds: 60
+          periodSeconds: 30
+        readinessProbe:
+          exec:
+            command:
+            - pg_isready
+            - -U
+            - ai_user
+          initialDelaySeconds: 5
+          periodSeconds: 10
+  volumeClaimTemplates:
+  - metadata:
+      name: postgres-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 50Gi
+      storageClassName: fast-ssd
+---
+# PostgreSQL服务
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  namespace: ai-orchestrator
+spec:
+  selector:
+    app: postgres
+  ports:
+  - port: 5432
+    targetPort: 5432
+  clusterIP: None
+---
+# 水平Pod自动缩放器
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: ai-orchestrator-hpa
+  namespace: ai-orchestrator
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: ai-orchestrator
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+      - type: Pods
+        value: 2
+        periodSeconds: 60
+      - type: Percent
+        value: 50
+        periodSeconds: 60
+      selectPolicy: Max
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Pods
+        value: 1
+        periodSeconds: 60
+---
+# 网络策略
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: ai-orchestrator-network-policy
+  namespace: ai-orchestrator
+spec:
+  podSelector:
+    matchLabels:
+      app: ai-orchestrator
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: nginx
+    ports:
+    - protocol: TCP
+      port: 8000
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: monitoring
+    ports:
+    - protocol: TCP
+      port: 8080
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: redis
+    ports:
+    - protocol: TCP
+      port: 6379
+  - to:
+    - podSelector:
+        matchLabels:
+          app: postgres
+    ports:
+    - protocol: TCP
+      port: 5432
+  - to:
+    - podSelector:
+        matchLabels:
+          app: qdrant
+    ports:
+    - protocol: TCP
+      port: 6333

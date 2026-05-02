@@ -1,0 +1,96 @@
+启动时间: 2026-04-12 23:06:29
+🚀 OMC自动化系统启动
+============================================================
+[2026-04-12T15:06:29.431Z] [INFO] 自动化系统启动
+🔍 检查系统状态...
+  ✅ 工作空间
+  ✅ 路由系统
+  ✅ 配置目录
+  ✅ 日志目录
+
+🔄 执行初始工作流...
+  1. 初始数据收集...
+[2026-04-12T15:06:29.473Z] [ERROR] 数据收集失败: Command failed: node omc-4ai-workflow-complete.js --mode=collect
+/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+  2. 初始数据分析...
+[2026-04-12T15:06:29.503Z] [ERROR] 数据分析失败: Command failed: node omc-4ai-workflow-complete.js --mode=analyze
+/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+  3. 初始策略库生成...
+[2026-04-12T15:06:29.532Z] [ERROR] 策略库生成失败: Command failed: node strategy-library-generator.js
+/root/.openclaw/workspace/strategy-library-generator.js:1071
+    if (content.includes('算法')) guidelines.push
+                                               
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+[2026-04-12T15:06:29.532Z] [INFO] 初始工作流执行完成
+
+⏰ 设置定时任务...
+  定时任务计划:
+    数据收集: 0 */1 * * * (每小时)
+    数据分析: 0 */6 * * * (每6小时)
+    系统优化: 0 0 * * * (每天)
+    策略更新: 0 0 */7 * * (每周)
+[2026-04-12T15:06:29.533Z] [INFO] 定时任务脚本创建完成
+[2026-04-12T15:06:29.533Z] [INFO] 定时任务设置完成
+
+📊 启动监控服务...
+[2026-04-12T15:06:29.533Z] [INFO] 监控服务启动
+  ✅ 监控服务已启动 (每5分钟检查一次)
+✅ 自动化系统启动完成
+📊 监控状态: 运行中
+⏰ 下次数据收集: 1小时后
+📁 日志目录: /root/.openclaw/workspace/omc-automation-logs
+============================================================
+[2026-04-12T15:06:29.533Z] [INFO] 自动化系统启动完成
+[2026-04-12T15:11:31.153Z] [INFO] 监控检查完成: 2026-04-12T15:11:29.618Z
+[2026-04-12T15:16:31.157Z] [INFO] 监控检查完成: 2026-04-12T15:16:29.620Z
+[2026-04-12T15:21:31.227Z] [INFO] 监控检查完成: 2026-04-12T15:21:29.692Z
+[2026-04-12T15:26:31.231Z] [INFO] 监控检查完成: 2026-04-12T15:26:29.694Z
+[2026-04-12T15:31:31.232Z] [INFO] 监控检查完成: 2026-04-12T15:31:29.696Z
+[2026-04-12T15:36:31.234Z] [INFO] 监控检查完成: 2026-04-12T15:36:29.697Z
+[2026-04-12T15:41:31.235Z] [INFO] 监控检查完成: 2026-04-12T15:41:29.699Z
+[2026-04-12T15:46:31.238Z] [INFO] 监控检查完成: 2026-04-12T15:46:29.700Z

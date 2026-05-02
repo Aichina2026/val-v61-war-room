@@ -1,0 +1,158 @@
+{
+  "id": "omc-real-router-1776040308920",
+  "timestamp": "2026-04-13T00:31:48.920Z",
+  "task": "创建一个用户管理系统",
+  "options": {
+    "strategy": "balanced"
+  },
+  "stages": {
+    "analysis": {
+      "success": true,
+      "stage": "analysis",
+      "content": "[CLI路由:model-routing-orchestrator] 分析以下任务需求: 创建一个用户管理系统...",
+      "model": "deepseek-v3.2",
+      "routerSkill": "model-routing-orchestrator",
+      "method": "bound callViaOpenClawCli",
+      "latency": 301,
+      "fullLatency": 301,
+      "rawResult": {
+        "success": true,
+        "content": "[CLI路由:model-routing-orchestrator] 分析以下任务需求: 创建一个用户管理系统...",
+        "model": "deepseek-v3.2",
+        "routerSkill": "model-routing-orchestrator",
+        "latency": 301,
+        "method": "bound callViaOpenClawCli"
+      }
+    },
+    "design": {
+      "success": true,
+      "stage": "design",
+      "content": "[CLI路由:intelligent-router] 基于需求分析，设计系统架构: 创建一个用户管理系统...",
+      "model": "claude-opus-4.6",
+      "routerSkill": "intelligent-router",
+      "method": "bound callViaOpenClawCli",
+      "latency": 300,
+      "fullLatency": 300,
+      "rawResult": {
+        "success": true,
+        "content": "[CLI路由:intelligent-router] 基于需求分析，设计系统架构: 创建一个用户管理系统...",
+        "model": "claude-opus-4.6",
+        "routerSkill": "intelligent-router",
+        "latency": 300,
+        "method": "bound callViaOpenClawCli"
+      }
+    },
+    "generation": {
+      "success": true,
+      "stage": "generation",
+      "content": "[CLI路由:oc-skill-router] 基于架构设计，生成代码实现: 创建一个用户管理系统...",
+      "model": "gpt-5.4",
+      "routerSkill": "oc-skill-router",
+      "method": "bound callViaOpenClawCli",
+      "latency": 300,
+      "fullLatency": 300,
+      "rawResult": {
+        "success": true,
+        "content": "[CLI路由:oc-skill-router] 基于架构设计，生成代码实现: 创建一个用户管理系统...",
+        "model": "gpt-5.4",
+        "routerSkill": "oc-skill-router",
+        "latency": 300,
+        "method": "bound callViaOpenClawCli"
+      }
+    },
+    "review": {
+      "success": true,
+      "stage": "review",
+      "content": "[CLI路由:model-routing] 审查生成的代码，提出改进建议...",
+      "model": "gemini-3.1-pro-preview",
+      "routerSkill": "model-routing",
+      "method": "bound callViaOpenClawCli",
+      "latency": 301,
+      "fullLatency": 301,
+      "rawResult": {
+        "success": true,
+        "content": "[CLI路由:model-routing] 审查生成的代码，提出改进建议...",
+        "model": "gemini-3.1-pro-preview",
+        "routerSkill": "model-routing",
+        "latency": 301,
+        "method": "bound callViaOpenClawCli"
+      }
+    },
+    "optimization": {
+      "success": true,
+      "stage": "optimization",
+      "content": "[CLI路由:adaptive-routing] 优化代码性能，提高效率...",
+      "model": "deepseek-v3.2",
+      "routerSkill": "adaptive-routing",
+      "method": "bound callViaOpenClawCli",
+      "latency": 301,
+      "fullLatency": 301,
+      "rawResult": {
+        "success": true,
+        "content": "[CLI路由:adaptive-routing] 优化代码性能，提高效率...",
+        "model": "deepseek-v3.2",
+        "routerSkill": "adaptive-routing",
+        "latency": 301,
+        "method": "bound callViaOpenClawCli"
+      }
+    }
+  },
+  "metrics": {
+    "calls": 5,
+    "successes": 5,
+    "failures": 0,
+    "fallbacks": 0,
+    "totalLatency": 1503,
+    "avgLatency": 300.6,
+    "workflowDuration": 1505,
+    "stageSuccessCount": 5,
+    "stageSuccessRate": "100.0%"
+  },
+  "summary": {
+    "overallSuccess": true,
+    "stageDetails": {
+      "analysis": {
+        "success": true,
+        "model": "deepseek-v3.2",
+        "routerSkill": "model-routing-orchestrator",
+        "latency": 301
+      },
+      "design": {
+        "success": true,
+        "model": "claude-opus-4.6",
+        "routerSkill": "intelligent-router",
+        "latency": 300
+      },
+      "generation": {
+        "success": true,
+        "model": "gpt-5.4",
+        "routerSkill": "oc-skill-router",
+        "latency": 300
+      },
+      "review": {
+        "success": true,
+        "model": "gemini-3.1-pro-preview",
+        "routerSkill": "model-routing",
+        "latency": 301
+      },
+      "optimization": {
+        "success": true,
+        "model": "deepseek-v3.2",
+        "routerSkill": "adaptive-routing",
+        "latency": 301
+      }
+    },
+    "routingPerformance": {
+      "successRate": "100.0%",
+      "totalCalls": 5,
+      "successfulCalls": 5,
+      "fallbackCalls": 0,
+      "failedCalls": 0,
+      "averageLatency": "301ms",
+      "workflowDuration": "1505ms"
+    },
+    "recommendations": [
+      "路由系统工作正常，可以部署到生产环境"
+    ]
+  }
+}

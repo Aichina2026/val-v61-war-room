@@ -1,0 +1,33 @@
+{
+  "systemName": "小白无代码AI系统",
+  "version": "1.0.0",
+  "theme": {
+    "primaryColor": "#3B82F6",
+    "backgroundColor": "#F9FAFB",
+    "fontFamily": "Inter, system-ui, sans-serif"
+  },
+  "features": {
+    "dragAndDrop": true,
+    "realTimePreview": true,
+    "templateGallery": true,
+    "aiModelMarketplace": true,
+    "oneClickDeploy": true,
+    "collaboration": true
+  },
+  "deployment": {
+    "targets": [
+      "cloud",
+      "docker",
+      "serverless",
+      "edge"
+    ],
+    "autoScaling": true,
+    "monitoring": true,
+    "backup": true
+  },
+  "security": {
+    "encryption": true,
+    "authentication": true,
+    "auditLogs": true
+  }
+}

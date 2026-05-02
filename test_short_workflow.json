@@ -1,0 +1,18 @@
+[
+  {
+    "prompt": "第一轮测试：什么是机器学习？",
+    "model": "gpt-5.4",
+    "options": {
+      "max_tokens": 100,
+      "temperature": 0.7
+    }
+  },
+  {
+    "prompt": "第二轮测试：解释神经网络的基本概念",
+    "model": "gemini-3.1-pro-preview",
+    "options": {
+      "max_tokens": 120,
+      "temperature": 0.5
+    }
+  }
+]

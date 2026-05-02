@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-05-01T05:27:32.083Z",
+  "system": {
+    "os": "Linux iv-yegisssjy8s6iplz6lpg 6.8.0-55-generic #57-Ubuntu SMP PREEMPT_DYNAMIC Wed Feb 12 23:42:21 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux",
+    "node": "v22.22.0",
+    "npm": "10.9.4",
+    "git": "git version 2.43.0"
+  },
+  "services": {
+    "openclaw-gateway": {
+      "running": true,
+      "pid": "26980\n27272"
+    },
+    "4ai-workflow": {
+      "running": true,
+      "pid": "27274"
+    },
+    "cron-jobs": {
+      "running": true,
+      "pid": null
+    }
+  },
+  "resources": {
+    "cpu": 0,
+    "memory": {
+      "total": 3917,
+      "used": 1430,
+      "usage": 36.5
+    },
+    "disk": {
+      "total": "40G",
+      "used": "23G",
+      "available": "16G",
+      "usage": "60%"
+    }
+  },
+  "connectivity": {
+    "github-api": "reachable",
+    "github-main": "reachable",
+    "openclaw-docs": "reachable"
+  },
+  "issues": [],
+  "recommendations": [],
+  "summary": "healthy",
+  "file__root__openclaw_openclaw_json": true,
+  "file__root__openclaw__env": true,
+  "file__root__openclaw_workspace_AGENTS_md": true,
+  "file__root__openclaw_workspace_SYSTEM_ARCHITECTURE_COMPLETE_md": true,
+  "file__root__openclaw_workspace_MAINTENANCE_SCHEDULE_json": true,
+  "status": "✅ 系统健康",
+  "stats": {
+    "total_checks": 5,
+    "issues_found": 0,
+    "recommendations": 0,
+    "check_duration": 1510
+  }
+}

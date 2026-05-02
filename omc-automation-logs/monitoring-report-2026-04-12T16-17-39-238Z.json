@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-04-12T16:17:37.700Z",
+  "healthChecks": {
+    "timestamp": "2026-04-12T16:17:39.238Z",
+    "totalChecks": 4,
+    "passedChecks": 4,
+    "failedChecks": 0,
+    "checks": [
+      {
+        "name": "文件系统",
+        "status": {
+          "healthy": true,
+          "details": "所有必要文件都存在"
+        },
+        "details": "检查必要文件是否存在"
+      },
+      {
+        "name": "路由系统",
+        "status": {
+          "healthy": true,
+          "details": "路由系统正常"
+        },
+        "details": "测试路由系统是否正常"
+      },
+      {
+        "name": "数据目录",
+        "status": {
+          "healthy": true,
+          "details": "所有目录都可写"
+        },
+        "details": "检查数据目录可写性"
+      },
+      {
+        "name": "配置系统",
+        "status": {
+          "healthy": true,
+          "details": "配置完整有效"
+        },
+        "details": "检查配置有效性"
+      }
+    ]
+  },
+  "performanceMetrics": {
+    "timestamp": "2026-04-12T16:17:39.238Z",
+    "successRate": 0.9683439194926343,
+    "averageLatency": 347.70768664967443,
+    "errorRate": 0.04653796612301486,
+    "throughput": 106.1687514404321,
+    "uptime": 0.999
+  },
+  "resourceUsage": {
+    "timestamp": "2026-04-12T16:17:39.238Z",
+    "cpuUsage": 54.261748318576764,
+    "memoryUsage": 67.86248473078838,
+    "diskUsage": 64.15676732946653,
+    "networkTraffic": 2818.072912958977
+  },
+  "taskStatus": {
+    "timestamp": "2026-04-12T16:17:39.238Z",
+    "status": {
+      "dataCollection": "on_time",
+      "dataAnalysis": "on_time",
+      "systemOptimization": "never",
+      "strategyUpdate": "on_time"
+    },
+    "lastExecution": {
+      "dataCollection": "2026-04-12T15:47:37.547Z",
+      "dataAnalysis": "2026-04-12T15:47:37.547Z",
+      "systemOptimization": null,
+      "strategyUpdate": "2026-04-12T15:47:37.547Z"
+    }
+  },
+  "monitoringState": {
+    "lastCollection": "2026-04-12T15:47:37.547Z",
+    "lastAnalysis": "2026-04-12T15:47:37.547Z",
+    "lastOptimization": null,
+    "lastStrategyUpdate": "2026-04-12T15:47:37.547Z",
+    "errors": [
+      {
+        "type": "data_collection",
+        "timestamp": "2026-04-12T15:47:37.476Z",
+        "details": "Command failed: node omc-4ai-workflow-complete.js --mode=collect\n/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017\n\n\n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1638:18)\n    at Module._compile (node:internal/modules/cjs/loader:1680:20)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v22.22.0\n"
+      },
+      {
+        "type": "data_analysis",
+        "timestamp": "2026-04-12T15:47:37.512Z",
+        "details": "Command failed: node omc-4ai-workflow-complete.js --mode=analyze\n/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017\n\n\n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1638:18)\n    at Module._compile (node:internal/modules/cjs/loader:1680:20)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v22.22.0\n"
+      },
+      {
+        "type": "strategy_generation",
+        "timestamp": "2026-04-12T15:47:37.547Z",
+        "details": "Command failed: node strategy-library-generator.js\n/root/.openclaw/workspace/strategy-library-generator.js:1071\n    if (content.includes('算法')) guidelines.push\n                                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1638:18)\n    at Module._compile (node:internal/modules/cjs/loader:1680:20)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v22.22.0\n"
+      }
+    ],
+    "warnings": [],
+    "successes": []
+  }
+}

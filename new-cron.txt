@@ -1,0 +1,47 @@
+
+# ========================================
+0 10 1 * * cd /root/.openclaw/workspace && ./auto_reminder.sh monthly
+0 12 * * * cd /root/.openclaw/workspace && ./auto_reminder.sh daily
+0 18 * * 5 cd /root/.openclaw/workspace && ./auto_reminder.sh weekly
+0 18 * * * cd /root/.openclaw/workspace && ./auto_reminder.sh check
+0 23-6 * * * /root/.openclaw/workspace/20次循环强化器.sh ITERATION 迭代优化 >> /root/.openclaw/logs/iteration_20260314.log 2>&1
+0 2 * * * /root/.openclaw/workspace/monitor_resources.sh --deep
+0 6 * * * /root/.openclaw/workspace/daily_report.sh >> /root/.openclaw/logs/report_20260314.log 2>&1
+0 7 * * * /root/.openclaw/workspace/maintenance.sh >> /root/.openclaw/logs/maintenance_20260314.log 2>&1
+0 8-22 * * * /root/.openclaw/workspace/全天候任务生成器.sh >> /root/.openclaw/logs/task_gen_20260314.log 2>&1
+0 9 * * * cd /root/.openclaw/workspace && ./auto_reminder.sh check
+0 * * * * /root/.openclaw/workspace/health_check.sh >> /root/.openclaw/logs/health_20260314.log 2>&1
+0 * * * * /root/.openclaw/workspace/monitor_resources.sh
+*/15 * * * * /root/.openclaw/workspace/24小时进化调度器.sh >> /root/.openclaw/logs/24h_scheduler_20260314.log 2>&1
+# 24小时进化系统 - 核心调度
+30 23-6 * * * /root/.openclaw/workspace/20次循环强化器.sh ITERATION 迭代优化 >> /root/.openclaw/logs/iteration_20260314.log 2>&1
+30 8-22 * * * /root/.openclaw/workspace/全天候任务生成器.sh >> /root/.openclaw/logs/task_gen_20260314.log 2>&1
+# 任务执行调度 (每15分钟)
+# 新任务开发时段 (15小时)
+# 每15分钟检查一次，在闲暇时间执行迭代
+# 每周总结（周五下午6点）
+# 每天凌晨3点执行深度迭代
+# 每日报告生成
+# 每日进度提醒
+# 每月回顾（每月1号上午10点）
+# 系统健康监控
+# 系统维护时段 (1小时)
+# 迭代优化时段 (8小时)
+
+# =============== OMC 4AI工作流自动化配置 ===============
+# 添加时间: Mon Apr 13 05:38:42 PM CST 2026
+# OMC 4AI工作流自动化配置
+# 数据收集 - 每小时一次
+0 * * * * cd /root/.openclaw/workspace && node omc-4ai-workflow-complete.js --phase=collect >> /root/.openclaw/workspace/omc-automation-logs/collection.log 2>&1
+
+# 数据分析 - 每6小时一次
+0 */6 * * * cd /root/.openclaw/workspace && node omc-4ai-workflow-complete.js --phase=analyze >> /root/.openclaw/workspace/omc-automation-logs/analysis.log 2>&1
+
+# 系统优化 - 每天凌晨2点
+0 2 * * * cd /root/.openclaw/workspace && node omc-4ai-workflow-complete.js --phase=optimize >> /root/.openclaw/workspace/omc-automation-logs/optimization.log 2>&1
+
+# 策略生成 - 每周一凌晨3点
+0 3 * * 1 cd /root/.openclaw/workspace && node strategy-library-generator.js >> /root/.openclaw/workspace/omc-automation-logs/strategy.log 2>&1
+
+# 系统健康检查 - 每5分钟
+*/5 * * * * cd /root/.openclaw/workspace && node check-system-status.js >> /root/.openclaw/workspace/omc-automation-logs/health.log 2>&1

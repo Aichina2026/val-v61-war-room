@@ -1,0 +1,215 @@
+{
+  "history": [
+    {
+      "id": "opt-1776040775981",
+      "round": 3,
+      "task": "L8代码优化层自动化重构",
+      "timestamp": "2026-04-13T00:39:35.981Z",
+      "before": {
+        "timestamp": "2026-04-13T00:39:35.981Z",
+        "round": 3,
+        "system": {
+          "cpu": 32.40946560853638,
+          "memory": 38.92741322294005,
+          "disk": 50.693434105719255,
+          "network": 5.122196911295182
+        },
+        "application": {
+          "responseTime": 113.46044791656453,
+          "throughput": 1189.871625278159,
+          "errorRate": 0.37483275642040925,
+          "availability": 99.60874648226024
+        },
+        "quality": {
+          "codeCoverage": 83.54914222997112,
+          "technicalDebt": 1.7027445944970099,
+          "securityScore": 93.70887655100289,
+          "performanceScore": 94.84597712025993
+        }
+      },
+      "actions": [
+        "调整JVM参数优化内存使用",
+        "优化数据库索引",
+        "启用缓存策略"
+      ],
+      "status": "success",
+      "after": {
+        "timestamp": "2026-04-13T00:39:35.981Z",
+        "round": 3,
+        "system": {
+          "cpu": 28.90405079587611,
+          "memory": 29.599062773228216,
+          "disk": 50.693434105719255,
+          "network": 5.122196911295182
+        },
+        "application": {
+          "responseTime": 94.05760433673214,
+          "throughput": 1302.2234191684674,
+          "errorRate": 0.3504527727537365,
+          "availability": 99.79366369563523
+        },
+        "quality": {
+          "codeCoverage": 83.54914222997112,
+          "technicalDebt": 1.7027445944970099,
+          "securityScore": 93.70887655100289,
+          "performanceScore": 94.84597712025993
+        }
+      },
+      "improvement": {
+        "cpu": "10.8",
+        "memory": "24.0",
+        "responseTime": "17.1",
+        "throughput": "9.4",
+        "overall": "15.3"
+      }
+    },
+    {
+      "id": "opt-1776040819469",
+      "round": 3,
+      "task": "L8代码优化层自动化重构",
+      "timestamp": "2026-04-13T00:40:19.469Z",
+      "before": {
+        "timestamp": "2026-04-13T00:40:19.469Z",
+        "round": 3,
+        "system": {
+          "cpu": 38.081978841130194,
+          "memory": 44.406462735092695,
+          "disk": 60.51199973513472,
+          "network": 7.086182757454386
+        },
+        "application": {
+          "responseTime": 244.21663391295948,
+          "throughput": 604.4257391677817,
+          "errorRate": 0.15166765067669252,
+          "availability": 99.77397679429328
+        },
+        "quality": {
+          "codeCoverage": 84.83342286430431,
+          "technicalDebt": 6.035837731850007,
+          "securityScore": 89.61043807238394,
+          "performanceScore": 86.3365305807357
+        }
+      },
+      "actions": [
+        "调整JVM参数优化内存使用",
+        "优化数据库索引",
+        "启用缓存策略"
+      ],
+      "status": "success",
+      "after": {
+        "timestamp": "2026-04-13T00:40:19.469Z",
+        "round": 3,
+        "system": {
+          "cpu": 29.53885897580236,
+          "memory": 38.58338795471765,
+          "disk": 60.51199973513472,
+          "network": 7.086182757454386
+        },
+        "application": {
+          "responseTime": 210.08299043538375,
+          "throughput": 758.6366129115793,
+          "errorRate": 0,
+          "availability": 99.83390367582727
+        },
+        "quality": {
+          "codeCoverage": 84.83342286430431,
+          "technicalDebt": 6.035837731850007,
+          "securityScore": 89.61043807238394,
+          "performanceScore": 86.3365305807357
+        }
+      },
+      "improvement": {
+        "cpu": "22.4",
+        "memory": "13.1",
+        "responseTime": "14.0",
+        "throughput": "25.5",
+        "overall": "18.8"
+      }
+    },
+    {
+      "id": "opt-1776040882681",
+      "round": 3,
+      "task": "L8代码优化层自动化重构",
+      "timestamp": "2026-04-13T00:41:22.681Z",
+      "before": {
+        "timestamp": "2026-04-13T00:41:22.680Z",
+        "round": 3,
+        "system": {
+          "cpu": 25.624633380114556,
+          "memory": 49.02774503192159,
+          "disk": 52.155540712967905,
+          "network": 13.28127826710147
+        },
+        "application": {
+          "responseTime": 261.3885642046626,
+          "throughput": 860.4129882731584,
+          "errorRate": 0.07093308645456842,
+          "availability": 99.8062230285397
+        },
+        "quality": {
+          "codeCoverage": 76.07778062417809,
+          "technicalDebt": 5.83085330333377,
+          "securityScore": 89.16082966726893,
+          "performanceScore": 94.92911692334269
+        }
+      },
+      "actions": [
+        "调整JVM参数优化内存使用",
+        "优化数据库索引",
+        "启用缓存策略"
+      ],
+      "status": "success",
+      "after": {
+        "timestamp": "2026-04-13T00:41:22.680Z",
+        "round": 3,
+        "system": {
+          "cpu": 11.643436731501055,
+          "memory": 30.287610460384595,
+          "disk": 52.155540712967905,
+          "network": 13.28127826710147
+        },
+        "application": {
+          "responseTime": 246.13040516788013,
+          "throughput": 954.6414392549849,
+          "errorRate": 0.030262347748643954,
+          "availability": 99.9923343888988
+        },
+        "quality": {
+          "codeCoverage": 76.07778062417809,
+          "technicalDebt": 5.83085330333377,
+          "securityScore": 89.16082966726893,
+          "performanceScore": 94.92911692334269
+        }
+      },
+      "improvement": {
+        "cpu": "54.6",
+        "memory": "38.2",
+        "responseTime": "5.8",
+        "throughput": "11.0",
+        "overall": "27.4"
+      }
+    }
+  ],
+  "statistics": {
+    "totalOptimizations": 3,
+    "successfulOptimizations": 3,
+    "failedOptimizations": 0,
+    "performanceImprovements": [
+      {
+        "timestamp": "2026-04-13T00:39:35.981Z",
+        "improvement": "15.3",
+        "task": "L8代码优化层自动化重构"
+      },
+      {
+        "timestamp": "2026-04-13T00:40:19.469Z",
+        "improvement": "18.8",
+        "task": "L8代码优化层自动化重构"
+      },
+      {
+        "timestamp": "2026-04-13T00:41:22.681Z",
+        "improvement": "27.4",
+        "task": "L8代码优化层自动化重构"
+      }
+    ]
+  }
+}

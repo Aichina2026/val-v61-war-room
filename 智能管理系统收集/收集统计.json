@@ -1,0 +1,1184 @@
+{
+  "收集时间": "2026-04-12T16:02:47.738Z",
+  "工作空间": "/root/.openclaw/workspace",
+  "总文件数": 189,
+  "分类统计": {
+    "智能管理系统": 10,
+    "技能工具": 8,
+    "文件管理": 49,
+    "记忆管理": 9,
+    "知识库管理": 5,
+    "进程管理": 12,
+    "迭代管理": 2,
+    "策略管理": 6,
+    "数据库管理": 2,
+    "向量库管理": 0,
+    "特征库管理": 50,
+    "文件清理": 1,
+    "流量管理": 7,
+    "其他相关": 28
+  },
+  "文件列表": {
+    "智能管理系统": [
+      {
+        "path": "中文系统启动器.js",
+        "size": 18951,
+        "modified": "2026-04-11T18:39:59.677Z",
+        "lines": 411
+      },
+      {
+        "path": "omc-automation-system.js",
+        "size": 29446,
+        "modified": "2026-04-12T15:03:18.782Z",
+        "lines": 383
+      },
+      {
+        "path": "integration_verification_system.cjs",
+        "size": 18017,
+        "modified": "2026-04-09T19:45:14.123Z",
+        "lines": 385
+      },
+      {
+        "path": "zero_error_autonomous_system.cjs",
+        "size": 14608,
+        "modified": "2026-04-09T22:05:20.446Z",
+        "lines": 397
+      },
+      {
+        "path": "4SAPI_MULTI_MODEL_SYSTEMS_REPORT.md",
+        "size": 10248,
+        "modified": "2026-04-10T02:59:06.518Z",
+        "lines": 304
+      },
+      {
+        "path": "4sapi-full-system-reports/full_system_1775932347042_summary.md",
+        "size": 3103,
+        "modified": "2026-04-11T18:32:27.043Z",
+        "lines": 127
+      },
+      {
+        "path": "4sapi-full-system-reports/full_system_1775932347042.json",
+        "size": 14263,
+        "modified": "2026-04-11T18:32:27.042Z",
+        "lines": 43
+      },
+      {
+        "path": "SYSTEM_RESOURCE_MANAGER_AGENT.md",
+        "size": 37782,
+        "modified": "2026-04-11T11:02:06.835Z",
+        "lines": 348
+      },
+      {
+        "path": "check-system-status.js",
+        "size": 4514,
+        "modified": "2026-04-12T15:12:07.822Z",
+        "lines": 147
+      },
+      {
+        "path": "OPENCLAW_4.1_ENTERPRISE_SYSTEM.md",
+        "size": 26065,
+        "modified": "2026-04-10T17:57:01.058Z",
+        "lines": 378
+      }
+    ],
+    "技能工具": [
+      {
+        "path": "modules/code-generation/skills/veadk-go-skills/common/tools.md",
+        "size": 3186,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 126
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-go-skills/SKILL.md",
+        "size": 1447,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 42
+      },
+      {
+        "path": "modules/code-generation/skills/video-generate/SKILL.md",
+        "size": 1535,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 48
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/code-generation-tools.json",
+        "size": 6703,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 231
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/SKILL.md",
+        "size": 1788,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 75
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/common/tools.md",
+        "size": 1964,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 54
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/SKILL.md",
+        "size": 1846,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 58
+      },
+      {
+        "path": "modules/code-generation/skills/image-generate/SKILL.md",
+        "size": 830,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 33
+      }
+    ],
+    "文件管理": [
+      {
+        "path": "config/main.json",
+        "size": 1138,
+        "modified": "2026-04-09T19:50:07.212Z",
+        "lines": 52
+      },
+      {
+        "path": "API密钥验证.js",
+        "size": 10575,
+        "modified": "2026-04-11T19:11:34.036Z",
+        "lines": 281
+      },
+      {
+        "path": "omc-stable-reports/omc-full-analysis-2026-04-12T12-25-19-138Z.json",
+        "size": 32610,
+        "modified": "2026-04-12T12:25:19.138Z",
+        "lines": 390
+      },
+      {
+        "path": "omc-stable-reports/omc-full-analysis-2026-04-12T14-01-03-277Z.json",
+        "size": 47248,
+        "modified": "2026-04-12T14:01:03.277Z",
+        "lines": 369
+      },
+      {
+        "path": "cleanup-reports/cleanup-error-2026-04-12T14-24-40-827Z.json",
+        "size": 972084,
+        "modified": "2026-04-12T14:24:40.832Z",
+        "lines": 221
+      },
+      {
+        "path": "BOOTSTRAP.md",
+        "size": 1471,
+        "modified": "2026-04-09T18:42:09.609Z",
+        "lines": 56
+      },
+      {
+        "path": "rollback_integration.cjs",
+        "size": 2014,
+        "modified": "2026-04-09T19:50:07.218Z",
+        "lines": 76
+      },
+      {
+        "path": "backup-20260412-224640/omc-router-adapter.js",
+        "size": 26304,
+        "modified": "2026-04-12T14:46:40.657Z",
+        "lines": 407
+      },
+      {
+        "path": "backup-20260412-224640/omc-real-router-integration.js",
+        "size": 19855,
+        "modified": "2026-04-12T14:46:40.655Z",
+        "lines": 395
+      },
+      {
+        "path": "backup-20260412-224640/omc-workflow-api-fixed.js",
+        "size": 22647,
+        "modified": "2026-04-12T14:46:40.654Z",
+        "lines": 361
+      },
+      {
+        "path": "omc-router-adapter.js",
+        "size": 18174,
+        "modified": "2026-04-12T14:46:40.663Z",
+        "lines": 387
+      },
+      {
+        "path": "HEARTBEAT.md",
+        "size": 193,
+        "modified": "2026-04-09T18:42:09.608Z",
+        "lines": 8
+      },
+      {
+        "path": "omc-real-router-integration-integrated.js",
+        "size": 16687,
+        "modified": "2026-04-12T14:35:41.453Z",
+        "lines": 358
+      },
+      {
+        "path": "omc-real-router-integration.js",
+        "size": 16687,
+        "modified": "2026-04-12T14:46:40.661Z",
+        "lines": 358
+      },
+      {
+        "path": "update_model_config.cjs",
+        "size": 4983,
+        "modified": "2026-04-11T18:03:47.490Z",
+        "lines": 159
+      },
+      {
+        "path": "memory/2026-04-12-omc-deployment-complete.md",
+        "size": 4899,
+        "modified": "2026-04-12T15:16:24.901Z",
+        "lines": 189
+      },
+      {
+        "path": "memory/2026-04-12-model-api-validation.md",
+        "size": 6496,
+        "modified": "2026-04-12T11:39:31.453Z",
+        "lines": 473
+      },
+      {
+        "path": "memory/2026-04-12-omc-workflow-integration.md",
+        "size": 4850,
+        "modified": "2026-04-12T13:25:45.797Z",
+        "lines": 195
+      },
+      {
+        "path": "memory/2026-04-11-openclaw-agent-deploy.md",
+        "size": 4878,
+        "modified": "2026-04-11T16:54:02.859Z",
+        "lines": 197
+      },
+      {
+        "path": "memory/2026-04-11-openclaw-glm5-config.md",
+        "size": 6442,
+        "modified": "2026-04-11T18:18:28.143Z",
+        "lines": 470
+      },
+      {
+        "path": "memory/2026-04-11-api-config-audit.md",
+        "size": 7463,
+        "modified": "2026-04-11T19:14:08.345Z",
+        "lines": 322
+      },
+      {
+        "path": "deploy-production.sh",
+        "size": 21571,
+        "modified": "2026-04-12T13:02:58.644Z",
+        "lines": 424
+      },
+      {
+        "path": "resource_manager_agent/config/agent_config.yaml",
+        "size": 4661,
+        "modified": "2026-04-11T11:07:14.308Z",
+        "lines": 250
+      },
+      {
+        "path": "resource_manager_agent/main.py",
+        "size": 32172,
+        "modified": "2026-04-11T11:06:10.941Z",
+        "lines": 292
+      },
+      {
+        "path": "start_resource_manager.sh",
+        "size": 3022,
+        "modified": "2026-04-11T16:50:07.900Z",
+        "lines": 97
+      },
+      {
+        "path": "task_cleanup_and_completion.cjs",
+        "size": 13917,
+        "modified": "2026-04-09T22:09:58.614Z",
+        "lines": 370
+      },
+      {
+        "path": "update-models-script.sh",
+        "size": 7538,
+        "modified": "2026-04-12T10:08:08.004Z",
+        "lines": 252
+      },
+      {
+        "path": "update_models_simple.py",
+        "size": 1747,
+        "modified": "2026-04-12T10:34:25.484Z",
+        "lines": 58
+      },
+      {
+        "path": "modules/code-generation/skills/video-generate/scripts/video_generate.py",
+        "size": 5331,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 151
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/free-code-integration.js",
+        "size": 9334,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 341
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/omc-router-adapter.js",
+        "size": 26304,
+        "modified": "2026-04-12T13:03:55.171Z",
+        "lines": 407
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/omc-workflow-enhanced.js",
+        "size": 8393,
+        "modified": "2026-04-12T13:05:18.710Z",
+        "lines": 283
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/ri-mode.js",
+        "size": 20263,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 375
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/omc-production-config.json",
+        "size": 2413,
+        "modified": "2026-04-12T13:03:55.173Z",
+        "lines": 98
+      },
+      {
+        "path": "modules/code-generation/skills/evo_architect_integration.js",
+        "size": 14340,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 346
+      },
+      {
+        "path": "modules/code-generation/skills/image-generate/scripts/image_generate.py",
+        "size": 2361,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 73
+      },
+      {
+        "path": "modules/ai-engine/migrate_task_data.js",
+        "size": 17470,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 307
+      },
+      {
+        "path": "modules/ai-engine/quick_verify_4ai.js",
+        "size": 4682,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 130
+      },
+      {
+        "path": "多模型监管系统.js",
+        "size": 17288,
+        "modified": "2026-04-11T18:57:50.328Z",
+        "lines": 460
+      },
+      {
+        "path": "test_all_models.py",
+        "size": 3973,
+        "modified": "2026-04-12T10:52:42.872Z",
+        "lines": 119
+      },
+      {
+        "path": "cleanup-redundancy.js",
+        "size": 13415,
+        "modified": "2026-04-12T14:24:23.699Z",
+        "lines": 347
+      },
+      {
+        "path": "omc-workflow-stable.js",
+        "size": 28836,
+        "modified": "2026-04-12T12:25:07.185Z",
+        "lines": 364
+      },
+      {
+        "path": "fix_models_config.py",
+        "size": 5927,
+        "modified": "2026-04-12T10:33:30.184Z",
+        "lines": 176
+      },
+      {
+        "path": "AGENTS.md",
+        "size": 7874,
+        "modified": "2026-04-09T18:42:09.607Z",
+        "lines": 213
+      },
+      {
+        "path": "test_workflows.py",
+        "size": 4756,
+        "modified": "2026-04-12T11:05:30.162Z",
+        "lines": 145
+      },
+      {
+        "path": "test_glm5_config.cjs",
+        "size": 3983,
+        "modified": "2026-04-11T18:02:23.825Z",
+        "lines": 126
+      },
+      {
+        "path": "integration-reports/routing-integration-plan-2026-04-12T14-30-53-870Z.json",
+        "size": 11160,
+        "modified": "2026-04-12T14:30:53.870Z",
+        "lines": 274
+      },
+      {
+        "path": "final_production_setup.cjs",
+        "size": 22340,
+        "modified": "2026-04-09T19:18:05.054Z",
+        "lines": 386
+      },
+      {
+        "path": "start_all.cjs",
+        "size": 10365,
+        "modified": "2026-04-09T19:14:32.062Z",
+        "lines": 359
+      }
+    ],
+    "记忆管理": [
+      {
+        "path": "config/startup.json",
+        "size": 172,
+        "modified": "2026-04-09T18:39:33.055Z",
+        "lines": 12
+      },
+      {
+        "path": "memory/2026-04-10.md",
+        "size": 2153,
+        "modified": "2026-04-10T09:23:22.628Z",
+        "lines": 70
+      },
+      {
+        "path": "2_DAY_EMERGENCY_REFACTOR_REPORT.md",
+        "size": 12094,
+        "modified": "2026-04-09T18:41:36.417Z",
+        "lines": 385
+      },
+      {
+        "path": "enhanced_start_integrated.cjs",
+        "size": 14795,
+        "modified": "2026-04-11T17:42:27.695Z",
+        "lines": 321
+      },
+      {
+        "path": "modules/evo-architect/config.json",
+        "size": 284,
+        "modified": "2026-04-09T19:10:47.993Z",
+        "lines": 16
+      },
+      {
+        "path": "modules/ai-engine/production_omx_integration.js",
+        "size": 10531,
+        "modified": "2026-04-09T18:56:52.525Z",
+        "lines": 407
+      },
+      {
+        "path": "modules/ai-engine/production_resource_manager.js",
+        "size": 4357,
+        "modified": "2026-04-09T18:56:52.524Z",
+        "lines": 181
+      },
+      {
+        "path": "modules/resource-manager/resource_manager.cjs",
+        "size": 6565,
+        "modified": "2026-04-11T17:33:48.065Z",
+        "lines": 229
+      },
+      {
+        "path": "optimization_results.json",
+        "size": 3513,
+        "modified": "2026-04-09T22:13:19.288Z",
+        "lines": 142
+      }
+    ],
+    "知识库管理": [
+      {
+        "path": "modules/code-generation/skills/veadk-go-skills/common/knowledgebase.md",
+        "size": 1445,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 63
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-go-skills/converter/enio_rule.md",
+        "size": 5212,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 183
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/common/knowledgebase.md",
+        "size": 737,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 30
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/converter/langchain_rules.md",
+        "size": 652,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 45
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/converter/dify_rules.md",
+        "size": 815,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 21
+      }
+    ],
+    "进程管理": [
+      {
+        "path": "test-routing.js",
+        "size": 4856,
+        "modified": "2026-04-12T15:48:45.116Z",
+        "lines": 148
+      },
+      {
+        "path": "omc-workflow-routing-integrated.js",
+        "size": 4889,
+        "modified": "2026-04-12T13:45:25.557Z",
+        "lines": 152
+      },
+      {
+        "path": "test-routing-simple.js",
+        "size": 2270,
+        "modified": "2026-04-12T14:28:26.167Z",
+        "lines": 73
+      },
+      {
+        "path": "modules/no-code-system/nocode_core.cjs",
+        "size": 11334,
+        "modified": "2026-04-09T19:10:47.996Z",
+        "lines": 380
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-go-skills/common/callback.md",
+        "size": 9458,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 221
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/team-mode.js",
+        "size": 19493,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 365
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/omc-workflow.js",
+        "size": 16965,
+        "modified": "2026-04-12T12:09:19.880Z",
+        "lines": 347
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/architect-validation.js",
+        "size": 26398,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 380
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/DEPLOYMENT.md",
+        "size": 6258,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 287
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/start-code-generation.js",
+        "size": 13914,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 412
+      },
+      {
+        "path": "modules/evo-architect/test.cjs",
+        "size": 621,
+        "modified": "2026-04-09T19:10:47.993Z",
+        "lines": 29
+      },
+      {
+        "path": "verify_model_connections.py",
+        "size": 4355,
+        "modified": "2026-04-12T11:11:51.766Z",
+        "lines": 127
+      }
+    ],
+    "迭代管理": [
+      {
+        "path": "modules/ai-engine/run_parallel_ai.js",
+        "size": 30077,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 355
+      },
+      {
+        "path": "ri-loops/ri_loop_1775932343028.json",
+        "size": 11578,
+        "modified": "2026-04-11T18:32:27.038Z",
+        "lines": 432
+      }
+    ],
+    "策略管理": [
+      {
+        "path": "omc-router-config.json",
+        "size": 1185,
+        "modified": "2026-04-12T12:43:42.808Z",
+        "lines": 56
+      },
+      {
+        "path": "strategy-library-generator.js",
+        "size": 34972,
+        "modified": "2026-04-12T14:59:18.617Z",
+        "lines": 338
+      },
+      {
+        "path": "multi_model_classification_table.md",
+        "size": 14821,
+        "modified": "2026-04-10T02:56:52.614Z",
+        "lines": 384
+      },
+      {
+        "path": "OMC-ROUTER-INTEGRATION-FINAL.md",
+        "size": 10510,
+        "modified": "2026-04-12T12:47:44.265Z",
+        "lines": 339
+      },
+      {
+        "path": "omc-fixed-integrated-reports/omc-analysis-2026-04-12T14-33-08-431Z.json",
+        "size": 1914,
+        "modified": "2026-04-12T14:33:08.431Z",
+        "lines": 50
+      },
+      {
+        "path": "real-openclaw-router.js",
+        "size": 3635,
+        "modified": "2026-04-12T13:45:25.557Z",
+        "lines": 127
+      }
+    ],
+    "数据库管理": [
+      {
+        "path": "modules/data-features/reference_spatial_自适应振幅.json",
+        "size": 311,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 12
+      },
+      {
+        "path": "modules/code-generation/production_enhancer.js",
+        "size": 8570,
+        "modified": "2026-04-09T18:56:52.524Z",
+        "lines": 316
+      }
+    ],
+    "向量库管理": [],
+    "特征库管理": [
+      {
+        "path": "modules/no-code-system/ui_config.json",
+        "size": 663,
+        "modified": "2026-04-09T19:10:47.996Z",
+        "lines": 33
+      },
+      {
+        "path": "modules/data-features/reference_geometry_对数空间支撑.json",
+        "size": 352,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_趋势强度指标.json",
+        "size": 346,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_交叉验证_3.json",
+        "size": 346,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_周期谱分析.json",
+        "size": 357,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_比例分析_9.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_时空融合_1.json",
+        "size": 346,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_时间序列分解_1.json",
+        "size": 362,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_斐波那契扩展.json",
+        "size": 360,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_时间序列分解.json",
+        "size": 364,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_振幅自适应_3.json",
+        "size": 354,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_时序预测_9.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_多尺度分析_5.json",
+        "size": 354,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_空间变换_6.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_混合模型_8.json",
+        "size": 346,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_季节性检测_4.json",
+        "size": 356,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_周期检测_8.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_趋势分解_7.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_波动率预测_5.json",
+        "size": 354,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_特征组合_4.json",
+        "size": 344,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_振幅自适应.json",
+        "size": 336,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_分型密度_6.json",
+        "size": 347,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_波动率聚类.json",
+        "size": 341,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_空间计算_4.json",
+        "size": 348,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_周期谱分析_2.json",
+        "size": 356,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_波动率聚类_1.json",
+        "size": 354,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_集成学习_5.json",
+        "size": 345,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_黄金分割回调.json",
+        "size": 366,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_分型结构_2.json",
+        "size": 348,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_对数空间通道.json",
+        "size": 301,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 12
+      },
+      {
+        "path": "modules/data-features/reference_spatial_空间分布_8.json",
+        "size": 348,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_黄金分割通道_1.json",
+        "size": 362,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_双尺度趋势轴.json",
+        "size": 300,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 12
+      },
+      {
+        "path": "modules/data-features/reference_spatial_振幅分析_7.json",
+        "size": 348,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_时间窗口_6.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_江恩角度线.json",
+        "size": 357,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_模型融合_6.json",
+        "size": 346,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_几何分型_5.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_分型结构识别.json",
+        "size": 356,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_距离度量_8.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_江恩角度线_3.json",
+        "size": 356,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_多因子集成_2.json",
+        "size": 352,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_波动率比率.json",
+        "size": 311,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 12
+      },
+      {
+        "path": "modules/data-features/reference_fusion_特征交叉_7.json",
+        "size": 346,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_角度分析_7.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_斐波那契回调_2.json",
+        "size": 362,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_spatial_波动率模型_9.json",
+        "size": 354,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_geometry_对数空间支撑_4.json",
+        "size": 362,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_temporal_趋势强度_3.json",
+        "size": 350,
+        "modified": "2026-04-09T18:39:33.054Z",
+        "lines": 13
+      },
+      {
+        "path": "modules/data-features/reference_fusion_融合学习_9.json",
+        "size": 346,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 13
+      }
+    ],
+    "文件清理": [
+      {
+        "path": "task_cleanup_report.md",
+        "size": 298,
+        "modified": "2026-04-09T22:13:19.284Z",
+        "lines": 15
+      }
+    ],
+    "流量管理": [
+      {
+        "path": "omc-stable-reports/omc-exec-summary-2026-04-12T14-01-03-277Z.md",
+        "size": 2897,
+        "modified": "2026-04-12T14:01:03.277Z",
+        "lines": 69
+      },
+      {
+        "path": "omc-stable-reports/omc-exec-summary-2026-04-12T12-25-19-138Z.md",
+        "size": 2874,
+        "modified": "2026-04-12T12:25:19.139Z",
+        "lines": 69
+      },
+      {
+        "path": "omc-stable-reports/omc-implementation-plan-2026-04-12T12-25-19-138Z.md",
+        "size": 3537,
+        "modified": "2026-04-12T12:25:19.139Z",
+        "lines": 123
+      },
+      {
+        "path": "omc-stable-reports/omc-implementation-plan-2026-04-12T14-01-03-277Z.md",
+        "size": 3552,
+        "modified": "2026-04-12T14:01:03.278Z",
+        "lines": 123
+      },
+      {
+        "path": "start-omc-workflow-enhanced.sh",
+        "size": 434,
+        "modified": "2026-04-12T13:03:55.174Z",
+        "lines": 18
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-go-skills/common/agent.md",
+        "size": 4292,
+        "modified": "2026-04-09T18:39:33.052Z",
+        "lines": 170
+      },
+      {
+        "path": "integration-reports/routing-integration-plan-2026-04-12T14-30-53-870Z.md",
+        "size": 2781,
+        "modified": "2026-04-12T14:30:53.870Z",
+        "lines": 78
+      }
+    ],
+    "其他相关": [
+      {
+        "path": "config/integration.json",
+        "size": 3847,
+        "modified": "2026-04-09T22:13:19.286Z",
+        "lines": 128
+      },
+      {
+        "path": "model-config-summary-2026-04-12.md",
+        "size": 4182,
+        "modified": "2026-04-12T15:45:25.098Z",
+        "lines": 157
+      },
+      {
+        "path": "optimization_report_final.md",
+        "size": 5307,
+        "modified": "2026-04-09T22:13:19.260Z",
+        "lines": 244
+      },
+      {
+        "path": "INTEGRATION_ISSUES_REPORT.md",
+        "size": 4328,
+        "modified": "2026-04-11T17:38:20.835Z",
+        "lines": 156
+      },
+      {
+        "path": "4SAPI_enhanced_research_report.md",
+        "size": 4533,
+        "modified": "2026-04-10T02:56:52.616Z",
+        "lines": 148
+      },
+      {
+        "path": "test_resource_manager_fix.cjs",
+        "size": 1967,
+        "modified": "2026-04-11T17:32:19.463Z",
+        "lines": 62
+      },
+      {
+        "path": "configure_glm5.sh",
+        "size": 3444,
+        "modified": "2026-04-11T18:05:01.502Z",
+        "lines": 117
+      },
+      {
+        "path": "integration_report.json",
+        "size": 5256,
+        "modified": "2026-04-09T19:50:07.220Z",
+        "lines": 221
+      },
+      {
+        "path": "20_MINUTE_PRODUCTION_ACCELERATION_SUMMARY.md",
+        "size": 6848,
+        "modified": "2026-04-09T19:21:21.366Z",
+        "lines": 224
+      },
+      {
+        "path": "plugins/evo-architect/plugin.json",
+        "size": 210,
+        "modified": "2026-04-09T19:50:07.206Z",
+        "lines": 10
+      },
+      {
+        "path": "system_architecture_analysis.md",
+        "size": 4387,
+        "modified": "2026-04-09T22:03:20.183Z",
+        "lines": 145
+      },
+      {
+        "path": "README.md",
+        "size": 1754,
+        "modified": "2026-04-09T18:39:33.055Z",
+        "lines": 68
+      },
+      {
+        "path": "modules/no-code-system/QUICKSTART.md",
+        "size": 2540,
+        "modified": "2026-04-09T19:10:47.996Z",
+        "lines": 128
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/common/agent.md",
+        "size": 3255,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 126
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/generator/analyze.md",
+        "size": 1212,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 17
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/generator/coding.md",
+        "size": 258,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 7
+      },
+      {
+        "path": "modules/code-generation/skills/veadk-skills/references/generator/refine_prompt.md",
+        "size": 2411,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 52
+      },
+      {
+        "path": "modules/evo-architect/evo_core.cjs",
+        "size": 1901,
+        "modified": "2026-04-09T19:10:47.992Z",
+        "lines": 80
+      },
+      {
+        "path": "modules/ai-engine/unified_task_data.json",
+        "size": 20457,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 379
+      },
+      {
+        "path": "modules/ai-engine/transformData.js",
+        "size": 776,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 29
+      },
+      {
+        "path": "modules/task-management/任务说明.md",
+        "size": 1113,
+        "modified": "2026-04-09T18:39:33.053Z",
+        "lines": 49
+      },
+      {
+        "path": "omc-fixed-integrated-reports/omc-summary-2026-04-12T14-33-08-431Z.md",
+        "size": 2276,
+        "modified": "2026-04-12T14:33:08.431Z",
+        "lines": 68
+      },
+      {
+        "path": "OPTIMIZATION_ROADMAP.md",
+        "size": 5245,
+        "modified": "2026-04-11T17:39:19.629Z",
+        "lines": 218
+      },
+      {
+        "path": "omc-system-update-report-2026-04-12.md",
+        "size": 6420,
+        "modified": "2026-04-12T15:50:02.910Z",
+        "lines": 202
+      },
+      {
+        "path": "中文配置.json",
+        "size": 3786,
+        "modified": "2026-04-11T18:38:08.232Z",
+        "lines": 152
+      },
+      {
+        "path": "openclaw-update-models.json",
+        "size": 3991,
+        "modified": "2026-04-12T15:43:57.701Z",
+        "lines": 146
+      },
+      {
+        "path": "环境变量检查报告/检查摘要_1775934019306.md",
+        "size": 936,
+        "modified": "2026-04-11T19:00:19.307Z",
+        "lines": 41
+      },
+      {
+        "path": "环境变量检查报告/检查报告_1775934019306.json",
+        "size": 1313,
+        "modified": "2026-04-11T19:00:19.306Z",
+        "lines": 54
+      }
+    ]
+  }
+}

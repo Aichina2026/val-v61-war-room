@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-04-19T03:44:27.658486",
+  "checks": {
+    "system_health": true,
+    "api_connectivity": false,
+    "model_availability": true,
+    "performance_metrics": false
+  },
+  "status": "healthy",
+  "message": "4AI系统心跳检查完成"
+}

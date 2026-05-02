@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_g1yo1qh88",
+  "name": "季节性检测_4",
+  "category": "temporal",
+  "type": "reference",
+  "accuracy": 0.839,
+  "description": "季节性检测_4 - temporal特征",
+  "success_rate": 0,
+  "quality_score": 0.503,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

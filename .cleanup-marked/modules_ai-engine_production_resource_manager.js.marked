@@ -1,0 +1,7 @@
+{
+  "markedAt": "2026-05-01T05:31:46.434Z",
+  "original": "modules/ai-engine/production_resource_manager.js",
+  "reason": "Duplicate backup file",
+  "size": 4357,
+  "markedBy": "RedundancyCleanup"
+}

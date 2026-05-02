@@ -1,0 +1,158 @@
+2026-04-14 18:59:55,316 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:00:00,418 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:00:27,202 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:00:32,398 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:01:04,788 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:01:10,080 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:01:27,838 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:01:32,940 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:02:04,258 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:02:09,552 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:02:37,277 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:02:42,475 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:03:17,675 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:03:43,498 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:03:48,695 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:04:23,796 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:04:52,501 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:04:57,695 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:05:32,894 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:06:01,452 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:06:06,748 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:06:32,731 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:06:37,929 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:07:04,241 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:07:09,537 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:07:44,641 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:08:12,721 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:08:17,913 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:08:43,781 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:08:48,975 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:09:14,462 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:09:19,655 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:09:54,761 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:10:23,024 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:10:28,322 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:10:55,537 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:11:00,736 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:11:27,758 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:11:33,052 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:12:08,155 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:12:37,003 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:12:42,297 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:13:08,277 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:13:13,476 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:13:48,674 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:14:14,705 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:14:19,902 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:14:49,946 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:14:55,141 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:15:30,242 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:15:55,764 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:16:01,053 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:16:26,498 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:16:31,591 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:16:58,755 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:17:03,951 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:17:39,052 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:18:04,233 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:18:09,335 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:18:44,628 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:19:11,964 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:19:17,060 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:19:52,358 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:20:23,739 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:20:28,934 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:20:54,490 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:20:59,686 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:21:25,715 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:21:30,912 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:22:06,113 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:22:32,534 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:22:37,737 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:23:13,137 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:23:38,282 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:23:43,479 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:24:11,528 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:24:16,722 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:24:52,020 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:25:17,532 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:25:22,725 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:25:57,928 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:26:24,031 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:26:29,326 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:26:54,482 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:26:59,681 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:27:25,236 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:27:30,436 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:27:56,087 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:28:01,280 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:28:26,954 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:28:32,147 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:28:58,026 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:29:03,419 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:29:29,498 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:29:34,597 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:30:02,023 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:30:07,218 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:30:33,229 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:30:38,423 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:31:13,526 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:31:39,504 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:31:44,701 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:32:19,804 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:32:45,545 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:32:50,647 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:33:16,119 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:33:21,218 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:33:49,299 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:33:54,305 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:34:19,645 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:34:24,842 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:34:49,979 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:34:55,172 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:35:30,377 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:36:01,276 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:36:06,472 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:36:41,671 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:37:07,720 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:37:12,917 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:37:38,489 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:37:43,688 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:38:18,890 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:38:44,211 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:38:49,407 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:39:24,612 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:39:49,798 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:39:54,903 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:40:20,147 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:40:25,350 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:41:00,648 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:41:26,016 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:41:31,119 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:41:56,450 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:42:01,641 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:42:27,032 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:42:32,136 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:42:58,957 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:43:04,155 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:43:30,739 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:43:36,032 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:44:01,487 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:44:06,679 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:44:32,353 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:44:37,646 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:45:04,834 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:45:10,037 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:45:35,768 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:45:40,962 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:46:06,213 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:46:11,410 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:46:46,612 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:47:11,748 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:47:16,847 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:47:42,260 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:47:47,555 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:48:16,759 - __main__ - INFO - 开始上下文监控循环
+2026-04-14 19:48:22,055 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds
+2026-04-14 19:48:57,161 - __main__ - WARNING - 获取上下文使用失败: Command '['openclaw', 'session', 'status']' timed out after 5 seconds

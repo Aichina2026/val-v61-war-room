@@ -1,0 +1,8 @@
+{
+  "name": "OmX集成",
+  "type": "background-service",
+  "autoStart": true,
+  "restartPolicy": "always",
+  "healthCheck": "./health_check.cjs",
+  "metricsEndpoint": "/metrics/omx集成"
+}

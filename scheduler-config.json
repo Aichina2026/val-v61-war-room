@@ -1,0 +1,36 @@
+{
+  "scheduler": {
+    "name": "4AI Autonomous Scheduler",
+    "version": "1.0.0",
+    
+    "jobs": [
+      {
+        "name": "daily_optimization",
+        "description": "每日优化检查",
+        "schedule": "0 9 * * *",
+        "command": "node 4ai_workflow_task.cjs --task optimization",
+        "enabled": true
+      },
+      {
+        "name": "heartbeat_check",
+        "description": "心跳检查",
+        "schedule": "*/30 * * * *",
+        "command": "node AgentEventLoop.js heartbeat",
+        "enabled": true
+      },
+      {
+        "name": "experience_learning",
+        "description": "经验学习",
+        "schedule": "0 2 * * *",
+        "command": "node ExperienceLearner.js process",
+        "enabled": true
+      }
+    ],
+    
+    "monitoring": {
+      "enable": true,
+      "alertOnFailure": true,
+      "maxRetries": 3
+    }
+  }
+}

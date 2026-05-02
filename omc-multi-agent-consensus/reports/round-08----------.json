@@ -1,0 +1,127 @@
+{
+  "round": 8,
+  "topic": "性能监控与自动优化",
+  "timestamp": "2026-04-13T00:35:02.627Z",
+  "participatingLayers": [
+    "L4",
+    "L5",
+    "L6"
+  ],
+  "decisions": [
+    {
+      "layer": "L4",
+      "agentCount": 4,
+      "agentDecisions": [
+        {
+          "agent": "frontend-gen-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "backend-gen-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "test-gen-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "doc-gen-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        }
+      ],
+      "consensusScore": 1,
+      "consensusType": "unanimous",
+      "finalDecision": "通过"
+    },
+    {
+      "layer": "L5",
+      "agentCount": 3,
+      "agentDecisions": [
+        {
+          "agent": "code-review-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "security-review-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "performance-review-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        }
+      ],
+      "consensusScore": 1,
+      "consensusType": "unanimous",
+      "finalDecision": "通过"
+    },
+    {
+      "layer": "L6",
+      "agentCount": 3,
+      "agentDecisions": [
+        {
+          "agent": "unit-test-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "integration-test-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "e2e-test-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.627Z",
+          "error": "this.router.route is not a function"
+        }
+      ],
+      "consensusScore": 1,
+      "consensusType": "unanimous",
+      "finalDecision": "通过"
+    }
+  ],
+  "consensusAchieved": true,
+  "metrics": {
+    "totalAgents": 10,
+    "consensusRate": 1,
+    "averageConfidence": 0.5,
+    "responseTime": 930.1134696175218,
+    "successRate": 1
+  }
+}

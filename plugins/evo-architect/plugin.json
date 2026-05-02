@@ -1,0 +1,10 @@
+{
+  "name": "Evo-Architect",
+  "type": "architecture-plugin",
+  "version": "1.0.0",
+  "hooks": {
+    "startup": "evo_core.cjs",
+    "monitoring": "evo_monitor.cjs",
+    "optimization": "evo_optimizer.cjs"
+  }
+}

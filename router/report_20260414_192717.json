@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-04-14T19:27:17.935538",
+  "total_models": 10,
+  "current_strategy": "balanced",
+  "model_stats": [
+    {
+      "provider": "ark",
+      "model_id": "deepseek-v3.2",
+      "status": "offline",
+      "success_rate": 0.0,
+      "avg_response_time": 0.07,
+      "total_requests": 1,
+      "cost_per_input": 0,
+      "cost_per_output": 0,
+      "context_window": 200000,
+      "reasoning": false,
+      "last_tested": "2026-04-14T19:26:13.417733"
+    },
+    {
+      "provider": "ark",
+      "model_id": "glm-4-7-251222",
+      "status": "offline",
+      "success_rate": 0.0,
+      "avg_response_time": 0.06,
+      "total_requests": 1,
+      "cost_per_input": 0.0,
+      "cost_per_output": 0.0,
+      "context_window": 128000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:13.481738"
+    },
+    {
+      "provider": "alibailian",
+      "model_id": "glm-5",
+      "status": "healthy",
+      "success_rate": 100.0,
+      "avg_response_time": 7.38,
+      "total_requests": 1,
+      "cost_per_input": 0.005,
+      "cost_per_output": 0.01,
+      "context_window": 128000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:20.863167"
+    },
+    {
+      "provider": "alibailian",
+      "model_id": "qwen3.6-plus",
+      "status": "healthy",
+      "success_rate": 100.0,
+      "avg_response_time": 4.82,
+      "total_requests": 1,
+      "cost_per_input": 0.003,
+      "cost_per_output": 0.006,
+      "context_window": 128000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:25.679890"
+    },
+    {
+      "provider": "alibailian",
+      "model_id": "qwen3-max",
+      "status": "healthy",
+      "success_rate": 100.0,
+      "avg_response_time": 0.92,
+      "total_requests": 1,
+      "cost_per_input": 0.008,
+      "cost_per_output": 0.016,
+      "context_window": 128000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:26.596621"
+    },
+    {
+      "provider": "alibailian",
+      "model_id": "deepseek-v3.2",
+      "status": "healthy",
+      "success_rate": 100.0,
+      "avg_response_time": 1.41,
+      "total_requests": 1,
+      "cost_per_input": 0.001,
+      "cost_per_output": 0.002,
+      "context_window": 200000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:28.010517"
+    },
+    {
+      "provider": "kimi",
+      "model_id": "kimi-k2.5",
+      "status": "offline",
+      "success_rate": 0.0,
+      "avg_response_time": 0.19,
+      "total_requests": 1,
+      "cost_per_input": 0.0,
+      "cost_per_output": 0.0,
+      "context_window": 128000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:28.200958"
+    },
+    {
+      "provider": "4sapi",
+      "model_id": "gemini-3.1-pro-preview",
+      "status": "healthy",
+      "success_rate": 100.0,
+      "avg_response_time": 2.09,
+      "total_requests": 1,
+      "cost_per_input": 0.0,
+      "cost_per_output": 0.0,
+      "context_window": 128000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:30.296487"
+    },
+    {
+      "provider": "4sapi",
+      "model_id": "gpt-5.4",
+      "status": "healthy",
+      "success_rate": 100.0,
+      "avg_response_time": 1.47,
+      "total_requests": 1,
+      "cost_per_input": 0.0,
+      "cost_per_output": 0.0,
+      "context_window": 128000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:31.771390"
+    },
+    {
+      "provider": "4sapi",
+      "model_id": "claude-opus-4.6",
+      "status": "offline",
+      "success_rate": 0.0,
+      "avg_response_time": 0.55,
+      "total_requests": 1,
+      "cost_per_input": 0.0,
+      "cost_per_output": 0.0,
+      "context_window": 200000,
+      "reasoning": true,
+      "last_tested": "2026-04-14T19:26:32.322596"
+    }
+  ],
+  "recommendations": [
+    "⚠️  超过30%的模型离线，建议检查密钥有效性"
+  ],
+  "status_summary": {
+    "healthy": 6,
+    "degraded": 0,
+    "unstable": 0,
+    "offline": 4
+  }
+}

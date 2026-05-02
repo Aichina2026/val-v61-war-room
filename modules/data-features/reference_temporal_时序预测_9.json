@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_bzk9nl0j9",
+  "name": "时序预测_9",
+  "category": "temporal",
+  "type": "reference",
+  "accuracy": 0.849,
+  "description": "时序预测_9 - temporal特征",
+  "success_rate": 0,
+  "quality_score": 0.509,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

@@ -1,0 +1,293 @@
+{
+  "timestamp": "2026-04-12T14:30:53.869Z",
+  "workspace": "/root/.openclaw/workspace",
+  "plan": {
+    "files": [
+      {
+        "path": "mac-argumentation-workflow.js",
+        "filename": "mac-argumentation-workflow.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/mac-argumentation-workflow.js",
+          "lines": 1080,
+          "size": 27711,
+          "hasModelConfig": false,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": false,
+          "canBeIntegrated": false,
+          "integrationType": null,
+          "suggestedChanges": []
+        }
+      },
+      {
+        "path": "omc-enhanced.js",
+        "filename": "omc-enhanced.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/omc-enhanced.js",
+          "lines": 1144,
+          "size": 27719,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": false,
+          "canBeIntegrated": false,
+          "integrationType": null,
+          "suggestedChanges": []
+        }
+      },
+      {
+        "path": "omc-real-router-integration.js",
+        "filename": "omc-real-router-integration.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/omc-real-router-integration.js",
+          "lines": 684,
+          "size": 17863,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": true,
+          "hasSimulatedCalls": true,
+          "canBeIntegrated": true,
+          "integrationType": "replace-api-calls",
+          "suggestedChanges": [
+            {
+              "type": "import",
+              "description": "导入真实路由调用器",
+              "oldText": "const fs = require('fs');",
+              "newText": "const fs = require('fs');\nconst RealOpenClawRouter = require('./real-openclaw-router');"
+            },
+            {
+              "type": "call-replacement",
+              "description": "将直接模型调用替换为路由调用",
+              "examples": [
+                "// 替换前: await callGemini(prompt)",
+                "// 替换后: await this.router.unifiedRoute('analysis', prompt)"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "path": "omc-router-adapter.js",
+        "filename": "omc-router-adapter.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/omc-router-adapter.js",
+          "lines": 900,
+          "size": 24160,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": true,
+          "canBeIntegrated": true,
+          "integrationType": "replace-simulations",
+          "suggestedChanges": [
+            {
+              "type": "import",
+              "description": "导入真实路由调用器",
+              "oldText": "const fs = require('fs');",
+              "newText": "const fs = require('fs');\nconst RealOpenClawRouter = require('./real-openclaw-router');"
+            },
+            {
+              "type": "call-replacement",
+              "description": "将直接模型调用替换为路由调用",
+              "examples": [
+                "// 替换前: await callGemini(prompt)",
+                "// 替换后: await this.router.unifiedRoute('analysis', prompt)"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "path": "omc-workflow-api-fixed.js",
+        "filename": "omc-workflow-api-fixed.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/omc-workflow-api-fixed.js",
+          "lines": 733,
+          "size": 19753,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": true,
+          "hasSimulatedCalls": true,
+          "canBeIntegrated": true,
+          "integrationType": "replace-api-calls",
+          "suggestedChanges": [
+            {
+              "type": "import",
+              "description": "导入真实路由调用器",
+              "oldText": "const fs = require('fs');",
+              "newText": "const fs = require('fs');\nconst RealOpenClawRouter = require('./real-openclaw-router');"
+            },
+            {
+              "type": "constructor",
+              "description": "添加路由实例到构造函数",
+              "oldText": "constructor() {\n    this.workspace = '/root/.openclaw/workspace';\n    this.configPath = path.join(this.workspace, 'models-config.json');\n    this.apiConfig = this.loadApiConfig();\n    \n    // 多模型配置\n    this.modelRouting = {\n      'analysis': {\n        models: ['gemini-3.1-pro-preview', 'deepseek-v3.2'],\n        provider: '4sapi',\n        fallback: 'alibailian'\n      }",
+              "newText": "constructor() {\n    this.workspace = '/root/.openclaw/workspace';\n    this.configPath = path.join(this.workspace, 'models-config.json');\n    this.apiConfig = this.loadApiConfig();\n    \n    // 多模型配置\n    this.modelRouting = {\n      'analysis': {\n        models: ['gemini-3.1-pro-preview', 'deepseek-v3.2'],\n        provider: '4sapi',\n        fallback: 'alibailian'\n      \n    this.router = new RealOpenClawRouter();}"
+            },
+            {
+              "type": "call-replacement",
+              "description": "将直接模型调用替换为路由调用",
+              "examples": [
+                "// 替换前: await callGemini(prompt)",
+                "// 替换后: await this.router.unifiedRoute('analysis', prompt)"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "path": "omc-workflow-routing-integrated.js",
+        "filename": "omc-workflow-routing-integrated.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/omc-workflow-routing-integrated.js",
+          "lines": 152,
+          "size": 4507,
+          "hasModelConfig": false,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": false,
+          "canBeIntegrated": false,
+          "integrationType": null,
+          "suggestedChanges": []
+        }
+      },
+      {
+        "path": "omc-workflow-stable.js",
+        "filename": "omc-workflow-stable.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/omc-workflow-stable.js",
+          "lines": 928,
+          "size": 23480,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": false,
+          "canBeIntegrated": false,
+          "integrationType": null,
+          "suggestedChanges": []
+        }
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/free-code-integration.js",
+        "filename": "free-code-integration.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/modules/code-generation/skills/code-generation/free-code-integration.js",
+          "lines": 341,
+          "size": 8440,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": false,
+          "canBeIntegrated": false,
+          "integrationType": null,
+          "suggestedChanges": []
+        }
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/omc-router-adapter.js",
+        "filename": "omc-router-adapter.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/modules/code-generation/skills/code-generation/omc-router-adapter.js",
+          "lines": 900,
+          "size": 24160,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": true,
+          "canBeIntegrated": true,
+          "integrationType": "replace-simulations",
+          "suggestedChanges": [
+            {
+              "type": "import",
+              "description": "导入真实路由调用器",
+              "oldText": "const fs = require('fs');",
+              "newText": "const fs = require('fs');\nconst RealOpenClawRouter = require('./real-openclaw-router');"
+            },
+            {
+              "type": "call-replacement",
+              "description": "将直接模型调用替换为路由调用",
+              "examples": [
+                "// 替换前: await callGemini(prompt)",
+                "// 替换后: await this.router.unifiedRoute('analysis', prompt)"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/omc-workflow-enhanced.js",
+        "filename": "omc-workflow-enhanced.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/modules/code-generation/skills/code-generation/omc-workflow-enhanced.js",
+          "lines": 283,
+          "size": 7635,
+          "hasModelConfig": false,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": false,
+          "canBeIntegrated": false,
+          "integrationType": null,
+          "suggestedChanges": []
+        }
+      },
+      {
+        "path": "modules/code-generation/skills/code-generation/omc-workflow.js",
+        "filename": "omc-workflow.js",
+        "analysis": {
+          "filePath": "/root/.openclaw/workspace/modules/code-generation/skills/code-generation/omc-workflow.js",
+          "lines": 535,
+          "size": 15639,
+          "hasModelConfig": true,
+          "hasDirectAPICalls": false,
+          "hasSimulatedCalls": false,
+          "canBeIntegrated": false,
+          "integrationType": null,
+          "suggestedChanges": []
+        }
+      }
+    ],
+    "summary": {
+      "totalFiles": 11,
+      "canBeIntegrated": 4,
+      "integrationTypes": {
+        "replace-api-calls": 2,
+        "replace-simulations": 2
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "开始集成",
+      "description": "4 个文件可以集成OpenClaw路由系统"
+    },
+    {
+      "priority": "medium",
+      "action": "按优先级集成",
+      "description": "优先集成核心工作流文件，然后是辅助工具"
+    }
+  ],
+  "stepByStepPlan": [
+    {
+      "step": 1,
+      "file": "omc-workflow-api-fixed.js",
+      "type": "replace-api-calls",
+      "changes": 3,
+      "description": "集成路由系统到 omc-workflow-api-fixed.js",
+      "details": "- 导入真实路由调用器\n- 添加路由实例到构造函数\n- 将直接模型调用替换为路由调用"
+    },
+    {
+      "step": 2,
+      "file": "omc-real-router-integration.js",
+      "type": "replace-api-calls",
+      "changes": 2,
+      "description": "集成路由系统到 omc-real-router-integration.js",
+      "details": "- 导入真实路由调用器\n- 将直接模型调用替换为路由调用"
+    },
+    {
+      "step": 3,
+      "file": "omc-router-adapter.js",
+      "type": "replace-simulations",
+      "changes": 2,
+      "description": "集成路由系统到 omc-router-adapter.js",
+      "details": "- 导入真实路由调用器\n- 将直接模型调用替换为路由调用"
+    },
+    {
+      "step": 4,
+      "file": "modules/code-generation/skills/code-generation/omc-router-adapter.js",
+      "type": "replace-simulations",
+      "changes": 2,
+      "description": "集成路由系统到 omc-router-adapter.js",
+      "details": "- 导入真实路由调用器\n- 将直接模型调用替换为路由调用"
+    }
+  ]
+}

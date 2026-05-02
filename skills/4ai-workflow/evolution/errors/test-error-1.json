@@ -1,0 +1,28 @@
+{
+  "id": "test-error-1",
+  "category": "timeout",
+  "type": "API_TIMEOUT",
+  "description": "API call timed out after 30s",
+  "rootCause": "Network latency",
+  "solutions": [
+    "Increase timeout",
+    "Add retry logic"
+  ],
+  "context": {
+    "endpoint": "/api/v1/test"
+  },
+  "timestamp": "2026-05-02T07:01:00.448Z",
+  "version": "1.0.0",
+  "occurrenceCount": 1,
+  "resolved": true,
+  "resolution": {
+    "strategy": {
+      "pattern": "retry-with-backoff",
+      "config": {
+        "maxRetries": 3,
+        "baseDelay": 1000
+      }
+    }
+  },
+  "resolvedAt": "2026-05-02T07:01:32.683Z"
+}

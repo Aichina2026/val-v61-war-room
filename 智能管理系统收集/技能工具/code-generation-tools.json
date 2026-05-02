@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1",
+  "tools": [
+    {
+      "name": "free_code_generate",
+      "description": "使用free-code项目（Claude code纯洁版）生成代码",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "requirements": {
+            "type": "string",
+            "description": "代码需求描述"
+          },
+          "template": {
+            "type": "string",
+            "enum": ["component", "api", "utility", "class", "hook"],
+            "description": "代码模板类型",
+            "default": "component"
+          },
+          "language": {
+            "type": "string",
+            "description": "编程语言",
+            "default": "javascript"
+          },
+          "framework": {
+            "type": "string",
+            "description": "框架",
+            "default": "react"
+          },
+          "quality": {
+            "type": "string",
+            "enum": ["draft", "standard", "production"],
+            "description": "代码质量级别",
+            "default": "production"
+          },
+          "outputFile": {
+            "type": "string",
+            "description": "输出文件路径（可选）"
+          }
+        },
+        "required": ["requirements"]
+      }
+    },
+    {
+      "name": "omc_workflow_execute",
+      "description": "执行Oh-my-Codex端到端工作流",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "input": {
+            "type": "string",
+            "description": "输入需求或代码"
+          },
+          "workflowType": {
+            "type": "string",
+            "enum": ["full", "analysis", "design", "implementation", "review"],
+            "description": "工作流类型",
+            "default": "full"
+          },
+          "detailedOutput": {
+            "type": "boolean",
+            "description": "是否输出详细信息",
+            "default": false
+          },
+          "outputDir": {
+            "type": "string",
+            "description": "输出目录（可选）"
+          }
+        },
+        "required": ["input"]
+      }
+    },
+    {
+      "name": "team_mode_review",
+      "description": "使用$team模式进行多AI模型并行代码审查",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "要审查的代码"
+          },
+          "task": {
+            "type": "string",
+            "description": "审查任务描述",
+            "default": "代码审查"
+          },
+          "modelCount": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8,
+            "description": "使用的模型数量",
+            "default": 4
+          },
+          "parallelLimit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4,
+            "description": "并行执行限制",
+            "default": 3
+          },
+          "outputReport": {
+            "type": "boolean",
+            "description": "是否生成审查报告",
+            "default": true
+          }
+        },
+        "required": ["code"]
+      }
+    },
+    {
+      "name": "ri_mode_execute",
+      "description": "执行$ri模式持久执行循环",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": "string",
+            "description": "任务描述"
+          },
+          "code": {
+            "type": "string",
+            "description": "初始代码"
+          },
+          "maxIterations": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "description": "最大迭代次数",
+            "default": 10
+          },
+          "optimizationGoals": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["performance", "quality", "security", "maintainability"]
+            },
+            "description": "优化目标",
+            "default": ["performance", "quality", "security"]
+          },
+          "validationStrictness": {
+            "type": "string",
+            "enum": ["lenient", "normal", "strict"],
+            "description": "验证严格度",
+            "default": "strict"
+          },
+          "failFast": {
+            "type": "boolean",
+            "description": "快速失败模式",
+            "default": false
+          }
+        },
+        "required": ["task", "code"]
+      }
+    },
+    {
+      "name": "architect_validate",
+      "description": "执行架构师级生产验证",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "要验证的代码"
+          },
+          "validationLevel": {
+            "type": "string",
+            "enum": ["basic", "standard", "production"],
+            "description": "验证级别",
+            "default": "production"
+          },
+          "strictMode": {
+            "type": "boolean",
+            "description": "严格模式",
+            "default": true
+          },
+          "context": {
+            "type": "object",
+            "description": "上下文信息（可选）"
+          },
+          "generateReport": {
+            "type": "boolean",
+            "description": "是否生成详细报告",
+            "default": true
+          }
+        },
+        "required": ["code"]
+      }
+    },
+    {
+      "name": "code_generation_integration",
+      "description": "完整代码生成集成（组合所有功能）",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "requirements": {
+            "type": "string",
+            "description": "代码需求描述"
+          },
+          "includeWorkflow": {
+            "type": "boolean",
+            "description": "是否包含Oh-my-Codex工作流",
+            "default": true
+          },
+          "includeTeamReview": {
+            "type": "boolean",
+            "description": "是否包含$team模式审查",
+            "default": true
+          },
+          "includeRILoop": {
+            "type": "boolean",
+            "description": "是否包含$ri模式循环",
+            "default": false
+          },
+          "includeArchitectValidation": {
+            "type": "boolean",
+            "description": "是否包含架构师验证",
+            "default": true
+          },
+          "outputFormat": {
+            "type": "string",
+            "enum": ["code", "report", "both"],
+            "description": "输出格式",
+            "default": "both"
+          }
+        },
+        "required": ["requirements"]
+      }
+    }
+  ]
+}

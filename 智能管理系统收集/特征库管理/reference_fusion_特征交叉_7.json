@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_d0e2igpmt",
+  "name": "特征交叉_7",
+  "category": "fusion",
+  "type": "reference",
+  "accuracy": 0.837,
+  "description": "特征交叉_7 - fusion特征",
+  "success_rate": 0,
+  "quality_score": 0.502,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

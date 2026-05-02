@@ -1,0 +1,9 @@
+{
+  "threshold_percent": 80,
+  "check_interval": 5,
+  "max_context_window": 200000,
+  "auto_switch": true,
+  "switch_method": "new_session",
+  "keep_history": true,
+  "warning_threshold": 70
+}

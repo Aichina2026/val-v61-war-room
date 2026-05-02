@@ -1,0 +1,12 @@
+{
+  "preloadModules": [
+    "core",
+    "config"
+  ],
+  "lazyLoadModules": [
+    "data-features",
+    "visualization"
+  ],
+  "memoryLimit": 1073741824,
+  "timeout": 30000
+}

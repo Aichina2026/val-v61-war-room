@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0-emergency",
+  "refactored": "2026-04-09T18:31:39.847Z",
+  "originalFiles": 3887,
+  "modules": {
+    "code-generation": {
+      "enabled": true,
+      "path": "modules/code-generation"
+    },
+    "task-management": {
+      "enabled": true,
+      "path": "modules/task-management"
+    },
+    "ai-engine": {
+      "enabled": true,
+      "path": "modules/ai-engine"
+    },
+    "data-features": {
+      "enabled": true,
+      "path": "modules/data-features"
+    }
+  },
+  "performance": {
+    "lazyLoading": true,
+    "cacheEnabled": true,
+    "compression": true
+  }
+}

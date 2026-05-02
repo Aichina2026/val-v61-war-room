@@ -304,4 +304,35 @@ function calculateConfidence(results) {
   if (results.reviewer?.content) score += 0.05;
   if (results.arbiter?.content) score += 0.05;
   
-  //
+  return Math.min(score, 1.0);
+}
+
+/**
+ * Format output for delivery
+ */
+function formatOutput(results) {
+  return {
+    success: true,
+    phases: {
+      scout: results.scout ? { completed: true, timing: results.timing.scout } : null,
+      clarifier: results.clarifier ? { completed: true, model: results.clarifier.model } : null,
+      builder: results.builder ? { completed: true, model: results.builder.model } : null,
+      reviewer: results.reviewer ? { completed: true, model: results.reviewer.model } : null,
+      arbiter: results.arbiter ? { completed: true, model: results.arbiter.model } : null
+    },
+    timing: results.timing,
+    confidence: results.confidence,
+    output: results.arbiter?.content || 'No output generated'
+  };
+}
+
+/**
+ * Calculate relevance score
+ */
+function calculateRelevance(collected, task) {
+  // Simple relevance calculation
+  const totalItems = collected.memory.length + collected.web.length + collected.database.length;
+  return Math.min(totalItems / 10, 1.0);
+}
+
+module.exports = { execute };

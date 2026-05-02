@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_z2zp6dv2x",
+  "name": "时间序列分解_1",
+  "category": "temporal",
+  "type": "reference",
+  "accuracy": 0.864,
+  "description": "时间序列分解_1 - temporal特征",
+  "success_rate": 0,
+  "quality_score": 0.518,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

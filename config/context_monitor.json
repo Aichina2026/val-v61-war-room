@@ -1,0 +1,80 @@
+{
+  "monitoring": {
+    "enabled": true,
+    "check_interval_seconds": 30,
+    "check_messages_interval": 5,
+    "max_context_window": 200000,
+    "token_estimation_method": "hybrid",
+    "track_conversation_history": true
+  },
+  "thresholds": {
+    "info_level": 50,
+    "warning_level": 70,
+    "critical_level": 85,
+    "emergency_level": 95,
+    "auto_switch_level": 90
+  },
+  "switching": {
+    "enabled": true,
+    "method": "intelligent",
+    "options": {
+      "new_session": {
+        "enabled": true,
+        "transfer_key_context": true,
+        "create_summary": true,
+        "label_format": "auto_{timestamp}_{purpose}"
+      },
+      "compress": {
+        "enabled": false,
+        "compression_ratio": 0.5,
+        "preserve_structure": true
+      },
+      "summarize": {
+        "enabled": true,
+        "summary_length": 1000,
+        "include_key_points": true
+      }
+    },
+    "fallback_method": "new_session",
+    "user_confirmation": false
+  },
+  "notifications": {
+    "enabled": true,
+    "channels": [
+      "kimi-claw"
+    ],
+    "levels": [
+      "warning",
+      "critical",
+      "emergency",
+      "switch"
+    ],
+    "templates": {
+      "warning": "⚠️ 上下文使用率较高: {percent}% ({used}/{total} tokens)",
+      "critical": "🚨 上下文接近限制: {percent}% ({used}/{total} tokens)",
+      "emergency": "🔥 上下文即将超限: {percent}% ({used}/{total} tokens)",
+      "switch": "🔄 已自动切换到新会话: {new_session} (原因: {reason})"
+    }
+  },
+  "history": {
+    "enabled": true,
+    "max_entries": 1000,
+    "retention_days": 30,
+    "analytics_enabled": true,
+    "backup_enabled": true
+  },
+  "performance": {
+    "max_cpu_percent": 10,
+    "max_memory_mb": 100,
+    "log_level": "INFO",
+    "log_rotation": "daily"
+  },
+  "advanced": {
+    "predictive_analysis": true,
+    "learning_enabled": true,
+    "adaptive_thresholds": true,
+    "multi_session_support": false,
+    "recovery_mode": true
+  },
+  "performance.max_memory_mb": 50
+}

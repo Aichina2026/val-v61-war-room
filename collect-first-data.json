@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-04-13T09:25:00.000Z",
+  "phase": "collection",
+  "system": "OMC路由系统",
+  "metrics": {
+    "routingTests": 6,
+    "successRate": 100,
+    "averageLatency": 280,
+    "modelMatches": 12
+  },
+  "status": "system_started"
+}

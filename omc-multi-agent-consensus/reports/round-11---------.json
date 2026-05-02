@@ -1,0 +1,85 @@
+{
+  "round": 11,
+  "topic": "实时决策支持系统",
+  "timestamp": "2026-04-13T00:35:02.628Z",
+  "participatingLayers": [
+    "L7",
+    "L8"
+  ],
+  "decisions": [
+    {
+      "layer": "L7",
+      "agentCount": 3,
+      "agentDecisions": [
+        {
+          "agent": "vulnerability-detection-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.628Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "dependency-check-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.628Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "secret-detection-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.628Z",
+          "error": "this.router.route is not a function"
+        }
+      ],
+      "consensusScore": 1,
+      "consensusType": "unanimous",
+      "finalDecision": "通过"
+    },
+    {
+      "layer": "L8",
+      "agentCount": 3,
+      "agentDecisions": [
+        {
+          "agent": "performance-optimization-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.628Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "memory-optimization-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.628Z",
+          "error": "this.router.route is not a function"
+        },
+        {
+          "agent": "code-optimization-agent",
+          "decision": "同意",
+          "confidence": 0.5,
+          "reasoning": "降级决策",
+          "timestamp": "2026-04-13T00:35:02.629Z",
+          "error": "this.router.route is not a function"
+        }
+      ],
+      "consensusScore": 1,
+      "consensusType": "unanimous",
+      "finalDecision": "通过"
+    }
+  ],
+  "consensusAchieved": true,
+  "metrics": {
+    "totalAgents": 6,
+    "consensusRate": 1,
+    "averageConfidence": 0.5,
+    "responseTime": 1154.8184058900772,
+    "successRate": 1
+  }
+}

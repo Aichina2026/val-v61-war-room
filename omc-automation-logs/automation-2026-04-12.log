@@ -1,0 +1,171 @@
+[2026-04-12T15:06:29.431Z] [INFO] 自动化系统启动
+[2026-04-12T15:06:29.473Z] [ERROR] 数据收集失败: Command failed: node omc-4ai-workflow-complete.js --mode=collect
+/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+[2026-04-12T15:06:29.503Z] [ERROR] 数据分析失败: Command failed: node omc-4ai-workflow-complete.js --mode=analyze
+/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+[2026-04-12T15:06:29.532Z] [ERROR] 策略库生成失败: Command failed: node strategy-library-generator.js
+/root/.openclaw/workspace/strategy-library-generator.js:1071
+    if (content.includes('算法')) guidelines.push
+                                               
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+[2026-04-12T15:06:29.532Z] [INFO] 初始工作流执行完成
+[2026-04-12T15:06:29.533Z] [INFO] 定时任务脚本创建完成
+[2026-04-12T15:06:29.533Z] [INFO] 定时任务设置完成
+[2026-04-12T15:06:29.533Z] [INFO] 监控服务启动
+[2026-04-12T15:06:29.533Z] [INFO] 自动化系统启动完成
+[2026-04-12T15:11:31.153Z] [INFO] 监控检查完成: 2026-04-12T15:11:29.618Z
+[2026-04-12T15:16:31.157Z] [INFO] 监控检查完成: 2026-04-12T15:16:29.620Z
+[2026-04-12T15:21:31.227Z] [INFO] 监控检查完成: 2026-04-12T15:21:29.692Z
+[2026-04-12T15:26:31.231Z] [INFO] 监控检查完成: 2026-04-12T15:26:29.694Z
+[2026-04-12T15:31:31.232Z] [INFO] 监控检查完成: 2026-04-12T15:31:29.696Z
+[2026-04-12T15:36:31.234Z] [INFO] 监控检查完成: 2026-04-12T15:36:29.697Z
+[2026-04-12T15:41:31.235Z] [INFO] 监控检查完成: 2026-04-12T15:41:29.699Z
+[2026-04-12T15:46:31.238Z] [INFO] 监控检查完成: 2026-04-12T15:46:29.700Z
+[2026-04-12T15:47:37.437Z] [INFO] 自动化系统启动
+[2026-04-12T15:47:37.476Z] [ERROR] 数据收集失败: Command failed: node omc-4ai-workflow-complete.js --mode=collect
+/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+[2026-04-12T15:47:37.512Z] [ERROR] 数据分析失败: Command failed: node omc-4ai-workflow-complete.js --mode=analyze
+/root/.openclaw/workspace/omc-4ai-workflow-complete.js:1017
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+[2026-04-12T15:47:37.547Z] [ERROR] 策略库生成失败: Command failed: node strategy-library-generator.js
+/root/.openclaw/workspace/strategy-library-generator.js:1071
+    if (content.includes('算法')) guidelines.push
+                                               
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.22.0
+
+[2026-04-12T15:47:37.547Z] [INFO] 初始工作流执行完成
+[2026-04-12T15:47:37.548Z] [INFO] 定时任务脚本创建完成
+[2026-04-12T15:47:37.548Z] [INFO] 定时任务设置完成
+[2026-04-12T15:47:37.548Z] [INFO] 监控服务启动
+[2026-04-12T15:47:37.548Z] [INFO] 自动化系统启动完成
+[2026-04-12T15:52:39.150Z] [INFO] 监控检查完成: 2026-04-12T15:52:37.614Z
+[2026-04-12T15:57:39.153Z] [INFO] 监控检查完成: 2026-04-12T15:57:37.616Z
+[2026-04-12T16:02:39.235Z] [INFO] 监控检查完成: 2026-04-12T16:02:37.696Z
+[2026-04-12T16:07:39.239Z] [INFO] 监控检查完成: 2026-04-12T16:07:37.697Z
+[2026-04-12T16:12:39.235Z] [INFO] 监控检查完成: 2026-04-12T16:12:37.700Z
+[2026-04-12T16:17:39.238Z] [INFO] 监控检查完成: 2026-04-12T16:17:37.700Z
+[2026-04-12T16:22:39.238Z] [INFO] 监控检查完成: 2026-04-12T16:22:37.702Z
+[2026-04-12T16:27:39.237Z] [INFO] 监控检查完成: 2026-04-12T16:27:37.703Z
+[2026-04-12T16:32:39.340Z] [INFO] 监控检查完成: 2026-04-12T16:32:37.802Z
+[2026-04-12T16:37:39.340Z] [INFO] 监控检查完成: 2026-04-12T16:37:37.804Z
+[2026-04-12T16:42:39.343Z] [INFO] 监控检查完成: 2026-04-12T16:42:37.805Z
+[2026-04-12T16:47:39.344Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T16:47:39.345Z] [INFO] 监控检查完成: 2026-04-12T16:47:37.807Z
+[2026-04-12T16:52:39.348Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T16:52:39.348Z] [INFO] 监控检查完成: 2026-04-12T16:52:37.808Z
+[2026-04-12T16:57:39.346Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T16:57:39.346Z] [INFO] 监控检查完成: 2026-04-12T16:57:37.810Z
+[2026-04-12T17:02:39.346Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:02:39.347Z] [INFO] 监控检查完成: 2026-04-12T17:02:37.812Z
+[2026-04-12T17:07:39.419Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:07:39.420Z] [INFO] 监控检查完成: 2026-04-12T17:07:37.884Z
+[2026-04-12T17:12:39.421Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:12:39.421Z] [INFO] 监控检查完成: 2026-04-12T17:12:37.886Z
+[2026-04-12T17:17:39.422Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:17:39.423Z] [INFO] 监控检查完成: 2026-04-12T17:17:37.887Z
+[2026-04-12T17:22:39.426Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:22:39.426Z] [INFO] 监控检查完成: 2026-04-12T17:22:37.890Z
+[2026-04-12T17:27:39.429Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:27:39.430Z] [INFO] 监控检查完成: 2026-04-12T17:27:37.891Z
+[2026-04-12T17:32:39.430Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:32:39.431Z] [INFO] 监控检查完成: 2026-04-12T17:32:37.894Z
+[2026-04-12T17:37:39.519Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:37:39.520Z] [INFO] 监控检查完成: 2026-04-12T17:37:37.984Z
+[2026-04-12T17:42:39.523Z] [ALERT] WARNING: 任务 dataCollection 执行超时
+[2026-04-12T17:42:39.523Z] [INFO] 监控检查完成: 2026-04-12T17:42:37.985Z
+[2026-04-12T17:47:39.528Z] [ALERT] CRITICAL: 任务 dataCollection 执行失败
+[2026-04-12T17:47:39.528Z] [INFO] 监控检查完成: 2026-04-12T17:47:37.988Z
+[2026-04-12T17:52:39.525Z] [ALERT] CRITICAL: 任务 dataCollection 执行失败
+[2026-04-12T17:52:39.526Z] [INFO] 监控检查完成: 2026-04-12T17:52:37.989Z
+[2026-04-12T17:57:39.529Z] [ALERT] CRITICAL: 任务 dataCollection 执行失败
+[2026-04-12T17:57:39.530Z] [INFO] 监控检查完成: 2026-04-12T17:57:37.992Z
+[2026-04-12T18:02:39.609Z] [ALERT] CRITICAL: 任务 dataCollection 执行失败
+[2026-04-12T18:02:39.610Z] [INFO] 监控检查完成: 2026-04-12T18:02:38.073Z

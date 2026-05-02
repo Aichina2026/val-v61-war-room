@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_ke9aoboxr",
+  "name": "分型密度_6",
+  "category": "spatial",
+  "type": "reference",
+  "accuracy": 0.866,
+  "description": "分型密度_6 - spatial特征",
+  "success_rate": 0,
+  "quality_score": 0.52,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

@@ -1,0 +1,2823 @@
+[
+  {
+    "timestamp": "2026-04-14T19:00:00.418257",
+    "session_id": "session_1776164395",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:00:00.418247",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:00:32.399444",
+    "session_id": "session_1776164427",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:00:32.399426",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:01:10.081026",
+    "session_id": "session_1776164464",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:01:10.081009",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:01:32.940902",
+    "session_id": "session_1776164487",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:01:32.940889",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:02:09.552504",
+    "session_id": "session_1776164524",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:02:09.552493",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:02:42.570567",
+    "session_id": "session_1776164557",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:02:42.570554",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:03:17.770355",
+    "session_id": "session_1776164557",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:03:17.770337",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:03:48.696092",
+    "session_id": "session_1776164623",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:03:48.696079",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:04:23.797081",
+    "session_id": "session_1776164623",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:04:23.797066",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:04:57.695925",
+    "session_id": "session_1776164692",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:04:57.695911",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:05:32.896851",
+    "session_id": "session_1776164692",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:05:32.896831",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:06:06.748703",
+    "session_id": "session_1776164761",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:06:06.748691",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:06:37.929792",
+    "session_id": "session_1776164792",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:06:37.929779",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:07:09.537747",
+    "session_id": "session_1776164824",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:07:09.537733",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:07:44.737706",
+    "session_id": "session_1776164824",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:07:44.737693",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:08:17.913952",
+    "session_id": "session_1776164892",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:08:17.913943",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:08:48.975897",
+    "session_id": "session_1776164923",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:08:48.975876",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:09:19.656085",
+    "session_id": "session_1776164954",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:09:19.656072",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:09:54.855104",
+    "session_id": "session_1776164954",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:09:54.855090",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:10:28.322697",
+    "session_id": "session_1776165023",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:10:28.322687",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:11:00.736584",
+    "session_id": "session_1776165055",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:11:00.736570",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:11:33.052873",
+    "session_id": "session_1776165087",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:11:33.052862",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:12:08.155952",
+    "session_id": "session_1776165087",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:12:08.155940",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:12:42.298034",
+    "session_id": "session_1776165157",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:12:42.298024",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:13:13.476297",
+    "session_id": "session_1776165188",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:13:13.476286",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:13:48.675910",
+    "session_id": "session_1776165188",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:13:48.675895",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:14:19.903069",
+    "session_id": "session_1776165254",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:14:19.903059",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:14:55.141750",
+    "session_id": "session_1776165289",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:14:55.141741",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:15:30.242796",
+    "session_id": "session_1776165289",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:15:30.242783",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:16:01.053540",
+    "session_id": "session_1776165355",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:16:01.053506",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:16:31.592161",
+    "session_id": "session_1776165386",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:16:31.592149",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:17:03.951301",
+    "session_id": "session_1776165418",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:17:03.951288",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:17:39.053505",
+    "session_id": "session_1776165418",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:17:39.053489",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:18:09.336161",
+    "session_id": "session_1776165484",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:18:09.336152",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:18:44.629068",
+    "session_id": "session_1776165484",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:18:44.629051",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:19:17.060498",
+    "session_id": "session_1776165551",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:19:17.060484",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:19:52.359387",
+    "session_id": "session_1776165551",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:19:52.359373",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:20:28.934668",
+    "session_id": "session_1776165623",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:20:28.934657",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:20:59.686845",
+    "session_id": "session_1776165654",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:20:59.686836",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:21:30.912369",
+    "session_id": "session_1776165685",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:21:30.912356",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:22:06.113649",
+    "session_id": "session_1776165685",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:22:06.113621",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:22:37.737995",
+    "session_id": "session_1776165752",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:22:37.737982",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:23:13.137796",
+    "session_id": "session_1776165752",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:23:13.137781",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:23:43.479934",
+    "session_id": "session_1776165818",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:23:43.479920",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:24:16.722171",
+    "session_id": "session_1776165851",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:24:16.722161",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:24:52.021096",
+    "session_id": "session_1776165851",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:24:52.021084",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:25:22.726143",
+    "session_id": "session_1776165917",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:25:22.726128",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:25:57.929331",
+    "session_id": "session_1776165917",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:25:57.929317",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:26:29.326328",
+    "session_id": "session_1776165984",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:26:29.326316",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:26:59.681797",
+    "session_id": "session_1776166014",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:26:59.681783",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:27:30.436589",
+    "session_id": "session_1776166045",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:27:30.436575",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:28:01.281218",
+    "session_id": "session_1776166076",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:28:01.281205",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:28:32.147695",
+    "session_id": "session_1776166106",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:28:32.147684",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:29:03.420204",
+    "session_id": "session_1776166138",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:29:03.420190",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:29:34.598027",
+    "session_id": "session_1776166169",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:29:34.598016",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:30:07.219034",
+    "session_id": "session_1776166202",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:30:07.219023",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:30:38.423450",
+    "session_id": "session_1776166233",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:30:38.423440",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:31:13.526544",
+    "session_id": "session_1776166233",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:31:13.526512",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:31:44.701797",
+    "session_id": "session_1776166299",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:31:44.701783",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:32:19.804631",
+    "session_id": "session_1776166299",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:32:19.804621",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:32:50.647925",
+    "session_id": "session_1776166365",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:32:50.647912",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:33:21.218591",
+    "session_id": "session_1776166396",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:33:21.218574",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:33:54.305948",
+    "session_id": "session_1776166429",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:33:54.305938",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:34:24.842467",
+    "session_id": "session_1776166459",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:34:24.842456",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:34:55.172399",
+    "session_id": "session_1776166489",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:34:55.172389",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:35:30.377935",
+    "session_id": "session_1776166489",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:35:30.377921",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:36:06.472961",
+    "session_id": "session_1776166561",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:36:06.472951",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:36:41.672096",
+    "session_id": "session_1776166561",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:36:41.672082",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:37:12.917592",
+    "session_id": "session_1776166627",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:37:12.917576",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:37:43.688291",
+    "session_id": "session_1776166658",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:37:43.688281",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:38:18.890667",
+    "session_id": "session_1776166658",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:38:18.890653",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:38:49.407379",
+    "session_id": "session_1776166724",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:38:49.407363",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:39:24.706598",
+    "session_id": "session_1776166724",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:39:24.613516",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:39:54.903442",
+    "session_id": "session_1776166789",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:39:54.903432",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:40:25.350872",
+    "session_id": "session_1776166820",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:40:25.350863",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:41:00.649043",
+    "session_id": "session_1776166820",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:41:00.649026",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:41:31.119310",
+    "session_id": "session_1776166886",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:41:31.119297",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:42:01.641842",
+    "session_id": "session_1776166916",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:42:01.641828",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:42:32.136740",
+    "session_id": "session_1776166947",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:42:32.136727",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:43:04.155807",
+    "session_id": "session_1776166978",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:43:04.155793",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:43:36.032458",
+    "session_id": "session_1776167010",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:43:36.032448",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:44:06.679969",
+    "session_id": "session_1776167041",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:44:06.679957",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:44:37.646783",
+    "session_id": "session_1776167072",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:44:37.646772",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:45:10.037652",
+    "session_id": "session_1776167104",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:45:10.037617",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:45:40.963094",
+    "session_id": "session_1776167135",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:45:40.963083",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:46:11.410433",
+    "session_id": "session_1776167166",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:46:11.410418",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:46:46.614471",
+    "session_id": "session_1776167166",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:46:46.614450",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  },
+  {
+    "timestamp": "2026-04-14T19:47:16.847301",
+    "session_id": "session_1776167231",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:47:16.847292",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:47:47.556003",
+    "session_id": "session_1776167262",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:47:47.555986",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:48:22.056039",
+    "session_id": "session_1776167296",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:48:22.056023",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 0
+  },
+  {
+    "timestamp": "2026-04-14T19:48:57.162041",
+    "session_id": "session_1776167296",
+    "usage": {
+      "used_tokens": 75000,
+      "total_tokens": 200000,
+      "percent": 37,
+      "remaining_tokens": 125000,
+      "source": "fallback"
+    },
+    "risk": {
+      "current_level": "normal",
+      "action": "normal",
+      "message": "正常: 上下文使用率 37%",
+      "predicted_risk": {
+        "enabled": true,
+        "time_to_warning_seconds": 0,
+        "time_to_critical_seconds": 0,
+        "estimated_messages_remaining": 1250
+      },
+      "timestamp": "2026-04-14T19:48:57.162028",
+      "usage_info": {
+        "used_tokens": 75000,
+        "total_tokens": 200000,
+        "percent": 37,
+        "remaining_tokens": 125000,
+        "source": "fallback"
+      }
+    },
+    "message_count": 1
+  }
+]

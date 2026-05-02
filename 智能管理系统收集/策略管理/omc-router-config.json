@@ -1,0 +1,56 @@
+{
+  "logLevel": "info",
+  "enableMetrics": true,
+  "enableFallback": true,
+  "maxRetries": 3,
+  "defaultStrategy": "balanced",
+  "stageStrategies": {
+    "analysis": "balanced",
+    "design": "high-quality",
+    "generation": "cost-effective",
+    "review": "balanced",
+    "optimization": "fast"
+  },
+  "strategyConfig": {
+    "fast": {
+      "priority": [
+        "evolink",
+        "model"
+      ],
+      "timeout": 5000,
+      "description": "快速响应，适合简单任务"
+    },
+    "balanced": {
+      "priority": [
+        "orchestrator",
+        "intelligent"
+      ],
+      "timeout": 10000,
+      "description": "平衡性能和质量，适合一般任务"
+    },
+    "high-quality": {
+      "priority": [
+        "intelligent",
+        "orchestrator"
+      ],
+      "timeout": 15000,
+      "description": "高质量输出，适合复杂任务"
+    },
+    "cost-effective": {
+      "priority": [
+        "adaptive",
+        "deterministic"
+      ],
+      "timeout": 8000,
+      "description": "成本优先，适合批量任务"
+    }
+  },
+  "routingSystems": [
+    "adaptive",
+    "model",
+    "orchestrator",
+    "evolink",
+    "intelligent",
+    "deterministic"
+  ]
+}

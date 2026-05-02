@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_2jcend69y",
+  "name": "波动率模型_9",
+  "category": "spatial",
+  "type": "reference",
+  "accuracy": 0.848,
+  "description": "波动率模型_9 - spatial特征",
+  "success_rate": 0,
+  "quality_score": 0.509,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

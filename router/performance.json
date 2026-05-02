@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-04-14T19:26:32.323453",
+  "models": {
+    "ark/deepseek-v3.2": {
+      "response_times": [
+        0.06776237487792969
+      ],
+      "success_count": 0,
+      "failure_count": 1,
+      "last_tested": "2026-04-14T19:26:13.417733",
+      "status": "offline"
+    },
+    "ark/glm-4-7-251222": {
+      "response_times": [
+        0.06322574615478516
+      ],
+      "success_count": 0,
+      "failure_count": 1,
+      "last_tested": "2026-04-14T19:26:13.481738",
+      "status": "offline"
+    },
+    "alibailian/glm-5": {
+      "response_times": [
+        7.380308628082275
+      ],
+      "success_count": 1,
+      "failure_count": 0,
+      "last_tested": "2026-04-14T19:26:20.863167",
+      "status": "healthy"
+    },
+    "alibailian/qwen3.6-plus": {
+      "response_times": [
+        4.815765619277954
+      ],
+      "success_count": 1,
+      "failure_count": 0,
+      "last_tested": "2026-04-14T19:26:25.679890",
+      "status": "healthy"
+    },
+    "alibailian/qwen3-max": {
+      "response_times": [
+        0.915858268737793
+      ],
+      "success_count": 1,
+      "failure_count": 0,
+      "last_tested": "2026-04-14T19:26:26.596621",
+      "status": "healthy"
+    },
+    "alibailian/deepseek-v3.2": {
+      "response_times": [
+        1.4130749702453613
+      ],
+      "success_count": 1,
+      "failure_count": 0,
+      "last_tested": "2026-04-14T19:26:28.010517",
+      "status": "healthy"
+    },
+    "kimi/kimi-k2.5": {
+      "response_times": [
+        0.1893758773803711
+      ],
+      "success_count": 0,
+      "failure_count": 1,
+      "last_tested": "2026-04-14T19:26:28.200958",
+      "status": "offline"
+    },
+    "4sapi/gemini-3.1-pro-preview": {
+      "response_times": [
+        2.094529867172241
+      ],
+      "success_count": 1,
+      "failure_count": 0,
+      "last_tested": "2026-04-14T19:26:30.296487",
+      "status": "healthy"
+    },
+    "4sapi/gpt-5.4": {
+      "response_times": [
+        1.4739751815795898
+      ],
+      "success_count": 1,
+      "failure_count": 0,
+      "last_tested": "2026-04-14T19:26:31.771390",
+      "status": "healthy"
+    },
+    "4sapi/claude-opus-4.6": {
+      "response_times": [
+        0.550288200378418
+      ],
+      "success_count": 0,
+      "failure_count": 1,
+      "last_tested": "2026-04-14T19:26:32.322596",
+      "status": "offline"
+    }
+  }
+}

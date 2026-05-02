@@ -1,0 +1,19 @@
+{
+  "id": "derived-from-error-test-error-1",
+  "category": "error-recovery",
+  "name": "Recovery: API_TIMEOUT",
+  "description": "Solution for API call timed out after 30s",
+  "patterns": [
+    "timeout",
+    "API_TIMEOUT"
+  ],
+  "result": {
+    "source": "error-recovery",
+    "originalError": "test-error-1"
+  },
+  "confidence": 0.8,
+  "timestamp": "2026-05-02T07:01:32.684Z",
+  "version": "1.0.0",
+  "usageCount": 0,
+  "successCount": 0
+}

@@ -1,0 +1,112 @@
+{
+  "workflow": {
+    "name": "4SAPI零错误工作流",
+    "version": "1.0.0",
+    "description": "具有延迟等待、自动重试和错误恢复的4SAPI工作流"
+  },
+  
+  "api": {
+    "baseUrl": "https://4sapi.com/v1",
+    "apiKey": "sk-REDACTED",
+    "timeout": 30000
+  },
+  
+  "models": {
+    "default": "gpt-5.4",
+    "fallbackOrder": [
+      "gemini-3.1-pro-preview",
+      "claude-opus-4.6",
+      "gpt-4o",
+      "claude-sonnet-3.5"
+    ],
+    "autoSelect": true,
+    "checkAvailability": true
+  },
+  
+  "delays": {
+    "initial": 1000,
+    "betweenRequests": 2000,
+    "betweenRetries": 3000,
+    "afterError": 5000,
+    "rateLimit": 10000,
+    "circuitBreakerReset": 60000
+  },
+  
+  "retry": {
+    "enabled": true,
+    "maxAttempts": 3,
+    "backoffFactor": 2,
+    "retryableErrors": ["network_error", "timeout", "server_error", "rate_limit"],
+    "nonRetryableErrors": ["validation_error", "client_error", "circuit_breaker"]
+  },
+  
+  "zeroError": {
+    "inputValidation": {
+      "enabled": true,
+      "maxLength": 10000,
+      "sanitize": true,
+      "checkDangerousPatterns": true
+    },
+    "outputValidation": {
+      "enabled": true,
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "circuitBreaker": {
+      "enabled": true,
+      "failureThreshold": 5,
+      "resetTimeout": 60000
+    }
+  },
+  
+  "monitoring": {
+    "enabled": true,
+    "logLevel": "info",
+    "logDir": "/root/.openclaw/workspace/4sapi-workflow-logs",
+    "metrics": {
+      "enabled": true,
+      "collect": ["response_time", "success_rate", "token_usage", "error_rate"],
+      "reportInterval": 3600000
+    },
+    "alerts": {
+      "enabled": true,
+      "errorThreshold": 0.2,
+      "slowResponseThreshold": 10000
+    }
+  },
+  
+  "workflowExecution": {
+    "continueOnError": true,
+    "maxConcurrent": 1,
+    "batchSize": 10,
+    "validationBeforeExecution": true,
+    "generateReport": true,
+    "saveResults": true
+  },
+  
+  "performance": {
+    "enableCaching": false,
+    "cacheTTL": 300000,
+    "compressResponses": false,
+    "optimizeTokenUsage": true
+  },
+  
+  "security": {
+    "sanitizeInput": true,
+    "validateOutput": true,
+    "rateLimit": {
+      "enabled": true,
+      "requestsPerMinute": 60,
+      "burstSize": 10
+    },
+    "timeoutProtection": true
+  },
+  
+  "examples": {
+    "singleCall": "node 4sapi_zero_error_workflow.js single '你的提示' [模型]",
+    "exampleWorkflow": "node 4sapi_zero_error_workflow.js run-example",
+    "customWorkflow": "node 4sapi_zero_error_workflow.js custom '[{\"prompt\":\"提示1\",\"model\":\"gpt-5.4\"},{\"prompt\":\"提示2\",\"model\":\"gemini-3.1-pro-preview\"}]'",
+    "checkStatus": "node 4sapi_zero_error_workflow.js status",
+    "resetState": "node 4sapi_zero_error_workflow.js reset"
+  }
+}

@@ -1,0 +1,24 @@
+/**
+ * 测试模块 - 用于 OMX 集成测试
+ */
+
+module.exports = {
+  name: 'test-module',
+  version: '1.0.0',
+  process: (input) => {
+    return `处理结果: ${JSON.stringify(input)}`;
+  },
+  benchmark: async (iterations = 1000) => {
+    const results = [];
+    for (let i = 0; i < iterations; i++) {
+      const start = Date.now();
+      // 模拟处理
+      await new Promise(resolve => setTimeout(resolve, 0));
+      results.push(Date.now() - start);
+    }
+    return {
+      avgTime: results.reduce((a, b) => a + b, 0) / iterations,
+      totalTime: results.reduce((a, b) => a + b, 0)
+    };
+  }
+};

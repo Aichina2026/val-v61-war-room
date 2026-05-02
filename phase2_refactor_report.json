@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-04-09T18:35:05.220Z",
+  "duration": "0.0 分钟",
+  "successRate": "50.0%",
+  "reports": [
+    {
+      "step": "team-review",
+      "success": true,
+      "output": "==================================================\n🚀 启动$team模式并行代码审查\n==================================================\n👥 启动$team模式: 紧急重构质量审查\n  使用 4 个模型并行审查\n  执行并行审查 (2 个任务, 最大并行: 3)\n    🧠 架构师模型 开始审查 (架构审查)\n    🧠 安全模型 开始审查 (安全检查)\n    ✅ 架构师模型 审查完成\n    ✅ 安全模型 审查完成\n  📊 进度: 2/2 (100%)\n\n💾 审查结果已保存:\n   详细结果: /root/.openclaw/workspace/reviews/review_1775759702860.json\n   报告文件: /root/.openclaw/workspace/reviews/review_1775759702860_report.md\n\n==================================================\n🎉 并行..."
+    },
+    {
+      "step": "architect-validation",
+      "success": false,
+      "error": "Command failed: node \"/root/.openclaw/workspace_refactored/modules/code-generation/skills/code-generation/architect-validation.js\" \"#!/usr/bin/env node\n/**\n * OpenClaw 2.0 紧急重构版 - 优化启动文件\n * 重构时间: 2026-04-09T18:31:39.959Z\n */\n\nconst fs = require('fs');\nconst path = require('path');\n\nclass OptimizedStartup {\n  constructor() {\n    this.workspace = path.join(__dirname, '..');\n    this.config = this.loadConfig();\n    this.modules = new Map();\n    this.startTime = Date.now();\n  }\n\n  async start() {\n    console.log('🚀 OpenClaw 2.0 紧急重构版启动中...');\n    \n    // 阶段1: 加载核心配置\n    await this.loadCore();\n    \n    // 阶段2: 预加载关键模块\n    await this.preloadCriticalModules();\n    \n    // 阶段3: 启动服务\n    await this.startServices();\n    \n    // 阶段4: 就绪检查\n    await this.readyCheck();\n    \n    const duration = Date.now() - this.startTime;\n    console.log(`✅ 系统启动完成，耗时: ${duration}ms`);\n    console.log(`📊 内存使用: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB`);\n    \n    return { success: true, duration };\n  }\n\n  loadConfig() {\n    const configPath = path.join(this.workspace, 'config', 'main.json');\n    return JSON.parse(fs.readFileSync(configPath, 'utf8'));\n  }\n\n  async loadCore() {\n    // 加载核心文件\n    const coreFiles = [\n      'AGENTS.md', 'SOUL.md', 'TOOLS.md', 'MEMORY.md'\n    ];\n    \n    coreFiles.forEach(file => {\n      const content = fs.readFileSync(\n        path.join(this.workspace, 'core', file),\n        'utf8'\n      );\n      this.modules.set(`core:${file}`, { content, loaded: true });\n    });\n  }\n\n  async preloadCriticalModules() {\n    // 预加载代码生成模块\n    const codeGenPath = path.join(this.workspace, 'modules', 'code-generation');\n    if (fs.existsSync(path.join(codeGenPath, 'skills', 'code-generation', 'start-code-generation.js'))) {\n      const codeGen = require(path.join(codeGenPath, 'skills', 'code-generation', 'start-code-generation.js'));\n      this.modules.set('code-generation', codeGen);\n    }\n    \n    // 预加载任务管理\n    const taskPath = path.join(this.workspace, 'modules', 'task-management');\n    if (fs.existsSync(path.join(taskPath, 'task_manager.js'))) {\n      const taskManager = require(path.join(taskPath, 'task_manager.js'));\n      this.modules.set('task-management', taskManager);\n    }\n  }\n\n  async startServices() {\n    // 启动基础服务\n    console.log('启动基础服务...');\n    \n    // 内存缓存服务\n    this.cache = new Map();\n    \n    // 文件监控服务\n    this.watcher = fs.watch(this.workspace, { recursive: false }, () => {\n      console.log('检测到文件变化');\n    });\n  }\n\n  async readyCheck() {\n    // 检查系统就绪状态\n    const checks = [\n      this.checkConfig(),\n      this.checkModules(),\n      this.checkPermissions(),\n      this.checkMemory()\n    ];\n    \n    const results = await Promise.all(checks);\n    const passed = results.filter(r => r.passed).length;\n    \n    console.log(`🧪 系统检查: ${passed}/${checks.length} 通过`);\n    \n    return passed === checks.length;\n  }\n\n  checkConfig() {\n    return { passed: true, message: '配置检查通过' };\n  }\n\n  checkModules() {\n    const required = ['code-generation', 'task-management'];\n    const missing = required.filter(m => !this.modules.has(m));\n    \n    return {\n      passed: missing.length === 0,\n      message: missing.length === 0 ? '模块检查通过' : `缺少模块: ${missing.join(', ')}`\n    };\n  }\n\n  checkPermissions() {\n    const testFile = path.join(this.workspace, '.permission_test');\n    try {\n      fs.writeFileSync(testFile, 'test');\n      fs.unlinkSync(testFile);\n      return { passed: true, message: '权限检查通过' };\n    } catch (error) {\n      return { passed: false, message: `权限错误: ${error.message}` };\n    }\n  }\n\n  checkMemory() {\n    const limit = 1024 * 1024 * 1024; // 1GB\n    const used = process.memoryUsage().heapUsed;\n    \n    return {\n      passed: used < limit,\n      message: `内存使用: ${(used / 1024 / 1024).toFixed(2)}MB / ${(limit / 1024 / 1024).toFixed(2)}MB`\n    };\n  }\n}\n\n// 启动系统\nif (require.main === module) {\n  const startup = new OptimizedStartup();\n  startup.start().catch(error => {\n    console.error('❌ 启动失败:', error.message);\n    process.exit(1);\n  });\n}\n\nmodule.exports = OptimizedStartup;\n\" --level=production --strict\n/bin/sh: 1: ✅: not found\n/bin/sh: 1: Bad substitution\n/bin/sh: 1: core:: not found\n/bin/sh: 1: Bad substitution\n/bin/sh: 1: Bad substitution\n/bin/sh: 1: Bad substitution\n/bin/sh: 1: Bad substitution\n❌ 验证失败: Cannot read properties of undefined (reading 'length')\n"
+    },
+    {
+      "step": "performance-benchmark",
+      "success": true,
+      "results": {
+        "startupTime": "99ms",
+        "memoryUsage": "4.74MB",
+        "moduleLoading": "正常",
+        "fileOps": "0ms"
+      }
+    },
+    {
+      "step": "functionality-test",
+      "success": false,
+      "results": {
+        "核心配置文件": false,
+        "技能系统": false,
+        "任务管理": false,
+        "工具库": false,
+        "文档系统": false
+      },
+      "score": "0/5"
+    }
+  ],
+  "summary": {
+    "originalFiles": 3887,
+    "newStructure": 109,
+    "performance": {
+      "startupTime": "99ms",
+      "memoryUsage": "4.74MB",
+      "moduleLoading": "正常",
+      "fileOps": "0ms"
+    },
+    "recommendations": [
+      "进行最终用户验收测试",
+      "建立系统监控和告警",
+      "制定定期备份策略",
+      "完善文档和培训材料",
+      "建立持续集成流程",
+      "紧急完善文档系统",
+      "补充必要的工具库"
+    ]
+  }
+}

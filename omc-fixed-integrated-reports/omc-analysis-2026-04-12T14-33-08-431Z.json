@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-04-12T14:33:06.925Z",
+  "task": "测试路由集成版本",
+  "routingSystem": "OpenClaw智能路由",
+  "stages": {
+    "discovery": {
+      "analysis": "[CLI路由:model-routing-orchestrator] 分析工作空间中的OMC相关文件，识别所有与Oh-my-Codex、FREECODE、CLAWCODE、Claude code相关的工具、技能、系统、工作流、文件。...",
+      "model": "deepseek-v3.2",
+      "routerSkill": "model-routing-orchestrator",
+      "latency": 303,
+      "success": true
+    },
+    "redundancy": {
+      "analysis": "[CLI路由:intelligent-router] 基于系统发现结果，分析工具和工作流的冗余情况，识别重复功能，提出去重建议。...",
+      "model": "claude-opus-4.6",
+      "routerSkill": "intelligent-router",
+      "latency": 299,
+      "success": true
+    },
+    "selection": {
+      "selection": "[CLI路由:model-routing] 基于系统发现和冗余分析结果，选择每个工具的最佳版本，制定版本管理策略。...",
+      "model": "gemini-3.1-pro-preview",
+      "routerSkill": "model-routing",
+      "latency": 300,
+      "success": true
+    },
+    "combination": {
+      "strategy": "[CLI路由:oc-skill-router] 基于之前的分析结果，设计Oh-my-Codex与free-code的最佳组合策略，提出融合技能方案。...",
+      "model": "gpt-5.4",
+      "routerSkill": "oc-skill-router",
+      "latency": 299,
+      "success": true
+    },
+    "fusion": {
+      "design": "[CLI路由:adaptive-routing] 设计创新的融合技能，将多个工具的优势结合，提出进化路径和实现方案。...",
+      "model": "deepseek-v3.2",
+      "routerSkill": "adaptive-routing",
+      "latency": 299,
+      "success": true
+    }
+  },
+  "summary": {
+    "startTime": 1776004386925,
+    "successCount": 5,
+    "totalLatency": 1500,
+    "totalTime": 1506,
+    "successRate": "100.0%",
+    "avgLatency": "300ms"
+  }
+}

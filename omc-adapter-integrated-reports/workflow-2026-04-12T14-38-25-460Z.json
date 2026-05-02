@@ -1,0 +1,137 @@
+{
+  "id": "adapter-1776004703953",
+  "timestamp": "2026-04-12T14:38:23.953Z",
+  "task": "测试路由适配器集成功能",
+  "strategy": "balanced",
+  "stages": {
+    "analysis": {
+      "success": true,
+      "stage": "analysis",
+      "content": "[CLI路由:model-routing-orchestrator] 分析以下任务需求：测试路由适配器集成功能...",
+      "model": "deepseek-v3.2",
+      "routerSkill": "model-routing-orchestrator",
+      "routingStrategy": "balanced",
+      "latency": 301,
+      "fullLatency": 301,
+      "method": "bound callViaOpenClawCli",
+      "fallback": false,
+      "timestamp": "2026-04-12T14:38:24.256Z",
+      "performance": "A (快速)"
+    },
+    "design": {
+      "success": true,
+      "stage": "design",
+      "content": "[CLI路由:intelligent-router] 基于需求分析，设计系统架构：测试路由适配器集成功能...",
+      "model": "claude-opus-4.6",
+      "routerSkill": "intelligent-router",
+      "routingStrategy": "balanced",
+      "latency": 301,
+      "fullLatency": 301,
+      "method": "bound callViaOpenClawCli",
+      "fallback": false,
+      "timestamp": "2026-04-12T14:38:24.557Z",
+      "performance": "A (快速)"
+    },
+    "generation": {
+      "success": true,
+      "stage": "generation",
+      "content": "[CLI路由:oc-skill-router] 基于架构设计，生成代码实现：测试路由适配器集成功能...",
+      "model": "gpt-5.4",
+      "routerSkill": "oc-skill-router",
+      "routingStrategy": "balanced",
+      "latency": 301,
+      "fullLatency": 301,
+      "method": "bound callViaOpenClawCli",
+      "fallback": false,
+      "timestamp": "2026-04-12T14:38:24.858Z",
+      "performance": "A (快速)"
+    },
+    "review": {
+      "success": true,
+      "stage": "review",
+      "content": "[CLI路由:model-routing] 审查代码质量，提出改进建议：测试路由适配器集成功能...",
+      "model": "gemini-3.1-pro-preview",
+      "routerSkill": "model-routing",
+      "routingStrategy": "balanced",
+      "latency": 300,
+      "fullLatency": 300,
+      "method": "bound callViaOpenClawCli",
+      "fallback": false,
+      "timestamp": "2026-04-12T14:38:25.159Z",
+      "performance": "A (快速)"
+    },
+    "optimization": {
+      "success": true,
+      "stage": "optimization",
+      "content": "[CLI路由:adaptive-routing] 优化代码性能，提高效率：测试路由适配器集成功能...",
+      "model": "deepseek-v3.2",
+      "routerSkill": "adaptive-routing",
+      "routingStrategy": "balanced",
+      "latency": 301,
+      "fullLatency": 301,
+      "method": "bound callViaOpenClawCli",
+      "fallback": false,
+      "timestamp": "2026-04-12T14:38:25.460Z",
+      "performance": "A (快速)"
+    }
+  },
+  "metrics": {
+    "calls": 5,
+    "successes": 5,
+    "failures": 0,
+    "fallbacks": 0,
+    "totalLatency": 1504,
+    "avgLatency": 300.8,
+    "workflowDuration": 1507,
+    "stageSuccessCount": 5,
+    "stageSuccessRate": "100.0%"
+  },
+  "summary": {
+    "overallStatus": "完全成功",
+    "stageDetails": {
+      "analysis": {
+        "success": true,
+        "model": "deepseek-v3.2",
+        "routerSkill": "model-routing-orchestrator",
+        "latency": 301,
+        "performance": "A (快速)"
+      },
+      "design": {
+        "success": true,
+        "model": "claude-opus-4.6",
+        "routerSkill": "intelligent-router",
+        "latency": 301,
+        "performance": "A (快速)"
+      },
+      "generation": {
+        "success": true,
+        "model": "gpt-5.4",
+        "routerSkill": "oc-skill-router",
+        "latency": 301,
+        "performance": "A (快速)"
+      },
+      "review": {
+        "success": true,
+        "model": "gemini-3.1-pro-preview",
+        "routerSkill": "model-routing",
+        "latency": 300,
+        "performance": "A (快速)"
+      },
+      "optimization": {
+        "success": true,
+        "model": "deepseek-v3.2",
+        "routerSkill": "adaptive-routing",
+        "latency": 301,
+        "performance": "A (快速)"
+      }
+    },
+    "performance": {
+      "successRate": "100.0%",
+      "averageLatency": "301ms",
+      "totalDuration": "undefinedms"
+    },
+    "recommendations": [
+      "路由适配器工作正常，可以集成到项目中"
+    ]
+  }
+}

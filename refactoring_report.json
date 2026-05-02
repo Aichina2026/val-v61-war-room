@@ -1,0 +1,30 @@
+{
+  "refactoring": {
+    "startTime": "2026-04-09T18:31:39.773Z",
+    "duration": "0.0 分钟",
+    "originalFiles": 3887,
+    "processedFiles": 103,
+    "duplicatesRemoved": 0,
+    "newStructure": "/root/.openclaw/workspace_refactored"
+  },
+  "categories": {
+    "其他文件": 2489,
+    "JSON配置": 330,
+    "Markdown文档": 432,
+    "JavaScript": 584,
+    "Node.js模块": 41,
+    "日志文件": 4,
+    "文本文件": 7
+  },
+  "performance": {
+    "estimatedStartup": "3-5秒",
+    "estimatedMemory": "500MB-1GB",
+    "optimizationLevel": "紧急优化"
+  },
+  "nextSteps": [
+    "验证新系统功能",
+    "性能基准测试",
+    "用户验收测试",
+    "正式切换"
+  ]
+}

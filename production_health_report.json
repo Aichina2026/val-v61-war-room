@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-04-09T19:14:37.674Z",
+  "summary": {
+    "totalSystems": 6,
+    "runningSystems": 3,
+    "failedSystems": 3,
+    "availability": "50.0%"
+  },
+  "systems": [
+    {
+      "name": "智能系统资源管理器Agent",
+      "status": "failed",
+      "startupTime": null,
+      "description": "分布式智能资源管理"
+    },
+    {
+      "name": "代码生成系统集成",
+      "status": "running",
+      "startupTime": 2,
+      "description": "多模型协同代码生成"
+    },
+    {
+      "name": "OmX集成",
+      "status": "failed",
+      "startupTime": null,
+      "description": "高性能计算引擎集成"
+    },
+    {
+      "name": "Evo-Architect",
+      "status": "failed",
+      "startupTime": null,
+      "description": "自进化系统架构平台"
+    },
+    {
+      "name": "omx_minimal_integration.cjs",
+      "status": "running",
+      "startupTime": 158,
+      "description": "零配置轻量级运行时"
+    },
+    {
+      "name": "小白无代码AI系统",
+      "status": "running",
+      "startupTime": 7,
+      "description": "可视化AI流程构建平台"
+    }
+  ],
+  "performance": {
+    "totalStartupTime": 167,
+    "avgStartupTime": "27.8",
+    "concurrency": 3,
+    "efficiency": "high"
+  },
+  "recommendations": [
+    "检查失败系统的日志",
+    "验证系统依赖",
+    "重新启动失败系统"
+  ]
+}

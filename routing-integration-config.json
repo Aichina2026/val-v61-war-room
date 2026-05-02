@@ -1,0 +1,24 @@
+{
+  "routing": {
+    "enabled": true,
+    "defaultStrategy": "balanced",
+    "strategies": {
+      "fast": [
+        "adaptive-routing",
+        "oc-skill-router"
+      ],
+      "balanced": [
+        "model-routing-orchestrator",
+        "intelligent-router"
+      ],
+      "quality": [
+        "intelligent-router",
+        "model-routing-orchestrator"
+      ],
+      "cost": [
+        "openclaw-model-router-skill",
+        "adaptive-routing"
+      ]
+    }
+  }
+}

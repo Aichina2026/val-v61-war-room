@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "environment": "production",
+  "deploymentTime": "2026-04-12T12:48:00Z",
+  
+  "routerConfiguration": {
+    "logLevel": "info",
+    "enableMetrics": true,
+    "enableFallback": true,
+    "maxRetries": 3,
+    "enablePerformanceMonitoring": true,
+    "enableErrorTracking": true,
+    
+    "strategies": {
+      "fast": {
+        "priority": ["evolink", "model"],
+        "timeout": 5000,
+        "maxConcurrent": 5
+      },
+      "balanced": {
+        "priority": ["orchestrator", "intelligent"],
+        "timeout": 10000,
+        "maxConcurrent": 3
+      },
+      "high-quality": {
+        "priority": ["intelligent", "orchestrator"],
+        "timeout": 15000,
+        "maxConcurrent": 2
+      },
+      "cost-effective": {
+        "priority": ["adaptive", "deterministic"],
+        "timeout": 8000,
+        "maxConcurrent": 4
+      }
+    },
+    
+    "stageStrategies": {
+      "analysis": {
+        "strategy": "balanced",
+        "fallback": "fast",
+        "priorityModels": ["gemini-3.1-pro-preview", "deepseek-v3.2"]
+      },
+      "design": {
+        "strategy": "high-quality",
+        "fallback": "balanced",
+        "priorityModels": ["claude-opus-4.6", "gpt-5.4"]
+      },
+      "generation": {
+        "strategy": "cost-effective",
+        "fallback": "balanced",
+        "priorityModels": ["gpt-5.4", "gemini-3.1-pro-preview"]
+      },
+      "review": {
+        "strategy": "balanced",
+        "fallback": "high-quality",
+        "priorityModels": ["deepseek-v3.2", "claude-opus-4.6"]
+      },
+      "optimization": {
+        "strategy": "fast",
+        "fallback": "cost-effective",
+        "priorityModels": ["gemini-3.1-pro-preview", "gpt-5.4"]
+      }
+    },
+    
+    "apiConfiguration": {
+      "timeoutDefaults": {
+        "short": 3000,
+        "medium": 8000,
+        "long": 15000
+      },
+      "retryPolicy": {
+        "maxAttempts": 3,
+        "backoffFactor": 2,
+        "initialDelay": 1000
+      }
+    }
+  },
+  
+  "monitoringSettings": {
+    "metricsCollection": {
+      "enable": true,
+      "interval": 30000,
+      "retentionDays": 30
+    },
+    "logSettings": {
+      "level": "info",
+      "retentionDays": 7,
+      "enableFileLogging": true
+    },
+    "alertThresholds": {
+      "errorRate": 0.1,
+      "latencyP95": 5000,
+      "availability": 0.99
+    }
+  },
+  
+  "deploymentNotes": "OMC工作流与OpenClaw智能路由系统集成部署 - 生产环境"
+}

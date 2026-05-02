@@ -1,0 +1,13 @@
+{
+  "id": "feature_1773735382814_8m9l6847i",
+  "name": "分型结构_2",
+  "category": "spatial",
+  "type": "reference",
+  "accuracy": 0.831,
+  "description": "分型结构_2 - spatial特征",
+  "success_rate": 0,
+  "quality_score": 0.498,
+  "usage_count": 0,
+  "created_at": "2026-03-17T08:16:22.814Z",
+  "updated_at": "2026-03-17T08:16:22.814Z"
+}

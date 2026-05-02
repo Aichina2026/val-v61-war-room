@@ -1,0 +1,148 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-04-16T13:58:00Z",
+  "description": "4AI系统定时维护任务配置",
+  
+  "maintenance_tasks": {
+    "daily": [
+      {
+        "name": "system_health_check",
+        "description": "系统健康检查",
+        "schedule": "0 2 * * *",
+        "command": "node /root/.openclaw/workspace/health-check.js --full",
+        "enabled": true,
+        "timeout": 300,
+        "retry_count": 2,
+        "notify_on_failure": true
+      },
+      {
+        "name": "log_rotation",
+        "description": "日志轮转清理",
+        "schedule": "0 3 * * *",
+        "command": "find /root/.openclaw/logs -name \"*.log\" -mtime +7 -delete",
+        "enabled": true,
+        "timeout": 180,
+        "retry_count": 1,
+        "notify_on_failure": false
+      },
+      {
+        "name": "backup_cleanup",
+        "description": "备份文件整理",
+        "schedule": "30 3 * * *",
+        "command": "node /root/.openclaw/workspace/cleanup-redundancy.js --safe",
+        "enabled": true,
+        "timeout": 600,
+        "retry_count": 1,
+        "notify_on_failure": true
+      },
+      {
+        "name": "github_connectivity_test",
+        "description": "GitHub连通性测试",
+        "schedule": "0 6,12,18 * * *",
+        "command": "curl -s -I https://api.github.com | grep -q 'HTTP/2 200' && echo 'GitHub API OK' || echo 'GitHub API Failed'",
+        "enabled": true,
+        "timeout": 30,
+        "retry_count": 3,
+        "notify_on_failure": true
+      }
+    ],
+    
+    "weekly": [
+      {
+        "name": "full_system_backup",
+        "description": "完整系统备份",
+        "schedule": "0 3 * * 0",
+        "command": "node /root/.openclaw/workspace/backup-system.js --full --compress",
+        "enabled": true,
+        "timeout": 1800,
+        "retry_count": 1,
+        "notify_on_failure": true
+      },
+      {
+        "name": "configuration_audit",
+        "description": "配置审计",
+        "schedule": "30 3 * * 0",
+        "command": "node /root/.openclaw/workspace/config-audit.js --verbose",
+        "enabled": true,
+        "timeout": 300,
+        "retry_count": 1,
+        "notify_on_failure": true
+      },
+      {
+        "name": "performance_benchmark",
+        "description": "性能基准测试",
+        "schedule": "0 4 * * 0",
+        "command": "node /root/.openclaw/workspace/performance-test.js --all",
+        "enabled": true,
+        "timeout": 900,
+        "retry_count": 1,
+        "notify_on_failure": false
+      }
+    ],
+    
+    "monthly": [
+      {
+        "name": "security_scan",
+        "description": "安全扫描",
+        "schedule": "0 2 1 * *",
+        "command": "node /root/.openclaw/workspace/security-scan.js --full",
+        "enabled": true,
+        "timeout": 3600,
+        "retry_count": 1,
+        "notify_on_failure": true
+      },
+      {
+        "name": "dependency_update_check",
+        "description": "依赖更新检查",
+        "schedule": "0 3 15 * *",
+        "command": "cd /root/.openclaw && npm outdated --depth=0",
+        "enabled": true,
+        "timeout": 300,
+        "retry_count": 1,
+        "notify_on_failure": false
+      }
+    ]
+  },
+  
+  "monitoring": {
+    "health_check_interval": 300,
+    "alert_channels": {
+      "email": false,
+      "slack": false,
+      "webhook": false,
+      "log_file": true
+    },
+    "metrics_collection": {
+      "cpu": true,
+      "memory": true,
+      "disk": true,
+      "network": true,
+      "process": true
+    }
+  },
+  
+  "maintenance_scripts": {
+    "health_check": "/root/.openclaw/workspace/health-check.js",
+    "cleanup": "/root/.openclaw/workspace/cleanup-redundancy.js",
+    "backup": "/root/.openclaw/workspace/backup-system.js",
+    "config_audit": "/root/.openclaw/workspace/config-audit.js",
+    "performance_test": "/root/.openclaw/workspace/performance-test.js",
+    "security_scan": "/root/.openclaw/workspace/security-scan.js"
+  },
+  
+  "notifications": {
+    "failure_threshold": 3,
+    "cooldown_period": 3600,
+    "recipients": []
+  },
+  
+  "backup_config": {
+    "retention_days": 30,
+    "compression": true,
+    "encryption": false,
+    "locations": [
+      "/root/.openclaw/backups/",
+      "/root/backup/"
+    ]
+  }
+}

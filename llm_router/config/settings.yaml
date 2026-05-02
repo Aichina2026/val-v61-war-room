@@ -1,0 +1,100 @@
+# OpenClaw LLM 路由系统配置
+
+# Redis 配置
+redis:
+  host: "localhost"
+  port: 6379
+  password: null  # 如果需要密码
+  db: 0
+
+# 缓存配置
+cache:
+  enabled: true
+  ttl: 3600  # 缓存过期时间（秒）
+  max_size: 10000  # 最大缓存条目数
+
+# AI 提供商配置
+providers:
+  # 4Sapi NewAPI - 主提供商
+  foursapi:
+    name: "4Sapi NewAPI"
+    base_url: "https://4sapi.com/v1"
+    api_keys:
+      - "sk-4s-key1"  # 替换为实际 Key
+      - "sk-4s-key2"
+      - "sk-4s-key3"
+      - "sk-4s-key4"
+      - "sk-4s-key5"
+    priority: 1  # 优先级，数字越小优先级越高
+    timeout: 120  # 超时时间（秒）
+    max_retries: 3  # 最大重试次数
+    enabled: true
+
+  # OpenRouter - 备用提供商
+  openrouter:
+    name: "OpenRouter"
+    base_url: "https://openrouter.ai/api/v1"
+    api_keys:
+      - "sk-or-key1"  # 替换为实际 Key
+      - "sk-or-key2"
+      - "sk-or-key3"
+      - "sk-or-key4"
+      - "sk-or-key5"
+    priority: 2
+    timeout: 150
+    max_retries: 3
+    enabled: true
+    extra_headers:
+      HTTP-Referer: "https://openclaw.ai"
+      X-Title: "OpenClaw Router"
+
+  # 阿里百炼 DashScope
+  bailian:
+    name: "阿里百炼 DashScope"
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_keys:
+      - "sk-bl-key1"  # 替换为实际 Key
+      - "sk-bl-key2"
+      - "sk-bl-key3"
+      - "sk-bl-key4"
+      - "sk-bl-key5"
+    priority: 3
+    timeout: 120
+    max_retries: 2
+    enabled: true
+
+  # 本地 Ollama（故障转移）
+  ollama:
+    name: "本地 Ollama"
+    base_url: "http://localhost:11434/v1"
+    api_keys: []
+    priority: 99  # 最低优先级，仅作为故障转移
+    timeout: 180
+    max_retries: 1
+    enabled: false  # 默认禁用，需要时手动启用
+
+# 路由策略
+routing:
+  default_model: "gpt-3.5-turbo"
+  enable_failover: true
+  failover_threshold: 3  # 失败次数阈值
+  circuit_breaker_timeout: 60  # 熔断器冷却时间（秒）
+
+# 性能优化
+performance:
+  connection_pool_size: 10  # 连接池大小，针对 2核4GB 优化
+  max_concurrent_requests: 2  # 最大并发请求数
+  request_timeout: 30  # 请求超时时间（秒）
+
+# 日志配置
+logging:
+  level: "INFO"
+  file: "/root/.openclaw/workspace/llm_router/logs/router.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+
+# 监控配置
+monitoring:
+  enable_metrics: true
+  metrics_port: 9091
+  health_check_interval: 30  # 健康检查间隔（秒）

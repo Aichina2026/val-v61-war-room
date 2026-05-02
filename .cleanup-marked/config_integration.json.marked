@@ -1,0 +1,7 @@
+{
+  "markedAt": "2026-05-01T05:31:46.432Z",
+  "original": "config/integration.json",
+  "reason": "Duplicate backup file",
+  "size": 3847,
+  "markedBy": "RedundancyCleanup"
+}

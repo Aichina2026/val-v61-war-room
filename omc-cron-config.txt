@@ -1,0 +1,15 @@
+# OMC 4AI工作流自动化配置
+# 数据收集 - 每小时一次
+0 * * * * cd /root/.openclaw/workspace && node omc-4ai-workflow-complete.js --phase=collect >> /root/.openclaw/workspace/omc-automation-logs/collection.log 2>&1
+
+# 数据分析 - 每6小时一次
+0 */6 * * * cd /root/.openclaw/workspace && node omc-4ai-workflow-complete.js --phase=analyze >> /root/.openclaw/workspace/omc-automation-logs/analysis.log 2>&1
+
+# 系统优化 - 每天凌晨2点
+0 2 * * * cd /root/.openclaw/workspace && node omc-4ai-workflow-complete.js --phase=optimize >> /root/.openclaw/workspace/omc-automation-logs/optimization.log 2>&1
+
+# 策略生成 - 每周一凌晨3点
+0 3 * * 1 cd /root/.openclaw/workspace && node strategy-library-generator.js >> /root/.openclaw/workspace/omc-automation-logs/strategy.log 2>&1
+
+# 系统健康检查 - 每5分钟
+*/5 * * * * cd /root/.openclaw/workspace && node check-system-status.js >> /root/.openclaw/workspace/omc-automation-logs/health.log 2>&1

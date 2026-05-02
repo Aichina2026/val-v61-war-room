@@ -1,0 +1,16 @@
+{
+  "id": "freq-error-1",
+  "category": "auth",
+  "type": "AUTH_FAILED",
+  "description": "Authentication failed",
+  "rootCause": "Expired token",
+  "solutions": [
+    "Refresh token"
+  ],
+  "context": {},
+  "timestamp": "2026-05-02T07:01:46.316Z",
+  "version": "1.0.0",
+  "occurrenceCount": 5,
+  "resolved": false,
+  "resolution": null
+}

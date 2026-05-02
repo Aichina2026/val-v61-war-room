@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-04-14T20:19:46.813Z",
+  "summary": {
+    "totalTasks": 2,
+    "successfulTasks": 2,
+    "failedTasks": 0,
+    "successRate": 100,
+    "totalTime": 13809,
+    "avgTimePerTask": 6904.5
+  },
+  "details": {
+    "successful": [
+      {
+        "taskIndex": 0,
+        "model": "gpt-5.4",
+        "responseTime": 4492,
+        "responseLength": 0
+      },
+      {
+        "taskIndex": 1,
+        "model": "gemini-3.1-pro-preview",
+        "responseTime": 5244,
+        "responseLength": 9
+      }
+    ],
+    "failed": []
+  },
+  "metrics": {
+    "requestCount": 4,
+    "successCount": 4,
+    "errorCount": 0,
+    "successRate": 100,
+    "circuitBreaker": {
+      "isOpen": false,
+      "failureCount": 0,
+      "lastFailureTime": null,
+      "resetAfterMs": 60000
+    }
+  }
+}
