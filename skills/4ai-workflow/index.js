@@ -14,6 +14,19 @@ const CONFIG = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8')
 );
 
+// Load Strategy Library
+const { StrategyLibrary } = require('./lib/strategy-library');
+let strategyLibrary = null;
+
+function getStrategyLibrary() {
+  if (!strategyLibrary) {
+    strategyLibrary = new StrategyLibrary({
+      basePath: path.join(__dirname, 'evolution')
+    });
+  }
+  return strategyLibrary;
+}
+
 /**
  * Main entry point for OpenClaw Skill
  * @param {Object} context - OpenClaw context
@@ -72,10 +85,15 @@ async function execute(context, task) {
     console.log(`\n✅ [4AI Workflow] Complete in ${(results.timing.total/1000).toFixed(1)}s`);
     console.log(`📊 Confidence: ${(results.confidence * 100).toFixed(1)}%`);
 
-    return formatOutput(results);
+    // Record strategy and check for errors
+    const output = formatOutput(results);
+    await recordWorkflowResult(task, results, output);
+    
+    return output;
 
   } catch (error) {
     console.error(`❌ [4AI Workflow] Error: ${error.message}`);
+    await recordWorkflowError(task, error);
     throw error;
   }
 }
@@ -333,6 +351,71 @@ function calculateRelevance(collected, task) {
   // Simple relevance calculation
   const totalItems = collected.memory.length + collected.web.length + collected.database.length;
   return Math.min(totalItems / 10, 1.0);
+}
+
+/**
+ * Record successful workflow result to strategy library
+ */
+async function recordWorkflowResult(task, results, output) {
+  try {
+    const lib = getStrategyLibrary();
+    
+    // Record strategy for successful workflow
+    lib.addStrategy({
+      id: `workflow-${Date.now()}`,
+      category: '4ai-workflow',
+      name: '4AI Workflow Execution',
+      description: `Task: ${task.slice(0, 100)}`,
+      patterns: ['multi-agent', 'orchestration'],
+      result: {
+        success: true,
+        confidence: results.confidence,
+        timing: results.timing,
+        models: {
+          scout: results.scout?.model,
+          clarifier: results.clarifier?.model,
+          builder: results.builder?.model,
+          reviewer: results.reviewer?.model,
+          arbiter: results.arbiter?.model
+        }
+      },
+      confidence: results.confidence
+    });
+    
+    // Update usage stats
+    if (results.scout?.model) lib.updateStrategyUsage(results.scout.model, true);
+    if (results.clarifier?.model) lib.updateStrategyUsage(results.clarifier.model, true);
+    if (results.builder?.model) lib.updateStrategyUsage(results.builder.model, true);
+    if (results.reviewer?.model) lib.updateStrategyUsage(results.reviewer.model, true);
+    if (results.arbiter?.model) lib.updateStrategyUsage(results.arbiter.model, true);
+    
+    console.log('[StrategyLibrary] Workflow result recorded');
+  } catch (e) {
+    console.log(`[StrategyLibrary] Record skipped: ${e.message}`);
+  }
+}
+
+/**
+ * Record workflow error to strategy library
+ */
+async function recordWorkflowError(task, error) {
+  try {
+    const lib = getStrategyLibrary();
+    
+    lib.addError({
+      id: `error-${Date.now()}`,
+      category: 'workflow-failure',
+      type: error.name || 'WorkflowError',
+      description: error.message,
+      rootCause: error.stack?.split('\n')[1]?.trim() || 'Unknown',
+      solutions: ['Check model availability', 'Verify API keys', 'Review timeout settings'],
+      context: { task: task.slice(0, 200) }
+    });
+    
+    console.log('[StrategyLibrary] Error recorded');
+  } catch (e) {
+    console.log(`[StrategyLibrary] Error record skipped: ${e.message}`);
+  }
 }
 
 module.exports = { execute };
