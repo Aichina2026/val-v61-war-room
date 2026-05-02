@@ -7,7 +7,7 @@
   },
   "roles": {
     "scout": {
-      "model": "foursapi/gpt-5.5",
+      "model": "foursapi/gemini-3.1-pro-preview",
       "description": "信息收集与关联分析",
       "timeout": 60000,
       "maxTokens": 16000,
@@ -23,7 +23,7 @@
       "backup": "foursapi/claude-opus-4-7"
     },
     "builder": {
-      "model": "foursapi/gpt-5.5",
+      "model": "foursapi/gemini-3.1-pro-preview",
       "description": "架构设计与代码生成",
       "timeout": 180000,
       "maxTokens": 64000,
@@ -44,7 +44,7 @@
       "timeout": 120000,
       "maxTokens": 32000,
       "temperature": 0.2,
-      "backup": "foursapi/gpt-5.5"
+      "backup": "foursapi/claude-opus-4-7"
     }
   },
   "resilience": {
